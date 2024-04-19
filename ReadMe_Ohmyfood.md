@@ -8,3 +8,4 @@ creation du dossier SCSS
     - 1 fichier layout.scss "pagination"
     - 1 fichier components.scss "bouton, card"
     - 1 fichier animation.scss  "animation"
+    - 1 fichier styles.scss "regrouper tous les fichiers dans styles"
