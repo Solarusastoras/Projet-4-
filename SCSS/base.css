@@ -1,0 +1,49 @@
+* {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: #000000;
+}
+
+.icon_color {
+  color: #7e7e7e;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.ancre {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer_logo {
+  font-family: "Shrikhand", sans-serif;
+}
+
+footer {
+  background-color: #353535;
+  font-family: "Shrikhand", sans-serif;
+}
+footer li {
+  color: #ffffff;
+}/*# sourceMappingURL=base.css.map */

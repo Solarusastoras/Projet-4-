@@ -1,0 +1,38 @@
+.news {
+  position: absolute;
+  top: 13px;
+  right: 12px;
+  background-color: $third-color;
+  color: $sixth-color;
+  padding: 5px;
+}
+
+.ligne {
+  display: flex;
+  flex-direction: row;
+}
+
+.centrer {
+  display: flex;
+  justify-content: center;
+}
+
+.colonne {
+  display: flex;
+  flex-direction: column;
+}
+
+.espace_entre {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+}
+
+@media (min-width: 320px) and (max-width: 767.99px) {
+  .taille_logo {
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+  }
+}
