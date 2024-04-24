@@ -1,0 +1,25 @@
+.ligne {
+  display: flex;
+  flex-direction: row;
+}
+
+.centrer {
+  display: flex;
+  justify-content: center;
+}
+
+.colonne {
+  display: flex;
+  flex-direction: column;
+}
+
+.espace_entre {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+}
+
+.fond {
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.2));
+}
+

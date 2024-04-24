@@ -1,0 +1,23 @@
+.ville_fond_ecran {
+  width: 100%;
+  height: 50px;
+  border: solid 2px $fourth-color;
+  margin-bottom: 45px $fourth-color(0.1);
+  margin-right: 15px;
+  background-color: lighten($fourth-color, 40%);
+}
+
+.border_fonctionnement {
+  border: #d9d9d9 solid 2px;
+  border-radius: 25px 25px 25px 25px;
+  width: 85%;
+  height: 60px;
+}
+
+.boutton_color {
+  background: linear-gradient(to bottom, $fifths-color, $second-color);
+}
+
+.ancre {
+      text-decoration: none;
+}

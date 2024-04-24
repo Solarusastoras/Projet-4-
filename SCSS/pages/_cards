@@ -1,0 +1,34 @@
+.restaurant {
+  background-color: $fourth-color (0, 3);
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 0px 15px 0px 15px;
+}
+
+.carte {
+  position: relative;
+  width: 100%;
+  height: 230px;
+  border-radius: 20px 20px 0px 0px;
+  background-color: $base-color;
+  margin-bottom: 20px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.carte .carte-contenu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.news {
+  position: absolute;
+  top: 13px;
+  right: 12px;
+  background-color: $third-color;
+  color: $sixth-color;
+  padding: 5px;
+}

@@ -1,0 +1,48 @@
+.icon_color {
+  color: $fourth-color;
+}
+
+ul,
+.color_footer,
+.ancre {
+  color: $base-color;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.boutton_color {
+  background: linear-gradient(to bottom, $fifths-color, $second-color);
+}
+
+.footer_logo {
+  font-family: $font-tittle;
+}
+
+footer {
+  background-color: $primary-color;
+}
+
+ul {
+  list-style-type: none;
+}
+
+footer {
+  background-color: $primary-color;
+  font-family: $font-tittle;
+}

@@ -1,0 +1,16 @@
+.boutton {
+  width: 218px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+}
+
+.cercle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: $second-color;
+  color: $base-color;
+  text-align: center;
+}
