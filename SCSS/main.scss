@@ -1,22 +1,22 @@
 // Importation des bases
-@import "/SCSS/base/colors";
-@import "/SCSS/base/fonts";
-@import "/SCSS/base/base";
+@import '/SCSS/base/colors';
+@import '/SCSS/base/fonts';
+@import '/SCSS/base/base';
 
 // Importation des composants
-@import "/SCSS/components/components";
+@import '/SCSS/components/components';
 
 // Importation des layouts
-@import "/SCSS/layouts/containers";
-@import"/SCSS/layouts/_footer";
-@import "/SCSS/layouts/header";
-@import "/SCSS/layouts/loader";
-@import "/SCSS/layouts/images";
+@import '/SCSS/layouts/containers';
+@import'/SCSS/layouts/footer';
+@import '/SCSS/layouts/header';
+@import '/SCSS/layouts/loader';
+@import '/SCSS/layouts/images';
 
 // Importation pages
-@import "/SCSS/pages/cards";
+@import '/SCSS/pages/cards';
 
 // Importation des outils
-@import "/SCSS/utils/mixins";
-@import "/SCSS/utils/variables";
-@import "/SCSS/utils/maps";
+@import '/SCSS/utils/mixins';
+@import '/SCSS/utils/variables';
+@import '/SCSS/utils/maps';
