@@ -3,22 +3,19 @@
   text-decoration: none;
 }
 
-* {
-  font-family: "Roboto", sans-serif;
-}
-
 a {
   color: #000000;
 }
 
 .ville_fond_ecran {
-  border: solid 2px #7e7e7e;
-  margin-bottom: 45px #7e7e7e 0.1;
+  margin-bottom: 45px;
   background-color: #e4e4e4;
+  box-shadow: 0px -8px 10px rgba(0, 0, 0, 0.2);
 }
 
-.border_fonctionnement {
-  border: #d9d9d9 solid 2px;
+.border_fonctionnement,
+.ville_fond_ecran {
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
 }
 
 .icon_color {
@@ -56,16 +53,14 @@ ul,
 
 footer {
   background-color: #353535;
-  font-family: "Shrikhand", sans-serif;
 }
 
 * {
-  margin: 0px;
-  text-decoration: none;
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: bold;
 }
 
@@ -78,15 +73,20 @@ h3 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: lighter;
+}
+
+.ancre {
+  font-size: 16px;
 }
 
 ul {
   list-style-type: none;
 }
 
-li, .footer_logo {
+li,
+.footer_logo {
   font-size: 16px;
 }
 
@@ -112,43 +112,87 @@ li, .footer_logo {
 .ville_fond_ecran {
   width: 100%;
   height: 50px;
-  margin-right: 15px;
+  margin: 0px 15px 38px 0px;
+}
+
+.marge_ville {
+  display: flex;
+  margin: 15px 15px 0px 0px;
+}
+
+.marge_titre {
+  display: flex;
+  margin-left: 1px;
+  text-align: center;
+}
+
+.marge_soustitre {
+  margin: 25px 0px 0px 0px;
+  text-align: center;
+}
+
+.boutton {
+  margin-top: 35px;
 }
 
 .border_fonctionnement {
+  position: relative;
   border-radius: 25px 25px 25px 25px;
-  width: 85%;
-  height: 60px;
+  width: 100%;
+  height: 50px;
+  padding-top: 30px;
+}
+
+.marge_fonctionnement {
+  display: flex;
+  margin: 53px 0px 0px 10px;
+}
+
+.marge_carte_fonctionnement {
+  display: flex;
+  margin: 40px 20px 61px 20px;
+  gap: 20px;
+}
+
+.cercle {
+  margin: 0px 20px 0px -15px;
+}
+
+.icon_color {
+  margin: 0px 20px 0px 0px;
 }
 
 .ancre {
   text-decoration: none;
 }
 
-.favoris, .favoris1, .favoris2, .favoris3 {
+.favoris,
+.favoris1,
+.favoris2,
+.favoris3 {
   position: absolute;
   right: 25px;
   padding: 5px;
 }
 
 .favoris {
-  bottom: 85px;
+  bottom: -280px;
 }
 
 .favoris1 {
-  bottom: -166px;
+  bottom: -530px;
 }
 
 .favoris2 {
-  bottom: -416px;
+  bottom: -780px;
 }
 
 .favoris3 {
-  bottom: -670px;
+  bottom: -1028px;
 }
 
 .footer_logo {
-  margin-left: 20px;
+  margin: 15px 0px 0px 20px;
 }
 
 .alignement_ul {
@@ -158,6 +202,10 @@ li, .footer_logo {
 
 li {
   padding: 7.5px;
+}
+
+.taille_logo {
+  margin: 25px 0px 12px 0px;
 }
 
 .loader {

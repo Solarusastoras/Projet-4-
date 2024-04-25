@@ -1,40 +1,81 @@
 .ville_fond_ecran {
   width: 100%;
   height: 50px;
+  margin: 0px 15px 38px 0px;
+}
 
-  margin-right: 15px;
+.marge_ville {
+  display: flex;
+  margin: 15px 15px 0px 0px;
+}
+
+.marge_titre {
+  display: flex;
+  margin-left: 1px;
+  text-align: center;
+}
+
+.marge_soustitre {
+  margin: 25px 0px 0px 0px;
+  text-align: center;
+}
+
+.boutton {
+  margin-top: 35px;
 }
 
 .border_fonctionnement {
+  position: relative;
   border-radius: 25px 25px 25px 25px;
-  width: 85%;
-  height: 60px;
+  width: 100%;
+  height: 50px;
+  padding-top: 30px;
+}
+
+.marge_fonctionnement {
+  display: flex;
+  margin: 53px 0px 0px 10px;
+}
+
+.marge_carte_fonctionnement {
+  display: flex;
+  margin: 40px 20px 61px 20px;
+  gap: 20px;
+}
+
+.cercle {
+  margin: 0px 20px 0px -15px;
+}
+
+.icon_color {
+  margin: 0px 20px 0px 0px;
 }
 
 .ancre {
   text-decoration: none;
 }
 
-
-.favoris, .favoris1, .favoris2, .favoris3 {
+.favoris,
+.favoris1,
+.favoris2,
+.favoris3 {
   position: absolute;
   right: 25px;
   padding: 5px;
 }
 
 .favoris {
-  bottom: 85px;
+  bottom: -280px;
 }
 
 .favoris1 {
-  bottom: -166px;
+  bottom: -530px;
 }
 
 .favoris2 {
-  bottom: -416px;
+  bottom: -780px;
 }
 
 .favoris3 {
-  bottom: -670px;
+  bottom: -1028px;
 }
-

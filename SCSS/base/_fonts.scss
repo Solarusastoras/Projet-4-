@@ -1,8 +1,12 @@
 $font-stack: "Roboto", sans-serif;
 $font-tittle: "Shrikhand", sans-serif;
 
+* {
+  font-family: $font-stack;
+}
+
 h1 {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: bold;
 }
 
@@ -15,18 +19,25 @@ h3 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: lighter;
 }
+
+.ancre {
+  font-size: 16px;
+}
+
 
 ul {
   list-style-type: none;
 }
 
-li, .footer_logo {
+li,
+.footer_logo {
   font-size: 16px;
 }
 
 .footer_logo {
   font-family: $font-tittle;
 }
+
