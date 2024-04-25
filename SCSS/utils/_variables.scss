@@ -1,3 +1,33 @@
+$base-color: #ffffff;
+$primary-color: #353535;
+$second-color: #9747ff;
+$third-color: #99e2d0;
+$fourth-color: #7e7e7e;
+$fifths-color: #ff79da;
+$sixth-color: #008766;
+$seventh-color: #0000;
+
+$font-stack: "Roboto", sans-serif;
+$font-tittle: "Shrikhand", sans-serif;
+
+* {
+  font-family: $font-stack;
+}
+
+a {
+  color: $seventh-color;
+}
+
+.ville_fond_ecran {
+  border: solid 2px $fourth-color;
+  margin-bottom: 45px $fourth-color(0.1);
+  background-color: lighten($fourth-color, 40%);
+}
+
+.border_fonctionnement {
+  border: #d9d9d9 solid 2px;
+}
+
 .icon_color {
   color: $fourth-color;
 }
@@ -28,6 +58,24 @@ p {
 
 .boutton_color {
   background: linear-gradient(to bottom, $fifths-color, $second-color);
+}
+
+.cercle {
+  background-color: $second-color;
+  color: $base-color;
+}
+
+.restaurant {
+  background-color: $fourth-color (0, 3);
+}
+
+.carte {
+  background-color: $base-color;
+}
+
+.news {
+  background-color: $third-color;
+  color: $sixth-color;
 }
 
 .footer_logo {
