@@ -13,7 +13,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="assets/CSS/style.css" />
+    <link rel="stylesheet" href="SCSS/style.css" />
     <link rel="stylesheet" type="html" href="/restaurants html/" />
   </head>
 
@@ -74,6 +74,8 @@
         </div>
       </section>
 
+      <!-- Restaurant -->
+
       <section class="restaurant">
         <h1 id="mon_ancre_resto">Restaurants</h1>
 
@@ -91,12 +93,12 @@
                 <h3>La palette du goût</h3>
                 <p>Ménilmontant</p>
               </div>
-              <div>
-                <i class="fa-regular fa-heart -- coeur_rempli"></i>
-              </div>
             </div>
           </article>
         </a>
+        <div class="favoris">
+          <i class="fa-regular fa-heart -- coeur_rempli"></i>
+        </div>
 
         <a href="/restaurants html/la_note_enchantee.html">
           <article class="carte">
@@ -111,12 +113,12 @@
                 <h3 class="carte-titre">La note enchantée</h3>
                 <p>Charonne</p>
               </div>
-              <div>
-                <i class="fa-regular fa-heart"></i>
-              </div>
             </div>
           </article>
         </a>
+        <div class="favoris1">
+          <i class="fa-regular fa-heart"></i>
+        </div>
 
         <a href="/restaurants html/a_la francaise.html">
           <article class="carte">
@@ -130,12 +132,12 @@
                 <h3>À la française</h3>
                 <p>Cité Rouge</p>
               </div>
-              <div>
-                <i class="fa-regular fa-heart"></i>
-              </div>
             </div>
           </article>
         </a>
+        <div class="favoris2">
+          <i class="fa-regular fa-heart"></i>
+        </div>
 
         <a href="/restaurants html/le_delice_des_sens.html">
           <article class="carte">
@@ -150,14 +152,13 @@
                   <h3>Le délice des sens</h3>
                   <p>Folie-Méricourt</p>
                 </div>
-                <div>
-                  <i class="fa-regular fa-heart"></i>
-                </div>
               </div>
             </div>
           </article>
         </a>
-
+        <div class="favoris3">
+          <i class="fa-regular fa-heart"></i>
+        </div>
       </section>
     </main>
 
@@ -166,16 +167,17 @@
       <section>
         <div>
           <h3 class="footer_logo -- color_footer">ohmyfood</h3>
-          <ul>
-            <li>
+          <ul class="alignement_ul">
+            <li class="ecart_li">
               <i class="fa-solid fa-utensils"></i>
               Proposer un restaurant
             </li>
-            <li>
+            <li class="ecart_li">
               <i class="fa-solid fa-handshake-angle"></i>
               Devenir partenaire
             </li>
-            <li>Mentions légales</li>
+
+            <li class="ecart_li">Mentions légales</li>
             <li>Contact</li>
           </ul>
         </div>

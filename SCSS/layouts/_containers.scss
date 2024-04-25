@@ -14,3 +14,27 @@
 .ancre {
   text-decoration: none;
 }
+
+
+.favoris, .favoris1, .favoris2, .favoris3 {
+  position: absolute;
+  right: 25px;
+  padding: 5px;
+}
+
+.favoris {
+  bottom: 85px;
+}
+
+.favoris1 {
+  bottom: -166px;
+}
+
+.favoris2 {
+  bottom: -416px;
+}
+
+.favoris3 {
+  bottom: -670px;
+}
+
