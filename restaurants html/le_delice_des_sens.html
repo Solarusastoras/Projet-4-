@@ -7,118 +7,152 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
       integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <link rel="stylesheet" href="/SCSS/style.css" />
   </head>
+
   <body>
+    <!-- header -->
     <header>
-      <div onclick="window.history.back()">
-        <i class="fa-solid fa-arrow-left"></i>
+      <div class="ligne">
+        <div onclick="window.history.back()">
+          <i class="fa-solid fa-arrow-left"></i>
+        </div>
+        <img
+          class="taille_logo"
+          src="/assets/images/logo/ohmyfood.png"
+          alt="logo ohmyfood"
+        />
       </div>
-      <img src="/assets/images/logo/ohmyfood.png" alt="logo ohmyfood" />
     </header>
 
+    <!-- main -->
     <main>
       <img
+        class="image_menu"
         src="/assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
         alt="Photo plat"
       />
-      <section>
+
+      <section class="marge_menu_carte">
+        <div class="fond_menus">
+          <div class="espace_entre">
+            <h1 class="titre">La palette du goût</h1>
+            <div class="coeur_rempli">
+              <i class="fa-regular fa-heart -- coeur_rempli"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Entrées -->
         <div>
-          <h1>La palette du goût</h1>
-          <i></i>
+          <p class="souligner_titre_menu">ENTRÉES</p>
+
+          <div class="border_carte_menu">
+            <h5 class="espace_text_prix">Tartare de thon</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">Assaisonné au yuzu</h6>
+              <h5 class="marge_prix_d">25<span class="euro">€</span></h5>
+            </div>
+          </div>
+
+          <div class="border_carte_menu">
+            <h5 class="espace_text_prix">Bouchée de homard croustillant</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">
+                Et sa farandole de petits légumes
+              </h6>
+              <h5 class="marge_prix_d">35<span class="euro">€</span></h5>
+            </div>
+          </div>
+
+          <div class="border_carte_menu">
+            <h5 class="espace_text_prix">Velouté de cèpes</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">Aux truffes</h6>
+              <h5 class="marge_prix_d">20<span class="euro">€</span></h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Plats -->
+        <div>
+          <p class="souligner_titre_menu">PLATS</p>
+
+          <div class="border_carte_menu">
+            <h5 class="espace_text_prix">Poulet rôti aux herbes de Provence</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">Et sa crème de truffe</h6>
+              <h5 class="marge_prix_d">40<span class="euro">€</span></h5>
+            </div>
+          </div>
+
+          <div class="border_carte_menu">
+            <h5 class="espace_text_prix">Langouste rôtie</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">Et ses légumes de saison</h6>
+              <h5 class="marge_prix_d">35<span class="euro">€</span></h5>
+            </div>
+          </div>
+
+          <div class="border_carte_menu">
+            <h5 class="espace_text_prix">Côte de bœuf Angus</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">Et sa purée de panais</h6>
+              <h5 class="marge_prix_d">44<span class="euro">€</span></h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- desserts -->
+        <div>
+          <p class="souligner_titre_menu">DESSERTS</p>
+
+          <div class="border_carte_menu">
+            <h5 class="espace_text_prix">Farandole de desserts</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">Du chef</h6>
+              <h5 class="marge_prix_d">18<span class="euro">€</span></h5>
+            </div>
+          </div>
+
+          <div class="border_carte_menu">
+            <h5 class="espace_text_prix">Crème brulée</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">Revisitée</h6>
+              <h5 class="marge_prix_d">22<span class="euro">€</span></h5>
+            </div>
+          </div>
+
+          <div class="border_carte_menu">
+            <h5 class="espace_text_prix">Tiramisu</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">À la noisette</h6>
+              <h5 class="marge_prix_d">23<span class="euro">€</span></h5>
+            </div>
+          </div>
         </div>
       </section>
-      <section>
-        <h2>ENTRÉES</h2>
 
-        <div>
-          <h3>Tartare de thon</h3>
-          <div>
-            <p>Assaisonné au yuzu</p>
-            <p>25<span class="euro">€</span></p>
-          </div>
-        </div>
-
-        <div>
-          <h3>Bouchée de homard croustillant</h3>
-          <div>
-            <p>Et sa farandole de petits légumes</p>
-            <p>35<span class="euro">€</span></p>
-          </div>
-        </div>
-
-        <div>
-          <h3>Velouté de cèpes</h3>
-          <div>
-            <p>Aux truffes</p>
-            <p>20<span class="euro">€</span></p>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h2>PLATS</h2>
-
-        <div>
-          <h3>Poulet rôti aux herbes de Provence</h3>
-          <div>
-            <p>Et sa crème de truffe</p>
-            <p>40<span class="euro">€</span></p>
-          </div>
-        </div>
-
-        <div>
-          <h3>Langouste rôtie</h3>
-          <div>
-            <p>Et ses légumes de saison</p>
-            <p>35<span class="euro">€</span></p>
-          </div>
-        </div>
-
-        <div>
-          <h3>Côte de bœuf Angus</h3>
-          <div>
-            <p>Et sa purée de panais</p>
-            <p>44<span class="euro">€</span></p>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h2>DESSERTS</h2>
-
-        <div>
-          <h3>Farandole de desserts</h3>
-          <div>
-            <p>Du chef</p>
-            <p>18<span class="euro">€</span></p>
-          </div>
-        </div>
-
-        <div>
-          <h3>Crème brulée</h3>
-          <div>
-            <p>Revisitée</p>
-            <p>22<span class="euro">€</span></p>
-          </div>
-        </div>
-
-        <div>
-          <h3>Tiramisu</h3>
-          <div>
-            <p>À la noisette</p>
-            <p>23<span class="euro">€</span></p>
-          </div>
-        </div>
-      </section>
-      <div>
-        <button>Commander</button>
+      <!-- boutton -->
+      <div class="centrer">
+        <button class="boutton -- boutton_color">Commander</button>
       </div>
     </main>
 

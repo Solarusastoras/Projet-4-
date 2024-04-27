@@ -7,20 +7,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
       integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="/assets/CSS/style.css" />
+    <link rel="stylesheet" href="/SCSS/style.css" />
   </head>
   <body>
     <header>
       <div onclick="window.history.back()">
         <i class="fa-solid fa-arrow-left"></i>
       </div>
-      <img src="/assets/images/logo/ohmyfood.png" alt="logo ohmyfood" />
+      <img
+        class="taille_logo"
+        src="/assets/images/logo/ohmyfood.png"
+        alt="logo ohmyfood"
+      />
     </header>
 
     <main>
@@ -28,97 +41,106 @@
         src="/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
         alt="Photo plat"
       />
-      <section>
+      <section class="marge_menu_carte">
+        <div class="fond_menus">
+          <div class="espace_entre">
+            <h1 class="titre">À la française</h1>
+            <div class="coeur_rempli">
+              <i class="fa-regular fa-heart -- coeur_rempli"></i>
+            </div>
+          </div>
+        </div>
+
         <div>
-          <h1>À la française</h1>
-          <i></i>
+          <p class="souligner_titre_menu">ENTRÉES</p>
+
+          <div class="border_carte_menu">
+            <h5 class="espace_text_prix">Tartare de poulpe acidulé</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">Aux zestes d'orange</h6>
+              <h5 class="marge_prix_d">25<span class="euro">€</span></h5>
+            </div>
+          </div>
+
+          <div class="border_carte_menu">
+            <h5 class="espace_text_prix">Velouté de légumes d'antan</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">Carotte, panais, topinambour</h6>
+              <h5 class="marge_prix_d">35<span class="euro">€</span></h5>
+            </div>
+          </div>
+
+          <div class="border_carte_menu">
+            <h5 class="espace_text_prix">Soupe à l'oignon</h5>
+            <div>
+              <h6 class="espace_text_prix">Revisitée</h6>
+              <h5 class="marge_prix_d">20<span class="euro">€</span></h5>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <p class="souligner_titre_menu">PLATS</p>
+
+          <div class="border_carte_menu">
+            <h5 class="espace_text_prix">Coquilles Saint-Jacques</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">
+                Accompagné de sa ribambelle de légumes
+              </h6>
+              <h5 class="marge_prix_d">40<span class="euro">€</span></h5>
+            </div>
+          </div>
+
+          <div class="border_carte_menu">
+            <h5 class="espace_text_prix">Magret de canard</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">Et parmentier de pommes de terre</h6>
+              <h5 class="marge_prix_d">35<span class="euro">€</span></h5>
+            </div>
+          </div>
+
+          <div class="border_carte_menu">
+            <h5 class="espace_text_prix">Pigeonneau d’Ille-et-Vilaine</h5>
+            <div>
+              <h6 class="espace_text_prix">
+                Sur son lit de gnocchis aux légumes
+              </h6>
+              <h5 class="marge_prix_d">44<span class="euro">€</span></h5>
+            </div>
+          </div>
+
+          <>
+          <p class="souligner_titre_menu">DESSERTS</p>
+
+          <div class="border_carte_menu">
+            <h5 class="espace_text_prix">Pétales de violettes glacés</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">Et purée de noisettes</h6>
+              <h5 class="marge_prix_d">18<span class="euro">€</span></h5>
+            </div>
+          </div>
+
+          <div class="border_carte_menu">
+            <h5 class="espace_text_prix">Fondant au chocolat</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">Revisité</h6>
+              <h5 class="marge_prix_d">22<span class="euro">€</span></h5>
+            </div>
+          </div>
+
+          <div class="border_carte_menu">
+            <h5 class="espace_text_prix">Millefeuille croustillant</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">Myrtilles et pâte d’amande</h6>
+              <h5 class="marge_prix_d">23<span class="euro">€</span></h5>
+            </div>
+          </div>
         </div>
       </section>
-      <section>
-        <h2>ENTRÉES</h2>
 
-        <div>
-          <h3>Tartare de poulpe acidulé</h3>
-          <div>
-            <p>Aux zestes d'orange</p>
-            <p>25<span class="euro">€</span></p>
-          </div>
-        </div>
-
-        <div>
-          <h3>Velouté de légumes d'antan</h3>
-          <div>
-            <p>Carotte, panais, topinambour</p>
-            <p>35<span class="euro">€</span></p>
-          </div>
-        </div>
-
-        <div>
-          <h3>Soupe à l'oignon</h3>
-          <div>
-            <p>Revisitée</p>
-            <p>20<span class="euro">€</span></p>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h2>PLATS</h2>
-
-        <div>
-          <h3>Coquilles Saint-Jacques</h3>
-          <div>
-            <p>Accompagné de sa ribambelle de légumes</p>
-            <p>40<span class="euro">€</span></p>
-          </div>
-        </div>
-
-        <div>
-          <h3>Magret de canard</h3>
-          <div>
-            <p>Et parmentier de pommes de terre</p>
-            <p>35<span class="euro">€</span></p>
-          </div>
-        </div>
-
-        <div>
-          <h3>Pigeonneau d’Ille-et-Vilaine</h3>
-          <div>
-            <p>Sur son lit de gnocchis aux légumes</p>
-            <p>44<span class="euro">€</span></p>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h2>DESSERTS</h2>
-
-        <div>
-          <h3>Pétales de violettes glacés</h3>
-          <div>
-            <p>Et purée de noisettes</p>
-            <p>18<span class="euro">€</span></p>
-          </div>
-        </div>
-
-        <div>
-          <h3>Fondant au chocolat</h3>
-          <div>
-            <p>Revisité</p>
-            <p>22<span class="euro">€</span></p>
-          </div>
-        </div>
-
-        <div>
-          <h3>Millefeuille croustillant</h3>
-          <div>
-            <p>Myrtilles et pâte d’amande</p>
-            <p>23<span class="euro">€</span></p>
-          </div>
-        </div>
-      </section>
-      <div>
-        <button>Commander</button>
+      <div class="centrer">
+        <button class="boutton -- boutton_color">Commander</button>
       </div>
     </main>
 
