@@ -6,6 +6,11 @@ $fourth-color: #7e7e7e;
 $fifths-color: #ff79da;
 $sixth-color: #008766;
 $seventh-color: #000000;
+$heighth-color: #f6f6f6;
+
+.fond_site {
+  background-color: $heighth-color;
+}
 
 a {
   color: $seventh-color;
@@ -17,9 +22,14 @@ a {
   box-shadow: 0px -8px 10px rgba(0, 0, 0, 0.2);
 }
 
-.border_fonctionnement,
-.ville_fond_ecran {
+.border_carte_menu,.border_carte_menu,
+.ville_fond_ecran,
+.boutton {
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.fond_fonctionnement {
+  background-color: $base-color;
 }
 
 .icon_color {
@@ -28,6 +38,7 @@ a {
 
 .boutton_color {
   background: linear-gradient(to bottom, $fifths-color, $second-color);
+  color: $base-color;
 }
 
 .cercle {
@@ -35,8 +46,8 @@ a {
   color: $base-color;
 }
 
-.restaurant {
-  background-color: $fourth-color (0, 3);
+.fond_restaurants {
+  background-color: $heighth-color;
 }
 
 .carte {

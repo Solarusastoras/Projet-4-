@@ -13,130 +13,168 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="/assets/CSS/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/SCSS/style.css" />
   </head>
   <body>
     <header>
-      <div onclick="window.history.back()">
-        <i class="fa-solid fa-arrow-left"></i>
+      <div class="ligne">
+        <div onclick="window.history.back()">
+          <i class="fa-solid fa-arrow-left"></i>
+        </div>
+        <img
+          class="taille_logo"
+          src="/assets/images/logo/ohmyfood.png"
+          alt="logo ohmyfood"
+        />
       </div>
-      <img src="/assets/images/logo/ohmyfood.png" alt="logo ohmyfood" />
     </header>
 
     <main>
       <img
+        class="image_menu"
         src="/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
         alt="Photo plat"
       />
-      <section>
+      <section class="marge_menu_carte">
+        <div class="fond_menus">
+          <div class="espace_entre">
+            <h1 class="titre">La palette du goût</h1>
+            <div class="coeur_rempli">
+              <i class="fa-regular fa-heart -- coeur_rempli"></i>
+            </div>
+          </div>
+        </div>
+
         <div>
-          <h1>La palette du goût</h1>
-          <i></i>
+          <p class="souligner_titre_menu">ENTRÉES</p>
+
+          <div class="border_carte_menu">
+            <h5 class="espace_text_prix">Fricassée d'escargots</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">Au piment d'Espelette</h6>
+              <h5 class="marge_prix_d">25<span class="euro">€</span></h5>
+            </div>
+          </div>
+
+          <div class="border_carte_menu">
+            <h5 class="espace_text_prix">Foie gras de canard mi-cuit</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">Et ses copeaux de truffe noire</h6>
+              <h5 class="marge_prix_d">35<span class="euro">€</span></h5>
+            </div>
+          </div>
+
+          <div class="border_carte_menu">
+            <h5 class="espace_text_prix">Œuf au plat</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">
+                Assaisonné à la truffe sur lit de caviar
+              </h6>
+              <h5 class="marge_prix_d">20<span class="euro">€</span></h5>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <p class="souligner_titre_menu">PLATS</p>
+
+          <div class="border_carte_menu">
+            <h5 class="espace_text_prix">Filet de bœuf aux herbes</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">
+                Accompagné de sa ribambelle de légumes
+              </h6>
+              <h5 class="marge_prix_d">40<span class="euro">€</span></h5>
+            </div>
+          </div>
+
+          <div class="border_carte_menu">
+            <h5 class="espace_text_prix">Parmentier de queue de bœuf</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">
+                À la truffe noire sur sa purée de panais
+              </h6>
+              <h5 class="marge_prix_d">35<span class="euro">€</span></h5>
+            </div>
+          </div>
+
+          <div class="border_carte_menu">
+            <h5 class="espace_text_prix">Filet de turbot</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">Aux agrumes</h6>
+              <h5 class="marge_prix_d">44<span class="euro">€</span></h5>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <p class="souligner_titre_menu">DESSERTS</p>
+
+          <div class="border_carte_menu">
+            <h5 class="espace_text_prix">Paris-Brest</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">Revisité</h6>
+              <h5 class="marge_prix_d">18<span class="euro">€</span></h5>
+            </div>
+          </div>
+
+          <div class="border_carte_menu">
+            <h5 class="espace_text_prix">Macaron au chocolat d'exception</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">
+                Et glace à la vanille de Madagascar
+              </h6>
+              <h5 class="marge_prix_d">22<span class="euro">€</span></h5>
+            </div>
+          </div>
+
+          <div class="border_carte_menu">
+            <h5 class="espace_text_prix">Mousse au chocolat</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">
+                Au piment d'Espelette et à la truffe noire
+              </h6>
+              <h5 class="marge_prix_d">23<span class="euro">€</span></h5>
+            </div>
+          </div>
         </div>
       </section>
-      <section>
-        <h2>ENTRÉES</h2>
 
-        <div>
-          <h3>Fricassée d'escargots</h3>
-          <div>
-            <p>Au piment d'Espelette</p>
-            <p>25<span class="euro">€</span></p>
-          </div>
-        </div>
-
-        <div>
-          <h3>Foie gras de canard mi-cuit</h3>
-          <div>
-            <p>Et ses copeaux de truffe noire</p>
-            <p>35<span class="euro">€</span></p>
-          </div>
-        </div>
-
-        <div>
-          <h3>Œuf au plat</h3>
-          <div>
-            <p>Assaisonné à la truffe sur lit de caviar</p>
-            <p>20<span class="euro">€</span></p>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h2>PLATS</h2>
-
-        <div>
-          <h3>Filet de bœuf aux herbes</h3>
-          <div>
-            <p>Accompagné de sa ribambelle de légumes</p>
-            <p>40<span class="euro">€</span></p>
-          </div>
-        </div>
-
-        <div>
-          <h3>Parmentier de queue de bœuf</h3>
-          <div>
-            <p>À la truffe noire sur sa purée de panais</p>
-            <p>35<span class="euro">€</span></p>
-          </div>
-        </div>
-
-        <div>
-          <h3>Filet de turbot</h3>
-          <div>
-            <p>Aux agrumes</p>
-            <p>44<span class="euro">€</span></p>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h2>DESSERTS</h2>
-
-        <div>
-          <h3>Paris-Brest</h3>
-          <div>
-            <p>Revisité</p>
-            <p>18<span class="euro">€</span></p>
-          </div>
-        </div>
-
-        <div>
-          <h3>Macaron au chocolat d'exception</h3>
-          <div>
-            <p>Et glace à la vanille de Madagascar</p>
-            <p>22<span class="euro">€</span></p>
-          </div>
-        </div>
-
-        <div>
-          <h3>Mousse au chocolat</h3>
-          <div>
-            <p>Au piment d'Espelette et à la truffe noire</p>
-            <p>23<span class="euro">€</span></p>
-          </div>
-        </div>
-      </section>
-      <div>
-        <button>Commander</button>
+      <div class="centrer">
+        <button class="boutton -- boutton_color">Commander</button>
       </div>
     </main>
 
     <!-- footer -->
     <footer>
       <section>
-        <div>
-          <h3 class="footer_logo -- color_footer">ohmyfood</h3>
-          <ul>
-            <li>
-              <i class="fa-solid fa-utensils"></i>
+        <div class="marge_footer">
+          <p class="footer_logo -- color_footer">ohmyfood</p>
+          <ul class="alignement_ul">
+            <li class="ecart_li">
+              <i class="fa-solid fa-utensils -- ecart_img_text_footer"></i>
               Proposer un restaurant
             </li>
-            <li>
-              <i class="fa-solid fa-handshake-angle"></i>
+            <li class="ecart_li">
+              <i
+                class="fa-solid fa-handshake-angle -- ecart_img_text_footer"
+              ></i>
               Devenir partenaire
             </li>
-            <li>Mentions légales</li>
+
+            <li class="ecart_li">Mentions légales</li>
             <li>Contact</li>
           </ul>
         </div>

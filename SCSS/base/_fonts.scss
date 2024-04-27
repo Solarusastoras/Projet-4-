@@ -3,6 +3,7 @@ $font-tittle: "Shrikhand", sans-serif;
 
 * {
   font-family: $font-stack;
+  text-decoration: none;
 }
 
 h1 {
@@ -11,7 +12,7 @@ h1 {
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 26px;
 }
 
 h3 {
@@ -20,13 +21,11 @@ h3 {
 
 p {
   font-size: 16px;
-  font-weight: lighter;
 }
 
 .ancre {
   font-size: 16px;
 }
-
 
 ul {
   list-style-type: none;
@@ -39,5 +38,12 @@ li,
 
 .footer_logo {
   font-family: $font-tittle;
+  font-size: 16px;
 }
 
+// Menu
+.titre {
+  font-family: $font-tittle;
+  font-size: 28px;
+  font-weight: 200;
+}
