@@ -17,13 +17,14 @@ a {
 }
 
 .border_carte_menu,
-.border_carte_menu,
+.border_carte_fonctionnent,
 .ville_fond_ecran,
 .boutton {
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
 }
 
-.fond_fonctionnement {
+.fond_fonctionnement,
+.bande_blanche {
   background-color: #ffffff;
 }
 
@@ -95,20 +96,28 @@ ul {
   list-style-type: none;
 }
 
-li,
-.footer_logo {
+li {
   font-size: 16px;
 }
 
 .footer_logo {
   font-family: "Shrikhand", sans-serif;
-  font-size: 16px;
+  font-size: 19px;
 }
 
-.titre {
+h1.titre {
   font-family: "Shrikhand", sans-serif;
-  font-size: 28px;
-  font-weight: 200;
+  font-size: 22px;
+  font-weight: 100;
+}
+
+h5 {
+  font-size: 15px;
+}
+
+h6 {
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .boutton {
@@ -123,7 +132,9 @@ li,
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .ville_fond_ecran {
@@ -189,31 +200,48 @@ li,
 .favoris1,
 .favoris2,
 .favoris3 {
-  position: absolute;
-  right: 25px;
+  position: relative;
+  top: -75px;
   padding: 5px;
+  margin-left: 230px;
 }
 
 .favoris {
-  bottom: -265px;
+  bottom: 0px;
 }
 
 .favoris1 {
-  bottom: -515px;
+  bottom: 0%;
 }
 
 .favoris2 {
-  bottom: -765px;
+  bottom: 0%;
 }
 
 .favoris3 {
-  bottom: -1015px;
+  bottom: 0%;
+}
+
+.bande_blanche {
+  position: relative;
+  height: 32px;
+  width: 100%;
+  top: -32px;
+  border-radius: 30px 30px 0px 0px;
 }
 
 .titre {
   font-family: "Shrikhand", sans-serif;
   font-size: 28px;
   font-weight: 200;
+}
+
+.espace_titre_coeur {
+  margin: 1px 25px;
+}
+
+.coeur_taille {
+  font-size: 130%;
 }
 
 .fond_menus {
@@ -226,14 +254,11 @@ li,
 }
 
 .marge_menu_carte {
-  margin: 15px;
-  border-radius: 10px 10px;
+  margin: -30px 15px 0px 15px;
 }
 
 .espace_text_prix {
-  margin-right: auto;
-  margin-left: 4%;
-  margin-bottom: 5px;
+  margin: 0px auto 5px 4%;
 }
 
 .marge_prix_d {
@@ -253,8 +278,12 @@ li {
   padding: 2px;
 }
 
-.ecart_img_text_footer {
+.ecart_img1_text_footer {
   margin-right: 12px;
+}
+
+.ecart_img2_text_footer {
+  margin-right: 6px;
 }
 
 .marge_footer {
@@ -263,6 +292,10 @@ li {
 
 .taille_logo {
   margin: 25px 0px 12px 0px;
+}
+
+.taille_fleche {
+  margin: 30px -30px -10px 15px;
 }
 
 .loader {
@@ -278,7 +311,8 @@ li {
   animation: 2s;
 }
 
-.carte img {
+.carte img,
+.image_menu {
   -o-object-fit: cover;
      object-fit: cover;
   height: 150px;
@@ -288,7 +322,12 @@ li {
   font-size: 140%;
 }
 
+.taille_fleche {
+  font-size: 150%;
+}
+
 .image_menu {
+  position: relative;
   width: 100%;
   height: 275px;
 }
@@ -334,6 +373,7 @@ li {
   width: 100%;
   height: 45px;
   padding-top: 10px;
+  margin-bottom: 15px;
 }
 
 .ligne {
@@ -361,10 +401,18 @@ li {
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.2));
 }
 
+.bottom_40 {
+  margin-bottom: 40px;
+}
+
+.botton_30 {
+  margin-bottom: 30px;
+}
+
 @media (min-width: 320px) and (max-width: 767.99px) {
   .taille_logo {
-    width: 50%;
-    margin-left: 25%;
+    width: 60%;
+    margin-left: 20%;
     margin-bottom: 15px;
     padding-bottom: 15px;
   }

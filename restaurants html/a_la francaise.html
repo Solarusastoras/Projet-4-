@@ -30,7 +30,7 @@
     <header>
       <div class="ligne">
         <div onclick="window.history.back()">
-          <i class="fa-solid fa-arrow-left"></i>
+          <i class="fa-solid fa-arrow-left -- taille_fleche"></i>
         </div>
         <img
           class="taille_logo"
@@ -40,24 +40,26 @@
       </div>
     </header>
 
-     <!-- main -->
+    <!-- main -->
     <main>
-      <img class="image_menu"
+      <img
+        class="image_menu"
         src="/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
         alt="Photo plat"
       />
+      <div class="bande_blanche"></div>
 
       <section class="marge_menu_carte">
         <div class="fond_menus">
           <div class="espace_entre">
-            <h1 class="titre">À la française</h1>
-            <div class="coeur_rempli">
-              <i class="fa-regular fa-heart -- coeur_rempli"></i>
+            <h1 class="titre -- bottom_40">À la française</h1>
+            <div class="coeur_rempli -- espace_titre_coeur">
+              <i class="fa-regular fa-heart -- coeur_taille"></i>
             </div>
           </div>
         </div>
 
-         <!-- Entrées -->
+        <!-- Entrées -->
         <div>
           <p class="souligner_titre_menu">ENTRÉES</p>
 
@@ -77,7 +79,7 @@
             </div>
           </div>
 
-          <div class="border_carte_menu">
+          <div class="border_carte_menu -- bottom_40">
             <h5 class="espace_text_prix">Soupe à l'oignon</h5>
             <div class="ligne">
               <h6 class="espace_text_prix">Revisitée</h6>
@@ -108,7 +110,7 @@
             </div>
           </div>
 
-          <div class="border_carte_menu">
+          <div class="border_carte_menu -- bottom_40">
             <h5 class="espace_text_prix">Pigeonneau d’Ille-et-Vilaine</h5>
             <div class="ligne">
               <h6 class="espace_text_prix">
@@ -120,37 +122,37 @@
 
           <!-- desserts -->
           <div>
-          <p class="souligner_titre_menu">DESSERTS</p>
+            <p class="souligner_titre_menu">DESSERTS</p>
 
-          <div class="border_carte_menu">
-            <h5 class="espace_text_prix">Pétales de violettes glacés</h5>
-            <div class="ligne">
-              <h6 class="espace_text_prix">Et purée de noisettes</h6>
-              <h5 class="marge_prix_d">18<span class="euro">€</span></h5>
+            <div class="border_carte_menu">
+              <h5 class="espace_text_prix">Pétales de violettes glacés</h5>
+              <div class="ligne">
+                <h6 class="espace_text_prix">Et purée de noisettes</h6>
+                <h5 class="marge_prix_d">18<span class="euro">€</span></h5>
+              </div>
+            </div>
+
+            <div class="border_carte_menu">
+              <h5 class="espace_text_prix">Fondant au chocolat</h5>
+              <div class="ligne">
+                <h6 class="espace_text_prix">Revisité</h6>
+                <h5 class="marge_prix_d">22<span class="euro">€</span></h5>
+              </div>
+            </div>
+
+            <div class="border_carte_menu">
+              <h5 class="espace_text_prix">Millefeuille croustillant</h5>
+              <div class="ligne">
+                <h6 class="espace_text_prix">Myrtilles et pâte d’amande</h6>
+                <h5 class="marge_prix_d">23<span class="euro">€</span></h5>
+              </div>
             </div>
           </div>
-
-          <div class="border_carte_menu">
-            <h5 class="espace_text_prix">Fondant au chocolat</h5>
-            <div class="ligne">
-              <h6 class="espace_text_prix">Revisité</h6>
-              <h5 class="marge_prix_d">22<span class="euro">€</span></h5>
-            </div>
-          </div>
-
-          <div class="border_carte_menu">
-            <h5 class="espace_text_prix">Millefeuille croustillant</h5>
-            <div class="ligne">
-              <h6 class="espace_text_prix">Myrtilles et pâte d’amande</h6>
-              <h5 class="marge_prix_d">23<span class="euro">€</span></h5>
-            </div>
-          </div>
-          </div>
-          </div>
+        </div>
       </section>
 
       <!-- boutton -->
-      <div class="centrer">
+      <div class="centrer -- botton_30">
         <button class="boutton -- boutton_color">Commander</button>
       </div>
     </main>
@@ -159,15 +161,15 @@
     <footer>
       <section>
         <div class="marge_footer">
-          <h1 class="footer_logo -- color_footer">ohmyfood</h1>
+          <p class="footer_logo -- color_footer">ohmyfood</p>
           <ul class="alignement_ul">
             <li class="ecart_li">
-              <i class="fa-solid fa-utensils -- ecart_img_text_footer"></i>
+              <i class="fa-solid fa-utensils -- ecart_img1_text_footer"></i>
               Proposer un restaurant
             </li>
             <li class="ecart_li">
               <i
-                class="fa-solid fa-handshake-angle -- ecart_img_text_footer"
+                class="fa-solid fa-handshake-angle -- ecart_img2_text_footer"
               ></i>
               Devenir partenaire
             </li>

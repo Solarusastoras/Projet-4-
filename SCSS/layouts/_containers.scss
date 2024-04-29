@@ -61,33 +61,49 @@
 .favoris1,
 .favoris2,
 .favoris3 {
-  position: absolute;
-  right: 25px;
+  position: relative;
+  top: -75px;
   padding: 5px;
+  margin-left: 230px;
 }
 
 .favoris {
-  bottom: -265px;
+  bottom: 0px;
 }
 
 .favoris1 {
-  bottom: -515px;
+  bottom: 0%;
 }
 
 .favoris2 {
-  bottom: -765px;
+  bottom: 0%;
 }
 
 .favoris3 {
-  bottom: -1015px;
+  bottom: 0%;
 }
 
 // Page des menus
+.bande_blanche {
+  position: relative;
+  height: 32px;
+  width: 100%;
+  top: -32px;
+  border-radius: 30px 30px 0px 0px;
+}
 
 .titre {
   font-family: $font-tittle;
   font-size: 28px;
   font-weight: 200;
+}
+
+.espace_titre_coeur {
+  margin: 1px 25px;
+}
+
+.coeur_taille {
+  font-size: 130%;
 }
 
 .fond_menus {
@@ -100,14 +116,11 @@
 }
 
 .marge_menu_carte {
-  margin: 15px;
-  border-radius: 10px 10px;
+  margin: -30px 15px 0px 15px;
 }
 
 .espace_text_prix {
-  margin-right: auto;
-  margin-left: 4%;
-  margin-bottom: 5px;
+  margin: 0px auto 5px 4%;
 }
 
 .marge_prix_d {

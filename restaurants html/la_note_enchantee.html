@@ -32,23 +32,31 @@
     <header>
       <div class="ligne">
         <div onclick="window.history.back()">
-          <i class="fa-solid fa-arrow-left"></i>
+          <i class="fa-solid fa-arrow-left -- taille_fleche"></i>
         </div>
-        <img class="taille_logo" src="/assets/images/logo/ohmyfood.png" alt="logo ohmyfood" />
+        <img
+          class="taille_logo"
+          src="/assets/images/logo/ohmyfood.png"
+          alt="logo ohmyfood"
+        />
       </div>
     </header>
 
     <!-- main -->
     <main>
-      <img class="image_menu" src="/assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+      <img
+        class="image_menu"
+        src="/assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
         alt="Photo plat"
       />
+      <div class="bande_blanche"></div>
+
       <section class="marge_menu_carte">
         <div class="fond_menus">
           <div class="espace_entre">
-            <h1 class="titre">La note enchantée</h1>
-            <div class="coeur_rempli">
-              <i class="fa-regular fa-heart -- coeur_rempli"></i>
+            <h1 class="titre -- bottom_40">La note enchantée</h1>
+            <div class="coeur_rempli -- espace_titre_coeur">
+              <i class="fa-regular fa-heart -- coeur_taille"></i>
             </div>
           </div>
         </div>
@@ -58,104 +66,111 @@
           <p class="souligner_titre_menu">ENTRÉES</p>
 
           <div class="border_carte_menu">
-          <h5 class="espace_text_prix">Ravioles de foie gras</h5>
-          <div class="ligne">
-            <h6 class="espace_text_prix">
-              Accompagnées de leur crème à la truffe
-            </h6>
-            <h5 class="marge_prix_d">25<span class="euro">€</span></h5>
-          </div>
-        </div>
-
-        <div class="border_carte_menu">
-          <h5 class="espace_text_prix">Caviar osciètre</h5>
-          <div class="ligne">
-            <h6 class="espace_text_prix">Sur blini à la farine de blé noir</h6>
-            <h5 class="marge_prix_d">35<span class="euro">€</span></h5>
-          </div>
-        </div>
-
-        <div class="border_carte_menu">
-          <h5 class="espace_text_prix">Homard et espuma de potiron</h5>
-          <div class="ligne">
-            <h6 class="espace_text_prix">Marinés aux zestes d'orange</h6>
-            <h5 class="marge_prix_d">20<span class="euro">€</span></h5>
-          </div>
-        </div>
-
-        <div class="border_carte_menu">
-          <h5 class="espace_text_prix">Foie gras de canard cuit entier</h5>
-          <div class="ligne">
-            <h6 class="espace_text_prix">Confiture de figue et pain toasté</h6>
-            <h5 class="marge_prix_d">35<span class="euro">€</span></h5>
-          </div>
-        </div>
-
-        <!-- Plats -->
-        <div>
-          <p class="souligner_titre_menu">PLATS</p>
-
-          <div class="border_carte_menu">
-            <h5 class="espace_text_prix">Noix de coquilles Saint-Jacques</h5>
+            <h5 class="espace_text_prix">Ravioles de foie gras</h5>
             <div class="ligne">
-              <h6 class="espace_text_prix">Sur lit de purée de céleri-rave</h6>
-              <h5 class="marge_prix_d">40<span class="euro">€</span></h5>
+              <h6 class="espace_text_prix">
+                Accompagnées de leur crème à la truffe
+              </h6>
+              <h5 class="marge_prix_d">25<span class="euro">€</span></h5>
             </div>
           </div>
 
           <div class="border_carte_menu">
-            <h5 class="espace_text_prix">Langoustine poêlée</h5>
+            <h5 class="espace_text_prix">Caviar osciètre</h5>
             <div class="ligne">
-              <h6 class="espace_text_prix">Purée de patate douce</h6>
+              <h6 class="espace_text_prix">
+                Sur blini à la farine de blé noir
+              </h6>
               <h5 class="marge_prix_d">35<span class="euro">€</span></h5>
             </div>
           </div>
 
           <div class="border_carte_menu">
-            <h5 class="espace_text_prix">Mijoté de queue de bœuf</h5>
+            <h5 class="espace_text_prix">Homard et espuma de potiron</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">Marinés aux zestes d'orange</h6>
+              <h5 class="marge_prix_d">20<span class="euro">€</span></h5>
+            </div>
+          </div>
+
+          <div class="border_carte_menu -- bottom_40">
+            <h5 class="espace_text_prix">Foie gras de canard cuit entier</h5>
             <div class="ligne">
               <h6 class="espace_text_prix">
-                Et riz sauvage aux zestes de citron
+                Confiture de figue et pain toasté
               </h6>
-              <h5 class="marge_prix_d">44<span class="euro">€</span></h5>
-            </div>
-          </div>
-        </div>
-
-        <!-- desserts -->
-        <div>
-          <p class="souligner_titre_menu">DESSERTS</p>
-
-          <div class="border_carte_menu">
-            <h5 class="espace_text_prix">Macaron noisette et chocolat</h5>
-            <div class="ligne">
-              <h6 class="espace_text_prix">
-                Glace au caramel brun et sel de Guérande
-              </h6>
-              <h5 class="marge_prix_d">18<span class="euro">€</span></h5>
+              <h5 class="marge_prix_d">35<span class="euro">€</span></h5>
             </div>
           </div>
 
-          <div class="border_carte_menu">
-            <h5 class="espace_text_prix">Baba au rhum revisité</h5>
-            <div class="ligne">
-              <h6 class="espace_text_prix">Avec son coulis de citron</h6>
-              <h5 class="marge_prix_d">22<span class="euro">€</span></h5>
+          <!-- Plats -->
+          <div>
+            <p class="souligner_titre_menu">PLATS</p>
+
+            <div class="border_carte_menu">
+              <h5 class="espace_text_prix">Noix de coquilles Saint-Jacques</h5>
+              <div class="ligne">
+                <h6 class="espace_text_prix">
+                  Sur lit de purée de céleri-rave
+                </h6>
+                <h5 class="marge_prix_d">40<span class="euro">€</span></h5>
+              </div>
+            </div>
+
+            <div class="border_carte_menu">
+              <h5 class="espace_text_prix">Langoustine poêlée</h5>
+              <div class="ligne">
+                <h6 class="espace_text_prix">Purée de patate douce</h6>
+                <h5 class="marge_prix_d">35<span class="euro">€</span></h5>
+              </div>
+            </div>
+
+            <div class="border_carte_menu -- bottom_40">
+              <h5 class="espace_text_prix">Mijoté de queue de bœuf</h5>
+              <div class="ligne">
+                <h6 class="espace_text_prix">
+                  Et riz sauvage aux zestes de citron
+                </h6>
+                <h5 class="marge_prix_d">44<span class="euro">€</span></h5>
+              </div>
             </div>
           </div>
 
-          <div class="border_carte_menu">
-            <h5 class="espace_text_prix">Tarte au citron meringuée</h5>
-            <div class="ligne">
-              <h6 class="espace_text_prix">Déstructurée</h6>
-              <h5 class="marge_prix_d">23<span class="euro">€</span></h5>
+          <!-- desserts -->
+          <div>
+            <p class="souligner_titre_menu">DESSERTS</p>
+
+            <div class="border_carte_menu">
+              <h5 class="espace_text_prix">Macaron noisette et chocolat</h5>
+              <div class="ligne">
+                <h6 class="espace_text_prix">
+                  Glace au caramel brun et sel de Guérande
+                </h6>
+                <h5 class="marge_prix_d">18<span class="euro">€</span></h5>
+              </div>
+            </div>
+
+            <div class="border_carte_menu">
+              <h5 class="espace_text_prix">Baba au rhum revisité</h5>
+              <div class="ligne">
+                <h6 class="espace_text_prix">Avec son coulis de citron</h6>
+                <h5 class="marge_prix_d">22<span class="euro">€</span></h5>
+              </div>
+            </div>
+
+            <div class="border_carte_menu">
+              <h5 class="espace_text_prix">Tarte au citron meringuée</h5>
+              <div class="ligne">
+                <h6 class="espace_text_prix">Déstructurée</h6>
+                <h5 class="marge_prix_d">23<span class="euro">€</span></h5>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <!-- boutton -->
-      <div class="centrer">
+      <div class="centrer -- botton_30">
         <button class="boutton -- boutton_color">Commander</button>
       </div>
     </main>
@@ -164,15 +179,15 @@
     <footer>
       <section>
         <div class="marge_footer">
-          <h1 class="footer_logo -- color_footer">ohmyfood</h1>
+          <p class="footer_logo -- color_footer">ohmyfood</p>
           <ul class="alignement_ul">
             <li class="ecart_li">
-              <i class="fa-solid fa-utensils -- ecart_img_text_footer"></i>
+              <i class="fa-solid fa-utensils -- ecart_img1_text_footer"></i>
               Proposer un restaurant
             </li>
             <li class="ecart_li">
               <i
-                class="fa-solid fa-handshake-angle -- ecart_img_text_footer"
+                class="fa-solid fa-handshake-angle -- ecart_img2_text_footer"
               ></i>
               Devenir partenaire
             </li>

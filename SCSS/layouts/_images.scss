@@ -1,4 +1,5 @@
-.carte img {
+.carte img,
+.image_menu {
   object-fit: cover;
   height: 150px;
 }
@@ -7,7 +8,12 @@
   font-size: 140%;
 }
 
+.taille_fleche {
+  font-size: 150%;
+}
+
 .image_menu {
+  position: relative;
   width: 100%;
   height: 275px;
 }

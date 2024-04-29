@@ -23,13 +23,14 @@ a {
 }
 
 .border_carte_menu,
-.border_carte_menu,
+.border_carte_fonctionnent,
 .ville_fond_ecran,
 .boutton {
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
 }
 
-.fond_fonctionnement {
+.fond_fonctionnement,
+.bande_blanche {
   background-color: $base-color;
 }
 
