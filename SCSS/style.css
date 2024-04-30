@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0px;
 }
@@ -30,6 +31,9 @@ a {
 
 .icon_color {
   color: #7e7e7e;
+}
+.icon_color:hover, .icon_color:active {
+  color: #9747ff;
 }
 
 .boutton_color {
@@ -298,33 +302,6 @@ li {
   margin: 30px -30px -10px 15px;
 }
 
-.loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  animation: loaderAnimation 2s linear forwards;
-}
-
-@keyframes loaderAnimation {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-.loader img {
-  width: 80%;
-  height: auto;
-}
-
 .carte img,
 .image_menu {
   -o-object-fit: cover;
@@ -421,6 +398,75 @@ li {
 
 .botton_30 {
   margin-bottom: 30px;
+}
+
+.slide-left_entree {
+  opacity: 0;
+  animation: slideIn 0.5s ease-out 0.5s forwards;
+}
+@keyframes slideIn {
+  from {
+    transform: translatex(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translatex(0);
+    opacity: 1;
+  }
+}
+
+.slide-left_plat {
+  opacity: 0;
+  animation: slideIn 0.5s ease-out 1s forwards;
+}
+@keyframes slideIn {
+  from {
+    transform: translatex(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translatex(0);
+    opacity: 1;
+  }
+}
+
+.slide-left_dessert {
+  opacity: 0;
+  animation: slideIn 0.5s ease-out 1.5s forwards;
+}
+@keyframes slideIn {
+  from {
+    transform: translatex(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translatex(0);
+    opacity: 1;
+  }
+}
+
+.choix_repas {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.choix_repas::after {
+  content: "✓";
+  color: #ffffff;
+  background-color: #99e2d0;
+  position: absolute;
+  right: 0; /* Commence en dehors de la vue */
+  transition: right 0.5s ease;
+  opacity: 0;
+}
+
+.choix_repas:hover::after {
+  right: 10px;
+  opacity: 1;
 }
 
 @media (min-width: 320px) and (max-width: 767.99px) {

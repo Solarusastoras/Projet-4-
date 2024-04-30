@@ -1,0 +1,23 @@
+.choix_repas {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.choix_repas::after {
+  content: "✓";
+  color: $base-color;
+  background-color: $third-color;
+  position: absolute;
+  right: 0; /* Commence en dehors de la vue */
+  transition: right 0.5s ease;
+  opacity: 0;
+}
+
+.choix_repas:hover::after {
+  right: 10px;
+  opacity: 1;
+}
