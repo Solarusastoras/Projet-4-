@@ -1,5 +1,5 @@
 .loader {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -8,5 +8,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: 2s;
+  z-index: 9999;
+  animation: loaderAnimation 2s linear forwards;
+}
+
+@keyframes loaderAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.loader img {
+  width: 80%;
+  height: auto;
 }
