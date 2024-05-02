@@ -3,7 +3,7 @@
   flex-direction: row;
 }
 
-.centrer {
+.centrer, .centrer_bureau {
   display: flex;
   justify-content: center;
 }
@@ -31,6 +31,11 @@
   margin-bottom: 30px;
 }
 
+.marge_left {
+  margin-left: 20%;
+}
+
+
 @mixin slide-in($delay, $distance: 50px) {
   @keyframes slideIn {
     from {
@@ -47,12 +52,8 @@
   animation: slideIn 0.5s ease-out $delay forwards;
 }
 
-.slide-left_entree {
-  @include slide-in(0.5s);
+.favoris input[type="checkbox"] {
+  display: none;
 }
-.slide-left_plat {
-  @include slide-in(1s);
-}
-.slide-left_dessert {
-  @include slide-in(1.5s);
-}
+
+// Bureau  

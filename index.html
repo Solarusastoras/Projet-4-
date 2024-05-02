@@ -34,7 +34,7 @@
     </div>
 
     <!-- header -->
-    <header>
+    <header class="centrer_bureau">
       <img
         class="center -- taille_logo"
         src="/assets/images/logo/ohmyfood.png"
@@ -51,7 +51,7 @@
         </div>
       </section>
       <section class="fond">
-        <div class="marge_titre">
+        <div class="marge_titre -- centrer_bureau">
           <h1>Réservez le menu qui vous convient</h1>
         </div>
         <p class="marge_soustitre">
@@ -68,9 +68,12 @@
       </section>
 
       <!-- main fonctionnement-->
+
       <section class="fond_fonctionnement">
-        <h1 class="marge_fonctionnement">Fonctionnement</h1>
-        <div class="marge_carte_fonctionnement -- colonne">
+        <h1 class="marge_fonctionnement -- marge_left">Fonctionnement</h1>
+        <div
+          class="marge_carte_fonctionnement -- colonne -- fonctionnement_bureau -- ligne_bureau"
+        >
           <div class="ligne -- border_carte_fonctionnent">
             <p class="cercle">1</p>
             <i class="fa-solid fa-mobile-screen-button -- icon_color"></i>
@@ -84,7 +87,7 @@
           </div>
 
           <div class="ligne -- border_carte_fonctionnent">
-            <p class="cercle -- centrer">3</p>
+            <p class="cercle">3</p>
             <i class="fa-solid fa-store -- icon_color"></i>
             <h4>Dégustez au restaurant</h4>
           </div>
@@ -93,19 +96,18 @@
 
       <!-- main Restaurant -->
       <section class="fond_restaurants">
-        <div class="marge_titre_restaurants">
+        <div class="marge_titre_restaurant -- marge_left">
           <h1 id="mon_ancre_resto">Restaurants</h1>
         </div>
-        <div class="marge_restaurants">
+        <div class="marge_restaurants -- restaurants_alignement_bureau -- marge_left">
           <a href="/restaurants html/la_palette_du_gout.html">
-            <article class="carte">
+            <article class="carte -- carte_bureau">
               <img
                 class="carte img"
                 src="/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
                 alt="Photo d'un plat"
               />
               <h4 class="news">Nouveau</h4>
-
               <div class="ligne">
                 <div class="carte-contenu -- espace_entre">
                   <h3>La palette du goût</h3>
@@ -115,11 +117,14 @@
             </article>
           </a>
           <div class="favoris">
-            <i class="fa-regular fa-heart -- coeur_rempli"></i>
+            <input type="checkbox" id="heartCheckbox" />
+            <label for="heartCheckbox">
+              <i class="fa-regular fa-heart"></i>
+            </label>
           </div>
 
           <a href="/restaurants html/la_note_enchantee.html">
-            <article class="carte">
+            <article class="carte -- carte_bureau">
               <img
                 class="carte img"
                 src="/assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
@@ -139,7 +144,7 @@
           </div>
 
           <a href="/restaurants html/a_la francaise.html">
-            <article class="carte">
+            <article class="carte -- carte_bureau">
               <img
                 class="carte img"
                 src="/assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
@@ -154,11 +159,11 @@
             </article>
           </a>
           <div class="favoris2">
-            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-heart -- coeur_rempli"></i>
           </div>
 
           <a href="/restaurants html/le_delice_des_sens.html">
-            <article class="carte">
+            <article class="carte -- carte_bureau">
               <img
                 class="carte img"
                 src="/assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
@@ -185,8 +190,10 @@
     <footer>
       <section>
         <div class="marge_footer">
-          <p class="footer_logo -- color_footer">ohmyfood</p>
-          <ul class="alignement_ul">
+          <p class="footer_logo -- color_footer -- logo_header_position">
+            ohmyfood
+          </p>
+          <ul class="alignement_ul -- ul_bureau">
             <li class="ecart_li">
               <i class="fa-solid fa-utensils -- ecart_img1_text_footer"></i>
               Proposer un restaurant

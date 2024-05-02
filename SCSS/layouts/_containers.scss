@@ -20,10 +20,12 @@
   text-align: center;
 }
 
+// Boutton
 .boutton {
   margin-top: 35px;
 }
 
+// Fonctionnement
 .marge_fonctionnement {
   display: flex;
   margin: 50px 0px 0px 10px;
@@ -44,6 +46,7 @@
   margin: 0px 20px 0px 0px;
 }
 
+// Restaurants carte
 .marge_restaurants {
   margin: 15px;
 }
@@ -65,22 +68,6 @@
   top: -75px;
   padding: 5px;
   margin-left: 230px;
-}
-
-.favoris {
-  bottom: 0px;
-}
-
-.favoris1 {
-  bottom: 0%;
-}
-
-.favoris2 {
-  bottom: 0%;
-}
-
-.favoris3 {
-  bottom: 0%;
 }
 
 // Page des menus

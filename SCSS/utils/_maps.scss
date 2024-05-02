@@ -6,3 +6,51 @@
     padding-bottom: 15px;
   }
 }
+@media (min-width: 768px) and (max-width: 1023.9px) {
+
+}
+
+
+@media (min-width: 1024px) and (max-width: 1920px) {
+
+  .marge_bureau {
+    margin: 0px;
+  }
+
+  // Fonctionnement
+  .fonctionnement_bureau {
+    width: 60%;
+  }
+
+  .ligne_bureau {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-left: 20%;
+  }
+
+  // Bureau
+  .carte_bureau {
+    width: 400px;
+    height: 251px;
+    }
+
+  .restaurants_alignement_bureau {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  // Footer
+  .logo_header_position {
+    position: absolute;
+    right: 5%;
+  }
+
+  .ul_bureau {
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    margin-left: 20%;
+  }
+}

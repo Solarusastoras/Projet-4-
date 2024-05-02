@@ -12,7 +12,7 @@
   color: $base-color;
   background-color: $third-color;
   position: absolute;
-  right: 0; /* Commence en dehors de la vue */
+  right: 0;
   transition: right 0.5s ease;
   opacity: 0;
 }
@@ -21,3 +21,15 @@
   right: 10px;
   opacity: 1;
 }
+
+.slide-left_entree {
+  @include slide-in(0.5s);
+}
+.slide-left_plat {
+  @include slide-in(1s);
+}
+.slide-left_dessert {
+  @include slide-in(1.5s);
+}
+
+
