@@ -34,9 +34,9 @@
     </div>
 
     <!-- header -->
-    <header class="centrer_bureau">
+    <header class="centrer -- centrer_bureau">
       <img
-        class="center -- taille_logo"
+        class="taille_logo"
         src="/assets/images/logo/ohmyfood.png"
         alt="logo ohmyfood"
       />
@@ -70,7 +70,7 @@
       <!-- main fonctionnement-->
 
       <section class="fond_fonctionnement">
-        <h1 class="marge_fonctionnement -- marge_left">Fonctionnement</h1>
+        <h1 class="marge_fonctionnement -- marge_left_10 -- marge_bureau -- fonctionnement_bureau">Fonctionnement</h1>
         <div
           class="marge_carte_fonctionnement -- colonne -- fonctionnement_bureau -- ligne_bureau"
         >
@@ -96,10 +96,10 @@
 
       <!-- main Restaurant -->
       <section class="fond_restaurants">
-        <div class="marge_titre_restaurant -- marge_left">
+        <div class="marge_left_10 -- marge_bureau">
           <h1 id="mon_ancre_resto">Restaurants</h1>
         </div>
-        <div class="marge_restaurants -- restaurants_alignement_bureau -- marge_left">
+        <div class="marge_restaurants -- restaurants_alignement_bureau -- marge_bureau">
           <a href="/restaurants html/la_palette_du_gout.html">
             <article class="carte -- carte_bureau">
               <img
@@ -116,10 +116,11 @@
               </div>
             </article>
           </a>
-          <div class="favoris">
-            <input type="checkbox" id="heartCheckbox" />
-            <label for="heartCheckbox">
-              <i class="fa-regular fa-heart"></i>
+          <div class="favoris -- favoris_bureau -- checkbox-container">
+             <i class="fa-regular fa-heart"></i>
+            <input type="checkbox" id="check-click">
+            <label for="check-click" class="toggle-content">
+                <i class="fa-regular fa-heart"></i>
             </label>
           </div>
 
@@ -139,8 +140,11 @@
               </div>
             </article>
           </a>
-          <div class="favoris1">
-            <i class="fa-regular fa-heart"></i>
+          <div class="favoris -- favoris_bureau -- checkbox-container">
+            <input type="checkbox" id="check-click1">
+            <label for="check-click1" class="toggle-content">
+                <i class="fa-regular fa-heart"></i>
+            </label>
           </div>
 
           <a href="/restaurants html/a_la francaise.html">
@@ -158,8 +162,11 @@
               </div>
             </article>
           </a>
-          <div class="favoris2">
-            <i class="fa-regular fa-heart -- coeur_rempli"></i>
+          <div class="favoris -- favoris_bureau -- checkbox-container">
+            <input type="checkbox" id="check-click2">
+            <label for="check-click2" class="toggle-content">
+                <i class="fa-regular fa-heart"></i>
+            </label>
           </div>
 
           <a href="/restaurants html/le_delice_des_sens.html">
@@ -179,8 +186,11 @@
               </div>
             </article>
           </a>
-          <div class="favoris3">
-            <i class="fa-regular fa-heart"></i>
+          <div class="favoris -- favoris_bureau -- checkbox-container">
+            <input type="checkbox" id="check-click3">
+            <label for="check-click3" class="toggle-content">
+                <i class="fa-regular fa-heart"></i>
+            </label>
           </div>
         </div>
       </section>
@@ -194,18 +204,18 @@
             ohmyfood
           </p>
           <ul class="alignement_ul -- ul_bureau">
-            <li class="ecart_li">
+            <li class="ecart_li -- ecart_li_bureau">
               <i class="fa-solid fa-utensils -- ecart_img1_text_footer"></i>
               Proposer un restaurant
             </li>
-            <li class="ecart_li">
+            <li class="ecart_li -- ecart_li_bureau">
               <i
                 class="fa-solid fa-handshake-angle -- ecart_img2_text_footer"
               ></i>
               Devenir partenaire
             </li>
 
-            <li class="ecart_li">Mentions légales</li>
+            <li class="ecart_li -- ecart_li_bureau">Mentions légales</li>
             <li>
               <a class="color_footer" href="mailto:contact@exemple.com">
                 Contact

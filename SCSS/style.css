@@ -141,15 +141,45 @@ h6 {
   align-items: center;
 }
 
+.checkbox-container {
+  display: block;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked + .toggle-content {
+  background: linear-gradient(to bottom, #ff79da, #9747ff);
+  border-radius: 90%;
+  overflow: hidden;
+}
+
+.like-button {
+  display: none;
+}
+
+.heart-icon {
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.like-button:checked + .heart-icon {
+  background: linear-gradient(to bottom, #ff79da, #9747ff);
+  -webkit-background: text;
+}
+
 .ville_fond_ecran {
   width: 100%;
   height: 50px;
-  margin: 0px 15px 38px 0px;
+  margin: 0px 0px 38px 0px;
 }
 
 .marge_ville {
   display: flex;
-  margin: 15px 15px 0px 0px;
+  margin: 15px 0px 0px 0px;
+  padding-right: 15px;
 }
 
 .marge_titre {
@@ -169,7 +199,7 @@ h6 {
 
 .marge_fonctionnement {
   display: flex;
-  margin: 50px 0px 0px 10px;
+  margin: 50px 0px 0px 0px;
   padding-top: 50px;
 }
 
@@ -207,7 +237,7 @@ h6 {
   position: relative;
   top: -75px;
   padding: 5px;
-  margin-left: 230px;
+  margin-left: 85%;
 }
 
 .bande_blanche {
@@ -279,7 +309,7 @@ li {
 }
 
 .taille_logo {
-  margin: 25px 0px 12px 0px;
+  margin: 25px 10% 12px 0px;
 }
 
 .taille_fleche {
@@ -320,8 +350,8 @@ li {
   height: 150px;
 }
 
-.fa-heart {
-  font-size: 140%;
+.toggle-content {
+  font-size: 130%;
 }
 
 .taille_fleche {
@@ -383,7 +413,8 @@ li {
   flex-direction: row;
 }
 
-.centrer, .centrer_bureau {
+.centrer,
+.centrer_bureau {
   display: flex;
   justify-content: center;
 }
@@ -411,12 +442,8 @@ li {
   margin-bottom: 30px;
 }
 
-.marge_left {
-  margin-left: 20%;
-}
-
-.favoris input[type=checkbox] {
-  display: none;
+.marge_left_10 {
+  margin-left: 10px;
 }
 
 .choix_repas {
@@ -428,19 +455,38 @@ li {
   transition: all 0.5s ease;
 }
 
-.choix_repas::after {
+.choix_repas::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+input[type=checkbox]:checked + .toggle-content_menu {
   content: "✓";
+  width: 50px;
+  height: 100%;
   color: #ffffff;
   background-color: #99e2d0;
   position: absolute;
-  right: 0;
-  transition: right 0.5s ease;
+  right: 0px;
+  top: 0px;
+  border-radius: 0px 5px 5px 0px;
+  transition: right 0.7s ease;
   opacity: 0;
+  margin-right: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.choix_repas:hover::after {
-  right: 10px;
-  opacity: 1;
+input[type=checkbox]:checked + .toggle-content_menu .marge_prix_d::after {
+  position: absolute;
+  right: -50px;
 }
 
 .slide-left_entree {
@@ -496,35 +542,58 @@ li {
     padding-bottom: 15px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1920px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .marge_bureau {
     margin: 0px;
   }
+}
+@media (min-width: 1024.1px) and (max-width: 1920px) {
+  .marge_bureau {
+    margin: 0px;
+  }
+  .marge_bureau {
+    margin: 0px 0% 0% 180px;
+  }
   .fonctionnement_bureau {
-    width: 60%;
+    width: 73%;
+    gap: 20px;
   }
   .ligne_bureau {
     display: flex;
     flex-direction: row;
     gap: 25px;
-    margin-left: 20%;
+    margin-left: 180px;
   }
   .carte_bureau {
-    width: 400px;
+    width: 490px;
     height: 251px;
+    margin-right: 100px;
   }
   .restaurants_alignement_bureau {
     display: flex;
     flex-wrap: wrap;
+    gap: 100px;
+    padding-top: 28px;
+  }
+  .favoris_bureau,
+  .favoris1_bureau,
+  .favoris2_bureau,
+  .favoris3_bureau {
+    margin-left: -19%;
+    margin-top: 24%;
   }
   .logo_header_position {
     position: absolute;
     right: 5%;
+    top: 10%;
   }
   .ul_bureau {
     display: flex;
     flex-direction: row;
     padding-top: 40px;
     margin-left: 20%;
+  }
+  .ul_bureau .ecart_li_bureau {
+    padding-right: 10px;
   }
 }/*# sourceMappingURL=style.css.map */

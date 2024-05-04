@@ -6,45 +6,62 @@
     padding-bottom: 15px;
   }
 }
-@media (min-width: 768px) and (max-width: 1023.9px) {
-
-}
-
-
-@media (min-width: 1024px) and (max-width: 1920px) {
-
+@media (min-width: 768px) and (max-width: 1024px) {
   .marge_bureau {
     margin: 0px;
+  }
+}
+
+@media (min-width: 1024.1px) and (max-width: 1920px) {
+  .marge_bureau {
+    margin: 0px;
+  }
+  // Main
+  .marge_bureau {
+    margin: 0px 0% 0% 180px;
   }
 
   // Fonctionnement
   .fonctionnement_bureau {
-    width: 60%;
+    width: 73%;
+    gap: 20px;
   }
 
   .ligne_bureau {
     display: flex;
     flex-direction: row;
     gap: 25px;
-    margin-left: 20%;
+    margin-left: 180px;
   }
 
-  // Bureau
+  // Restaurant
   .carte_bureau {
-    width: 400px;
+    width: 490px;
     height: 251px;
-    }
+    margin-right: 100px;
+    
+  }
 
   .restaurants_alignement_bureau {
     display: flex;
     flex-wrap: wrap;
+    gap: 100px;
+    padding-top: 28px;
+  }
 
+  .favoris_bureau,
+  .favoris1_bureau,
+  .favoris2_bureau,
+  .favoris3_bureau {
+    margin-left: -19%;
+    margin-top: 24%;
   }
 
   // Footer
   .logo_header_position {
     position: absolute;
     right: 5%;
+    top: 10%;
   }
 
   .ul_bureau {
@@ -52,5 +69,10 @@
     flex-direction: row;
     padding-top: 40px;
     margin-left: 20%;
+      }
+  
+    .ul_bureau .ecart_li_bureau{
+      padding-right: 10px;
+    }
   }
-}
+

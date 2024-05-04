@@ -7,19 +7,42 @@
   transition: all 0.5s ease;
 }
 
-.choix_repas::after {
+.choix_repas::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+
+
+input[type="checkbox"]:checked + .toggle-content_menu {
   content: "✓";
+  width: 50px;
+  height: 100%;
   color: $base-color;
   background-color: $third-color;
   position: absolute;
-  right: 0;
-  transition: right 0.5s ease;
+  right: 0px;
+  top: 0px;
+  border-radius: 0px 5px 5px 0px;
+  transition: right 0.7s ease;
   opacity: 0;
-}
+  margin-right: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.choix_repas:hover::after {
-  right: 10px;
-  opacity: 1;
+  & .marge_prix_d::after {
+    position: absolute;
+    right: -50px;
+  }
 }
 
 .slide-left_entree {
@@ -31,5 +54,3 @@
 .slide-left_dessert {
   @include slide-in(1.5s);
 }
-
-
