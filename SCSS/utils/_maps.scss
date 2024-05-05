@@ -6,6 +6,7 @@
     padding-bottom: 15px;
   }
 }
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .marge_bureau {
     margin: 0px;
@@ -13,9 +14,21 @@
 }
 
 @media (min-width: 1024.1px) and (max-width: 1920px) {
+  // INDEX HTML
   .marge_bureau {
     margin: 0px;
   }
+
+  // Header
+  .centrer_logo_bureau {
+    margin-left: 150px;
+    margin-bottom: 35px;
+  }
+
+  .marge_b_fond_bureau {
+    padding-bottom: 30px;
+  }
+
   // Main
   .marge_bureau {
     margin: 0px 0% 0% 180px;
@@ -39,7 +52,6 @@
     width: 490px;
     height: 251px;
     margin-right: 100px;
-    
   }
 
   .restaurants_alignement_bureau {
@@ -61,7 +73,6 @@
   .logo_header_position {
     position: absolute;
     right: 5%;
-    top: 10%;
   }
 
   .ul_bureau {
@@ -69,10 +80,30 @@
     flex-direction: row;
     padding-top: 40px;
     margin-left: 20%;
-      }
-  
-    .ul_bureau .ecart_li_bureau{
-      padding-right: 10px;
-    }
   }
 
+  .ul_bureau .ecart_li_bureau {
+    padding-right: 10px;
+  }
+}
+
+// MENUN HTML
+
+// Header
+.marge_l_bureau {
+  position: absolute;
+  left: 20px;
+}
+
+.taille_fleche_bureau {
+  font-size: 30px;
+}
+
+.taille_logo_bureau {
+  width: 200px;
+  height: 34px;
+}
+
+// Main
+
+// Footer

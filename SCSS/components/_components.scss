@@ -1,3 +1,4 @@
+//Boutton
 .boutton {
   width: 218px;
   height: 50px;
@@ -6,6 +7,7 @@
   text-align: center;
 }
 
+// Cercle
 .cercle {
   width: 24px;
   height: 24px;
@@ -15,33 +17,22 @@
   align-items: center;
 }
 
-
-.checkbox-container {
-  display: block;
-}
-
-input[type="checkbox"] {
+// Coeur
+.like-button {
   display: none;
 }
 
-input[type="checkbox"]:checked + .toggle-content{
+.fa-heart {
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.like-button:checked + .fa-heart {
   background: linear-gradient(to bottom, $fifths-color, $second-color);
-  border-radius: 90%;
-  overflow: hidden;
-}
-
-.like-button {
-    display: none;
-}
-
-.heart-icon {
-    font-size: 24px;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.like-button:checked + .heart-icon {
-    background: linear-gradient(to bottom, $fifths-color, $second-color);
-     -webkit-background: text;
-
+  -webkit-background-clip: text;
+  background-clip: text;
 }

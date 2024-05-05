@@ -1,50 +1,4 @@
-.choix_repas {
-  position: relative;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  cursor: pointer;
-  transition: all 0.5s ease;
-}
-
-.choix_repas::before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  background-color: white;
-  border-radius: 50%;
-  position: absolute;
-  right: 30px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-
-
-
-input[type="checkbox"]:checked + .toggle-content_menu {
-  content: "✓";
-  width: 50px;
-  height: 100%;
-  color: $base-color;
-  background-color: $third-color;
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  border-radius: 0px 5px 5px 0px;
-  transition: right 0.7s ease;
-  opacity: 0;
-  margin-right: -10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  & .marge_prix_d::after {
-    position: absolute;
-    right: -50px;
-  }
-}
-
+// Entrée des menu
 .slide-left_entree {
   @include slide-in(0.5s);
 }
@@ -54,3 +8,37 @@ input[type="checkbox"]:checked + .toggle-content_menu {
 .slide-left_dessert {
   @include slide-in(1.5s);
 }
+
+// Choix du repas
+
+.square {
+  width: 50px;
+  height: 50px;
+  background-color: $third-color;
+  position: relative;
+  margin-top: -28px;
+  margin-right: -1px;
+  animation: slideInFromRight 1s ease-out forwards;
+  border-radius: 0px 5px 5px 0px;
+  }
+
+.circle {
+  display: inline-block;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: $base-color;
+  line-height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle .number {
+  color: $third-color;
+  font-size: 10px;
+  margin-top: -15px;
+  margin-left: 6px;
+}
+
