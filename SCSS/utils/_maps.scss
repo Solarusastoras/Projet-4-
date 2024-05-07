@@ -87,7 +87,8 @@
   }
 }
 
-// MENUN HTML
+  @media (min-width: 1024.1px) and (max-width: 1920px) {
+// Restaurants HTML
 
 // Header
 .marge_l_bureau {
@@ -105,5 +106,14 @@
 }
 
 // Main
+.marge_main_bureau  {
+  margin: 0px 191px 0px 191px;
+}
+.marge_carte_bureau {
+  padding: 0px 201px 0px 201px;
+}
 
-// Footer
+.border_carte_menu .border_carte_menu_bureau {
+  width: 30%;
+}
+}
