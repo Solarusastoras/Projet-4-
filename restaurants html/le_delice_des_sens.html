@@ -30,12 +30,14 @@
   <body>
     <!-- header -->
     <header>
-      <div class="ligne">
+      <div class="ligne-- centrer_bureau">
         <div onclick="window.history.back()">
-          <i class="fa-solid fa-arrow-left -- taille_fleche"></i>
+          <i
+            class="fa-solid fa-arrow-left -- taille_fleche -- taille_fleche_bureau"
+          ></i>
         </div>
         <img
-          class="taille_logo"
+          class="taille_logo -- taille_logo_bureau"
           src="/assets/images/logo/ohmyfood.png"
           alt="logo ohmyfood"
         />
@@ -49,13 +51,14 @@
         src="/assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
         alt="Photo plat"
       />
-      <div class="bande_blanche"></div>
-
-      <section class="marge_menu_carte">
+      <section class="marge_main_bureau -- marge_menu_carte">
         <div class="fond_menus">
           <div class="espace_entre">
             <h1 class="titre -- bottom_40">Le délice des sens</h1>
-            <div class="favoris -- favoris_bureau -- checkbox-container">
+            <div class="deplacement_coeur_restaurants">
+              <div class="fa-regular fa-heart"></div>
+            </div>
+            <div class="favoris4 -- favoris4_bureau -- checkbox-container">
               <input type="checkbox" id="like-button" class="like-button" />
               <label for="like-button" class="fa-solid fa-heart"> </label>
             </div>
@@ -63,39 +66,48 @@
         </div>
 
         <!-- Entrées -->
-        <p class="souligner_titre_menu">ENTRÉES</p>
-        <div class="slide-left_entree">
-          <div class="border_carte_menu">
-            <h5 class="espace_text_prix">Tartare de thon</h5>
-            <div class="ligne">
-              <h6 class="espace_text_prix">Assaisonné au yuzu</h6>
-              <h5 class="marge_prix_d">25<span class="euro">€</span></h5>
+        <div class="fond_menus">
+          <p class="souligner_titre_menu -- marge_titre_repas">ENTRÉES</p>
+          <div class="slide-left_entree">
+            <div class="border_carte_menu -- marge_des_plats -- choix_repas">
+              <h5 class="espace_text_prix">Tartare de thon</h5>
+              <div class="ligne">
+                <h6 class="espace_text_prix">Assaisonné au yuzu</h6>
+                <h5 class="marge_prix_d">25<span class="euro">€</span></h5>
+                <div class="">
+                  <div class="square">
+                    <div class="circle">
+                      <div class="number">✓</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
 
-          <div class="border_carte_menu">
-            <h5 class="espace_text_prix">Bouchée de homard croustillant</h5>
-            <div class="ligne">
-              <h6 class="espace_text_prix">
-                Et sa farandole de petits légumes
-              </h6>
-              <h5 class="marge_prix_d">35<span class="euro">€</span></h5>
+            <div class="border_carte_menu -- marge_des_plats">
+              <h5 class="espace_text_prix">Bouchée de homard croustillant</h5>
+              <div class="ligne">
+                <h6 class="espace_text_prix">
+                  Et sa farandole de petits légumes
+                </h6>
+                <h5 class="marge_prix_d">35<span class="euro">€</span></h5>
+              </div>
             </div>
-          </div>
 
-          <div class="border_carte_menu -- bottom_40">
-            <h5 class="espace_text_prix">Velouté de cèpes</h5>
-            <div class="ligne">
-              <h6 class="espace_text_prix">Aux truffes</h6>
-              <h5 class="marge_prix_d">20<span class="euro">€</span></h5>
+            <div class="border_carte_menu -- bottom_40 -- marge_des_plats">
+              <h5 class="espace_text_prix">Velouté de cèpes</h5>
+              <div class="ligne">
+                <h6 class="espace_text_prix">Aux truffes</h6>
+                <h5 class="marge_prix_d">20<span class="euro">€</span></h5>
+              </div>
             </div>
           </div>
         </div>
 
         <!-- Plats -->
-        <p class="souligner_titre_menu">PLATS</p>
+        <p class="souligner_titre_menu -- marge_titre_repas">PLATS</p>
         <div class="slide-left_plat">
-          <div class="border_carte_menu">
+          <div class="border_carte_menu -- marge_des_plats">
             <h5 class="espace_text_prix">Poulet rôti aux herbes de Provence</h5>
             <div class="ligne">
               <h6 class="espace_text_prix">Et sa crème de truffe</h6>
@@ -103,7 +115,7 @@
             </div>
           </div>
 
-          <div class="border_carte_menu">
+          <div class="border_carte_menu -- marge_des_plats">
             <h5 class="espace_text_prix">Langouste rôtie</h5>
             <div class="ligne">
               <h6 class="espace_text_prix">Et ses légumes de saison</h6>
@@ -111,7 +123,7 @@
             </div>
           </div>
 
-          <div class="border_carte_menu -- bottom_40">
+          <div class="border_carte_menu -- bottom_40 -- marge_des_plats">
             <h5 class="espace_text_prix">Côte de bœuf Angus</h5>
             <div class="ligne">
               <h6 class="espace_text_prix">Et sa purée de panais</h6>
@@ -121,9 +133,9 @@
         </div>
 
         <!-- desserts -->
-        <p class="souligner_titre_menu">DESSERTS</p>
+        <p class="souligner_titre_menu marge_titre_repas">DESSERTS</p>
         <div class="slide-left_dessert">
-          <div class="border_carte_menu">
+          <div class="border_carte_menu -- marge_des_plats">
             <h5 class="espace_text_prix">Farandole de desserts</h5>
             <div class="ligne">
               <h6 class="espace_text_prix">Du chef</h6>
@@ -131,7 +143,7 @@
             </div>
           </div>
 
-          <div class="border_carte_menu">
+          <div class="border_carte_menu -- marge_des_plats">
             <h5 class="espace_text_prix">Crème brulée</h5>
             <div class="ligne">
               <h6 class="espace_text_prix">Revisitée</h6>
@@ -139,7 +151,7 @@
             </div>
           </div>
 
-          <div class="border_carte_menu">
+          <div class="border_carte_menu -- marge_des_plats">
             <h5 class="espace_text_prix">Tiramisu</h5>
             <div class="ligne">
               <h6 class="espace_text_prix">À la noisette</h6>

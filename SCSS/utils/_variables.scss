@@ -11,34 +11,7 @@
 
 // Choix du repas
 
-.square {
-  width: 50px;
-  height: 50px;
-  background-color: $third-color;
-  position: relative;
-  margin-top: -28px;
-  margin-right: -1px;
-  animation: slideInFromRight 1s ease-out forwards;
-  border-radius: 0px 5px 5px 0px;
-  }
-
-.circle {
-  display: inline-block;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  background-color: $base-color;
-  line-height: 50px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.slide-in-right {
+	-webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-
-.circle .number {
-  color: $third-color;
-  font-size: 10px;
-  margin-top: -15px;
-  margin-left: 6px;
-}
-

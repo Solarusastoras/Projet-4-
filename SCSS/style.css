@@ -24,7 +24,8 @@ a {
 }
 
 .fond_fonctionnement,
-.bande_blanche {
+.bande_blanche,
+.border_carte_menu {
   background-color: #ffffff;
 }
 
@@ -62,12 +63,18 @@ a {
 
 ul,
 .color_footer,
-.ancre {
+.ancre,
+.ecart_li {
   color: #ffffff;
 }
 
 footer {
   background-color: #353535;
+}
+
+.souligner_titre_menu {
+  border-bottom: 1px solid #99e2d0;
+  width: 12%;
 }
 
 * {
@@ -160,6 +167,44 @@ h6 {
   background-clip: text;
 }
 
+.fa-regular {
+  position: absolute;
+  top: 15px;
+  right: 3%;
+  font-size: 30px;
+  color: #000000;
+}
+
+.square {
+  width: 50px;
+  height: 70px;
+  background-color: #99e2d0;
+  position: relative;
+  margin-top: -38.5px;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.circle {
+  display: inline-block;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  line-height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle .number {
+  color: #99e2d0;
+  font-size: 15px;
+  margin-top: -15px;
+  margin-left: 4px;
+  font-weight: bold;
+}
+
 .ville_fond_ecran {
   width: 100%;
   height: 50px;
@@ -184,7 +229,8 @@ h6 {
 }
 
 .boutton {
-  margin-top: 35px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .marge_fonctionnement {
@@ -230,47 +276,67 @@ h6 {
   margin-left: 85%;
 }
 
-.bande_grise {
+.marge_menu_carte {
   position: relative;
-  height: 32px;
-  width: 100%;
-  top: -32px;
-  border-radius: 30px 30px 0px 0px;
+  top: -60px;
+  margin: 0px 0px 0px 0px;
 }
 
 .titre {
-  font-family: "Shrikhand", sans-serif;
-  font-size: 28px;
-  font-weight: 200;
+  margin-left: 10px;
+  margin-top: 30px;
+  margin-bottom: -15px;
 }
 
 .espace_titre_coeur {
-  margin: 1px 25px;
+  position: absolute;
+  bottom: 10px;
 }
 
-.coeur_taille {
-  font-size: 130%;
+.favoris4 {
+  position: relative;
+  margin-right: 4%;
+  top: 30px;
 }
 
 .fond_menus {
   border-radius: 20px 20px;
+  background-color: #f6f6f6;
 }
 
-.souligner_titre_menu {
-  border-bottom: 1px solid #99e2d0;
-  width: 12%;
-}
-
-.marge_menu_carte {
-  margin: -30px 15px 0px 15px;
-}
-
-.espace_text_prix {
-  margin: 0px auto 5px 4%;
+.marge_des_plats,
+.marge_titre_repas {
+  margin: 0px 0px 0px 10px;
 }
 
 .marge_prix_d {
   margin-right: 15px;
+}
+
+.espace_text_prix {
+  margin: 0px auto 5px 10px;
+}
+
+h5,
+h6 {
+  margin-left: 15px;
+}
+
+.fa-regular {
+  position: absolute;
+  right: 3%;
+  top: 0%;
+}
+
+.deplacement_coeur_index {
+  position: absolute;
+  top: 2px;
+}
+
+.deplacement_coeur_restaurants {
+  position: absolute;
+  right: 3%;
+  top: 2.6%;
 }
 
 .footer_logo {
@@ -303,7 +369,35 @@ li {
 }
 
 .taille_fleche {
-  margin: 30px -30px -10px 15px;
+  margin: 30px -30px -10px 0px;
+  font-size: 20px;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: auto;
+  animation: loaderAnimation linear 2s forwards;
+}
+
+@keyframes loaderAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.loader img {
+  width: 80%;
+  height: auto;
 }
 
 .carte img,
@@ -371,6 +465,15 @@ li {
   padding: 5px;
 }
 
+.border_carte_menu {
+  border-radius: 10px 10px 10px 10px;
+  width: 93%;
+  height: 45px;
+  padding: 15px 0px 10px 0px;
+  bottom: 10px;
+  margin-top: 15px;
+}
+
 .ligne {
   display: flex;
   flex-direction: row;
@@ -408,7 +511,16 @@ li {
 .marge_left_10 {
   margin-left: 10px;
 }
-
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .slide-left_entree {
   opacity: 0;
   animation: slideIn 0.5s ease-out 0.5s forwards;
@@ -454,35 +566,8 @@ li {
   }
 }
 
-.square {
-  width: 50px;
-  height: 50px;
-  background-color: #99e2d0;
-  position: relative;
-  margin-top: -28px;
-  margin-right: -1px;
-  animation: slideInFromRight 1s ease-out forwards;
-  border-radius: 0px 5px 5px 0px;
-}
-
-.circle {
-  display: inline-block;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  background-color: #ffffff;
-  line-height: 50px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.circle .number {
-  color: #99e2d0;
-  font-size: 10px;
-  margin-top: -15px;
-  margin-left: 6px;
+.slide-in-right {
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @media (min-width: 320px) and (max-width: 767.99px) {

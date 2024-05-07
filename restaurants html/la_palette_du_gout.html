@@ -36,12 +36,14 @@
   <body>
     <!-- header -->
     <header>
-      <div class="ligne">
-        <div onclick="window.history.back()">
-          <i class="fa-solid fa-arrow-left -- taille_fleche"></i>
+      <div class="ligne -- centrer_bureau">
+        <div class="marge_l_bureau" onclick="window.history.back()">
+          <i
+            class="fa-solid fa-arrow-left -- taille_fleche taille_fleche_bureau"
+          ></i>
         </div>
         <img
-          class="taille_logo"
+          class="taille_logo -- taille_logo_bureau"
           src="/assets/images/logo/ohmyfood.png"
           alt="logo ohmyfood"
         />
@@ -56,30 +58,40 @@
         alt="Photo plat"
       />
 
-      <div class="bande_blanche"></div>
-
-      <section class="marge_menu_carte">
+      <section class="marge_main_bureau -- marge_menu_carte">
         <div class="fond_menus">
           <div class="espace_entre">
             <h1 class="titre -- bottom_40">La palette du goût</h1>
-            <div class="favoris -- favoris_bureau -- checkbox-container">
+            <div class="deplacement_coeur_restaurants">
+              <div class="fa-regular fa-heart"></div>
+            </div>
+            <div class="favoris4 -- favoris4_bureau -- checkbox-container">
               <input type="checkbox" id="like-button" class="like-button" />
               <label for="like-button" class="fa-solid fa-heart"> </label>
             </div>
           </div>
+        </div>
 
           <!-- Entrées -->
-          <p class="souligner_titre_menu">ENTRÉES</p>
+          <div class="fond_menus">
+          <p class="souligner_titre_menu -- marge_titre_repas">ENTRÉES</p>
           <div class="slide-left_entree">
-            <div class="border_carte_menu">
+            <div class="border_carte_menu -- marge_des_plats -- choix_repas">
               <h5 class="espace_text_prix">Fricassée d'escargots</h5>
               <div class="ligne">
                 <h6 class="espace_text_prix">Au piment d'Espelette</h6>
                 <h5 class="marge_prix_d">25<span class="euro">€</span></h5>
+                <div class="">
+                  <div class="square">
+                    <div class="circle">
+                      <div class="number">✓</div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="border_carte_menu">
+            <div class="border_carte_menu -- marge_des_plats">
               <h5 class="espace_text_prix">Foie gras de canard mi-cuit</h5>
               <div class="ligne">
                 <h6 class="espace_text_prix">Et ses copeaux de truffe noire</h6>
@@ -87,7 +99,7 @@
               </div>
             </div>
 
-            <div class="border_carte_menu -- bottom_40">
+            <div class="border_carte_menu -- bottom_40  -- marge_des_plats">
               <h5 class="espace_text_prix">Œuf au plat</h5>
               <div class="ligne">
                 <h6 class="espace_text_prix">
@@ -99,9 +111,9 @@
           </div>
 
           <!-- Plats -->
-          <p class="souligner_titre_menu">PLATS</p>
+          <p class="souligner_titre_menu -- marge_titre_repas">PLATS</p>
           <div class="slide-left_plat">
-            <div class="border_carte_menu">
+            <div class="border_carte_menu -- marge_des_plats">
               <h5 class="espace_text_prix">Filet de bœuf aux herbes</h5>
               <div class="ligne">
                 <h6 class="espace_text_prix">
@@ -111,7 +123,7 @@
               </div>
             </div>
 
-            <div class="border_carte_menu">
+            <div class="border_carte_menu  -- marge_des_plats">
               <h5 class="espace_text_prix">Parmentier de queue de bœuf</h5>
               <div class="ligne">
                 <h6 class="espace_text_prix">
@@ -121,7 +133,7 @@
               </div>
             </div>
 
-            <div class="border_carte_menu -- bottom_40">
+            <div class="border_carte_menu -- bottom_40  -- marge_des_plats">
               <h5 class="espace_text_prix">Filet de turbot</h5>
               <div class="ligne">
                 <h6 class="espace_text_prix">Aux agrumes</h6>
@@ -131,9 +143,9 @@
           </div>
 
           <!-- desserts -->
-          <p class="souligner_titre_menu">DESSERTS</p>
+          <p class="souligner_titre_menu -- marge_titre_repas">DESSERTS</p>
           <div class="slide-left_dessert">
-            <div class="border_carte_menu">
+            <div class="border_carte_menu -- marge_des_plats">
               <h5 class="espace_text_prix">Paris-Brest</h5>
               <div class="ligne">
                 <h6 class="espace_text_prix">Revisité</h6>
@@ -141,7 +153,7 @@
               </div>
             </div>
 
-            <div class="border_carte_menu">
+            <div class="border_carte_menu -- marge_des_plats">
               <h5 class="espace_text_prix">Macaron au chocolat d'exception</h5>
               <div class="ligne">
                 <h6 class="espace_text_prix">
@@ -151,7 +163,7 @@
               </div>
             </div>
 
-            <div class="border_carte_menu">
+            <div class="border_carte_menu -- marge_des_plats">
               <h5 class="espace_text_prix">Mousse au chocolat</h5>
               <div class="ligne">
                 <h6 class="espace_text_prix">
@@ -162,13 +174,14 @@
             </div>
           </div>
         </div>
+        </div>
       </section>
 
       <!-- boutton -->
       <div class="centrer -- botton_30">
         <button class="boutton -- boutton_color">Commander</button>
       </div>
-    </main>
+   </main>
 
     <!-- footer -->
     <footer>

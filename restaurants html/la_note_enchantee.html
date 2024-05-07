@@ -51,11 +51,14 @@
       />
       <div class="bande_blanche"></div>
 
-      <section class="marge_menu_carte">
+      <section class="marge_main_bureau -- marge_menu_carte">
         <div class="fond_menus">
           <div class="espace_entre">
             <h1 class="titre -- bottom_40">La note enchantée</h1>
-            <div class="favoris -- favoris_bureau -- checkbox-container">
+            <div class="deplacement_coeur_restaurants">
+              <div class="fa-regular fa-heart"></div>
+            </div>
+            <div class="favoris4 -- favoris4_bureau -- checkbox-container">
               <input type="checkbox" id="like-button" class="like-button" />
               <label for="like-button" class="fa-solid fa-heart"> </label>
             </div>
@@ -63,105 +66,116 @@
         </div>
 
         <!-- Entrées -->
-        <p class="souligner_titre_menu">ENTRÉES</p>
-        <div class="slide-left_entree">
-          <div class="border_carte_menu">
-            <h5 class="espace_text_prix">Ravioles de foie gras</h5>
-            <div class="ligne">
-              <h6 class="espace_text_prix">
-                Accompagnées de leur crème à la truffe
-              </h6>
-              <h5 class="marge_prix_d">25<span class="euro">€</span></h5>
-            </div>
-          </div>
-
-          <div class="border_carte_menu">
-            <h5 class="espace_text_prix">Caviar osciètre</h5>
-            <div class="ligne">
-              <h6 class="espace_text_prix">
-                Sur blini à la farine de blé noir
-              </h6>
-              <h5 class="marge_prix_d">35<span class="euro">€</span></h5>
-            </div>
-          </div>
-
-          <div class="border_carte_menu">
-            <h5 class="espace_text_prix">Homard et espuma de potiron</h5>
-            <div class="ligne">
-              <h6 class="espace_text_prix">Marinés aux zestes d'orange</h6>
-              <h5 class="marge_prix_d">20<span class="euro">€</span></h5>
-            </div>
-          </div>
-
-          <div class="border_carte_menu -- bottom_40">
-            <h5 class="espace_text_prix">Foie gras de canard cuit entier</h5>
-            <div class="ligne">
-              <h6 class="espace_text_prix">
-                Confiture de figue et pain toasté
-              </h6>
-              <h5 class="marge_prix_d">35<span class="euro">€</span></h5>
-            </div>
-          </div>
-
-          <!-- Plats -->
-          <p class="souligner_titre_menu">PLATS</p>
-          <div class="slide-left_plat">
-            <div class="border_carte_menu">
-              <h5 class="espace_text_prix">Noix de coquilles Saint-Jacques</h5>
+        <div class="fond_menus">
+          <p class="souligner_titre_menu -- marge_titre_repas">ENTRÉES</p>
+          <div class="slide-left_entree">
+            <div class="border_carte_menu -- marge_des_plats -- choix_repas">
+              <h5 class="espace_text_prix">Ravioles de foie gras</h5>
               <div class="ligne">
                 <h6 class="espace_text_prix">
-                  Sur lit de purée de céleri-rave
+                  Accompagnées de leur crème à la truffe
                 </h6>
-                <h5 class="marge_prix_d">40<span class="euro">€</span></h5>
+                <h5 class="marge_prix_d">25<span class="euro">€</span></h5>
+                <div class="">
+                  <div class="square">
+                    <div class="circle">
+                      <div class="number">✓</div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
             <div class="border_carte_menu">
-              <h5 class="espace_text_prix">Langoustine poêlée</h5>
+              <h5 class="espace_text_prix">Caviar osciètre</h5>
               <div class="ligne">
-                <h6 class="espace_text_prix">Purée de patate douce</h6>
+                <h6 class="espace_text_prix">
+                  Sur blini à la farine de blé noir
+                </h6>
                 <h5 class="marge_prix_d">35<span class="euro">€</span></h5>
               </div>
             </div>
 
-            <div class="border_carte_menu -- bottom_40">
-              <h5 class="espace_text_prix">Mijoté de queue de bœuf</h5>
+            <div class="border_carte_menu">
+              <h5 class="espace_text_prix">Homard et espuma de potiron</h5>
               <div class="ligne">
-                <h6 class="espace_text_prix">
-                  Et riz sauvage aux zestes de citron
-                </h6>
-                <h5 class="marge_prix_d">44<span class="euro">€</span></h5>
+                <h6 class="espace_text_prix">Marinés aux zestes d'orange</h6>
+                <h5 class="marge_prix_d">20<span class="euro">€</span></h5>
               </div>
             </div>
-          </div>
 
-          <!-- desserts -->
-          <div>
-            <p class="souligner_titre_menu">DESSERTS</p>
-            <div class="slide-left_dessert">
+            <div class="border_carte_menu -- bottom_40">
+              <h5 class="espace_text_prix">Foie gras de canard cuit entier</h5>
+              <div class="ligne">
+                <h6 class="espace_text_prix">
+                  Confiture de figue et pain toasté
+                </h6>
+                <h5 class="marge_prix_d">35<span class="euro">€</span></h5>
+              </div>
+            </div>
+
+            <!-- Plats -->
+            <p class="souligner_titre_menu -- marge_titre_repas">PLATS</p>
+            <div class="slide-left_plat">
               <div class="border_carte_menu">
-                <h5 class="espace_text_prix">Macaron noisette et chocolat</h5>
+                <h5 class="espace_text_prix">
+                  Noix de coquilles Saint-Jacques
+                </h5>
                 <div class="ligne">
                   <h6 class="espace_text_prix">
-                    Glace au caramel brun et sel de Guérande
+                    Sur lit de purée de céleri-rave
                   </h6>
-                  <h5 class="marge_prix_d">18<span class="euro">€</span></h5>
+                  <h5 class="marge_prix_d">40<span class="euro">€</span></h5>
                 </div>
               </div>
 
               <div class="border_carte_menu">
-                <h5 class="espace_text_prix">Baba au rhum revisité</h5>
+                <h5 class="espace_text_prix">Langoustine poêlée</h5>
                 <div class="ligne">
-                  <h6 class="espace_text_prix">Avec son coulis de citron</h6>
-                  <h5 class="marge_prix_d">22<span class="euro">€</span></h5>
+                  <h6 class="espace_text_prix">Purée de patate douce</h6>
+                  <h5 class="marge_prix_d">35<span class="euro">€</span></h5>
                 </div>
               </div>
 
-              <div class="border_carte_menu">
-                <h5 class="espace_text_prix">Tarte au citron meringuée</h5>
+              <div class="border_carte_menu -- bottom_40">
+                <h5 class="espace_text_prix">Mijoté de queue de bœuf</h5>
                 <div class="ligne">
-                  <h6 class="espace_text_prix">Déstructurée</h6>
-                  <h5 class="marge_prix_d">23<span class="euro">€</span></h5>
+                  <h6 class="espace_text_prix">
+                    Et riz sauvage aux zestes de citron
+                  </h6>
+                  <h5 class="marge_prix_d">44<span class="euro">€</span></h5>
+                </div>
+              </div>
+            </div>
+
+            <!-- desserts -->
+            <div>
+              <p class="souligner_titre_menu -- marge_titre_repas">DESSERTS</p>
+              <div class="slide-left_dessert">
+                <div class="border_carte_menu">
+                  <h5 class="espace_text_prix">Macaron noisette et chocolat</h5>
+                  <div class="ligne">
+                    <h6 class="espace_text_prix">
+                      Glace au caramel brun et sel de Guérande
+                    </h6>
+                    <h5 class="marge_prix_d">18<span class="euro">€</span></h5>
+                  </div>
+                </div>
+
+                <div class="border_carte_menu">
+                  <h5 class="espace_text_prix">Baba au rhum revisité</h5>
+                  <div class="ligne">
+                    <h6 class="espace_text_prix">Avec son coulis de citron</h6>
+                    <h5 class="marge_prix_d">22<span class="euro">€</span></h5>
+                  </div>
+                </div>
+
+                <div class="border_carte_menu">
+                  <h5 class="espace_text_prix">Tarte au citron meringuée</h5>
+                  <div class="ligne">
+                    <h6 class="espace_text_prix">Déstructurée</h6>
+                    <h5 class="marge_prix_d">23<span class="euro">€</span></h5>
+                  </div>
                 </div>
               </div>
             </div>

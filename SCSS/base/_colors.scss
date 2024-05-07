@@ -30,7 +30,8 @@ a {
 }
 
 .fond_fonctionnement,
-.bande_blanche {
+.bande_blanche,
+.border_carte_menu {
   background-color: $base-color;
 }
 
@@ -69,10 +70,17 @@ a {
 
 ul,
 .color_footer,
-.ancre {
+.ancre,
+.ecart_li {
   color: $base-color;
 }
 
 footer {
   background-color: $primary-color;
+}
+
+// Restaurant
+.souligner_titre_menu {
+  border-bottom: 1px solid $third-color;
+  width: 12%;
 }
