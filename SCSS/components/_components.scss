@@ -17,34 +17,6 @@
   align-items: center;
 }
 
-// Coeur
-.like-button {
-  display: none;
-}
-
-.fa-heart {
-  font-size: 24px;
-  cursor: pointer;
-  transition: color 0.3s ease;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-.like-button:checked + .fa-heart {
-  background: linear-gradient(to bottom, $fifths-color, $second-color);
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
-.fa-regular {
-  position: absolute;
-  top: 15px;
-  right: 3%;
-  font-size: 30px;
-  color: $seventh-color;
-}
-
 // validation plats
 .square {
   width: 50px;

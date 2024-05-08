@@ -1,4 +1,4 @@
-.loader {
+.loader__container {
   position: fixed;
   top: 0;
   left: 0;
@@ -8,20 +8,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: auto;
-  animation: loaderAnimation linear 2s forwards;
+  z-index: 999;
+  animation: loaderFadeOut 2s forwards;
 }
 
-@keyframes loaderAnimation {
+.loader img {
+  width: 80%;
+  height: 100%;
+}
+
+@keyframes loaderFadeOut {
   0% {
     opacity: 1;
   }
   100% {
     opacity: 0;
+    visibility: hidden;
   }
 }
 
-.loader img {
-  width: 80%;
-  height: auto;
+.loader__container img {
+  width: 67%;
+  height: 80px;
 }

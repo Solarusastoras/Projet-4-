@@ -148,33 +148,6 @@ h6 {
   align-items: center;
 }
 
-.like-button {
-  display: none;
-}
-
-.fa-heart {
-  font-size: 24px;
-  cursor: pointer;
-  transition: color 0.3s ease;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-.like-button:checked + .fa-heart {
-  background: linear-gradient(to bottom, #ff79da, #9747ff);
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
-.fa-regular {
-  position: absolute;
-  top: 15px;
-  right: 3%;
-  font-size: 30px;
-  color: #000000;
-}
-
 .square {
   width: 50px;
   height: 70px;
@@ -373,7 +346,7 @@ li {
   font-size: 20px;
 }
 
-.loader {
+.loader__container {
   position: fixed;
   top: 0;
   left: 0;
@@ -383,21 +356,27 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: auto;
-  animation: loaderAnimation linear 2s forwards;
+  z-index: 999;
+  animation: loaderFadeOut 2s forwards;
 }
 
-@keyframes loaderAnimation {
+.loader img {
+  width: 80%;
+  height: 100%;
+}
+
+@keyframes loaderFadeOut {
   0% {
     opacity: 1;
   }
   100% {
     opacity: 0;
+    visibility: hidden;
   }
 }
-.loader img {
-  width: 80%;
-  height: auto;
+.loader__container img {
+  width: 67%;
+  height: 80px;
 }
 
 .carte img,
@@ -566,6 +545,36 @@ li {
   width: 660px;
 }
 
+.coeur-animation .heart {
+  visibility: visible;
+  position: absolute;
+  right: 14px;
+}
+.coeur-animation .coeur_remplis {
+  visibility: hidden;
+  position: absolute;
+  right: 14px;
+  opacity: 0;
+  background: linear-gradient(to bottom, #ff79da, #9747ff);
+}
+
+.coeur-animation:hover .coeur {
+  visibility: hidden;
+  cursor: pointer;
+  top: 200px;
+  right: 14px;
+}
+.coeur-animation:hover .coeur_remplis {
+  visibility: visible;
+  top: 200px;
+  right: 14px;
+  transition: 1.5s;
+  opacity: 1;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #ff79da, #9747ff);
+  color: #ffffff;
+}
+
 @media (min-width: 320px) and (max-width: 767.99px) {
   .taille_logo {
     width: 60%;
@@ -653,7 +662,11 @@ li {
   .marge_carte_bureau {
     padding: 0px 201px 0px 201px;
   }
-  .border_carte_menu .border_carte_menu_bureau {
-    width: 30%;
+  .titre_bureau {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .border_carte_menu_bureau {
+    width: 660%;
   }
 }/*# sourceMappingURL=style.css.map */

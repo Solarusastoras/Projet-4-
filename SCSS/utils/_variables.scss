@@ -19,3 +19,43 @@
 .taille_longeur_bureau_menu {
   width: 660px;
 }
+
+//Coeur
+.coeur-animation {
+  .heart {
+      visibility: visible;
+      position: absolute;
+      right: 14px;
+      
+  }
+
+  .coeur_remplis {
+      visibility: hidden;
+      position: absolute;
+      right: 14px;
+      opacity: 0;
+      background: linear-gradient(to bottom, $fifths-color, $second-color);
+  }
+}
+
+.coeur-animation:hover {
+  .coeur {
+      visibility: hidden;
+      cursor: pointer;
+      top: 200px;
+      right: 14px;
+  }
+
+  .coeur_remplis {
+      visibility: visible;
+      top: 200px;
+      right: 14px;
+      transition: 1.5s;
+      opacity: 1;
+      cursor: pointer;
+      background: linear-gradient(to bottom, $fifths-color, $second-color);
+  color: $base-color;
+  }
+}
+
+
