@@ -9,6 +9,28 @@
   @include slide-in(1.5s);
 }
 
+
+
+//Coeur
+
+.coeur_remplis {
+  opacity: 0;
+  z-index: 999;
+}
+
+.coeur_remplis:hover {
+  opacity: 1;
+  background-image: linear-gradient(to bottom, $fifths-color, $second-color);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  cursor: pointer;
+  animation: fade-in 250ms ease-in-out;
+  transition: all;
+  transition: 3s;
+  z-index: 0;
+}
+
 // Choix du repas
 
 .slide-in-right {
@@ -16,46 +38,42 @@
   animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.taille_longeur_bureau_menu {
-  width: 660px;
+.selection_plat {
+  display: none;
+  position: absolute;
+  right: 0px;
 }
 
-//Coeur
-.coeur-animation {
-  .heart {
-      visibility: visible;
-      position: absolute;
-      right: 14px;
-      
-  }
-
-  .coeur_remplis {
-      visibility: hidden;
-      position: absolute;
-      right: 14px;
-      opacity: 0;
-      background: linear-gradient(to bottom, $fifths-color, $second-color);
-  }
+.selection_plat:active {
+  display: block;
+  opacity: 1;
+  cursor: pointer;
+  animation: slide 250ms ease-in-out;
+  transition: slinde-in-right 3s regular;
+  transition: 3s;
 }
 
-.coeur-animation:hover {
-  .coeur {
-      visibility: hidden;
-      cursor: pointer;
-      top: 200px;
-      right: 14px;
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
   }
-
-  .coeur_remplis {
-      visibility: visible;
-      top: 200px;
-      right: 14px;
-      transition: 1.5s;
-      opacity: 1;
-      cursor: pointer;
-      background: linear-gradient(to bottom, $fifths-color, $second-color);
-  color: $base-color;
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
   }
 }
-
-
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}

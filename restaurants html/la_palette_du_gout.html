@@ -1,219 +1,195 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>La palette du goût</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
-      rel="stylesheet"
-    />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La palette du goût</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="/SCSS/style.css" />
-  </head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <body>
-     <!-- Loader -->
-     <div class="loader__container">
-      <img src="/assets/images/logo/ohmyfood.png" alt="logo d'ohmyfood" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/SCSS/style.css" />
+</head>
+
+<body>
+  <!-- Loader -->
+  <div class="loader__container">
+    <img src="/assets/images/logo/ohmyfood.png" alt="logo d'ohmyfood" />
   </div>
 
 
-    <!-- header -->
-    <header>
-      <div class="ligne -- centrer_bureau">
-        <div class="marge_l_bureau" onclick="window.history.back()">
-          <i
-            class="fa-solid fa-arrow-left -- taille_fleche taille_fleche_bureau"
-          ></i>
-        </div>
-        <img
-          class="taille_logo -- taille_logo_bureau"
-          src="/assets/images/logo/ohmyfood.png"
-          alt="logo ohmyfood"
-        />
+  <!-- header -->
+  <header>
+    <div class="ligne -- centrer_bureau">
+      <div class="marge_l_bureau" onclick="window.history.back()">
+        <i class="fa-solid fa-arrow-left -- taille_fleche taille_fleche_bureau"></i>
       </div>
-    </header>
+      <img class="taille_logo -- taille_logo_bureau" src="/assets/images/logo/ohmyfood.png" alt="logo ohmyfood" />
+    </div>
+  </header>
 
-    <!-- main -->
-    <main>
-      <img
-        class="image_menu"
-        src="/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-        alt="Photo plat"
-      />
+  <!-- main -->
+  <main>
+    <img class="image_menu" src="/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo plat" />
 
-      <section class="marge_main_bureau -- marge_menu_carte">
-        <div class="fond_menus">
-          <div class="espace_entre -- marge_carte_bureau">
-            <h1 class="titre -- bottom_40 -- .titre_bureau">La palette du goût</h1>
-            <div class="deplacement_coeur_restaurants">
-              <div class="heart-animation">
-                <img class="coeur_remplis" src="/assets/images/logo/Like.svg" alt="coeur coeur_remplis">
-                <img class="coeur" src="/assets/images/logo/Like.svg" alt="coeur_vide">
-            </div>
-            </div>
+    <section class="marge_main_bureau -- marge_menu_carte">
+      <div class="fond_menus">
+        <div class="espace_entre -- marge_carte_bureau">
+          <h1 class="titre -- bottom_40 -- titre_bureau">La palette du goût</h1>
+          <div class="deplacement_coeur_restaurants">
+            <i class="fa-solid fa-heart coeur_remplis"></i>
+            <i class="fa-regular fa-heart coeur_vide"></i>
           </div>
         </div>
+      </div>
 
-          <!-- Entrées -->
-          <div class="fond_menus">
-          <p class="souligner_titre_menu -- marge_titre_repas">ENTRÉES</p>
-          <div class="slide-left_entree">
-            <div class="border_carte_menu -- marge_des_plats -- .taille_longeur_bureau_menu">
-              <h5 class="espace_text_prix">Fricassée d'escargots</h5>
-              <div class="ligne">
-                <h6 class="espace_text_prix">Au piment d'Espelette</h6>
-                <h5 class="marge_prix_d">25<span class="euro">€</span></h5>
-                <div class="">
-                  <div class="square">
-                    <div class="circle">
-                      <div class="number">✓</div>
-                    </div>
+      <!-- Entrées -->
+      <div class="fond_menus">
+        <p class="souligner_titre_menu -- marge_titre_repas">ENTRÉES</p>
+        <div class="slide-left_entree">
+          <div class="border_carte_menu -- marge_des_plats -- taille_longeur_bureau_menu">
+            <h5 class="espace_text_prix">Fricassée d'escargots</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">Au piment d'Espelette</h6>
+              <h5 class="marge_prix_d">25<span class="euro">€</span></h5>
+              <div class="selection_plat">
+                <div class="square">
+                  <div class="circle">
+                    <div class="number">✓</div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="border_carte_menu -- marge_des_plats">
-              <h5 class="espace_text_prix">Foie gras de canard mi-cuit</h5>
-              <div class="ligne">
-                <h6 class="espace_text_prix">Et ses copeaux de truffe noire</h6>
-                <h5 class="marge_prix_d">35<span class="euro">€</span></h5>
-              </div>
-            </div>
-
-            <div class="border_carte_menu -- bottom_40  -- marge_des_plats">
-              <h5 class="espace_text_prix">Œuf au plat</h5>
-              <div class="ligne">
-                <h6 class="espace_text_prix">
-                  Assaisonné à la truffe sur lit de caviar
-                </h6>
-                <h5 class="marge_prix_d">20<span class="euro">€</span></h5>
-              </div>
+          <div class="border_carte_menu -- marge_des_plats">
+            <h5 class="espace_text_prix">Foie gras de canard mi-cuit</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">Et ses copeaux de truffe noire</h6>
+              <h5 class="marge_prix_d">35<span class="euro">€</span></h5>
             </div>
           </div>
 
-          <!-- Plats -->
-          <p class="souligner_titre_menu -- marge_titre_repas">PLATS</p>
-          <div class="slide-left_plat">
-            <div class="border_carte_menu -- marge_des_plats">
-              <h5 class="espace_text_prix">Filet de bœuf aux herbes</h5>
-              <div class="ligne">
-                <h6 class="espace_text_prix">
-                  Accompagné de sa ribambelle de légumes
-                </h6>
-                <h5 class="marge_prix_d">40<span class="euro">€</span></h5>
-              </div>
-            </div>
-
-            <div class="border_carte_menu  -- marge_des_plats">
-              <h5 class="espace_text_prix">Parmentier de queue de bœuf</h5>
-              <div class="ligne">
-                <h6 class="espace_text_prix">
-                  À la truffe noire sur sa purée de panais
-                </h6>
-                <h5 class="marge_prix_d">35<span class="euro">€</span></h5>
-              </div>
-            </div>
-
-            <div class="border_carte_menu -- bottom_40  -- marge_des_plats">
-              <h5 class="espace_text_prix">Filet de turbot</h5>
-              <div class="ligne">
-                <h6 class="espace_text_prix">Aux agrumes</h6>
-                <h5 class="marge_prix_d">44<span class="euro">€</span></h5>
-              </div>
-            </div>
-          </div>
-
-          <!-- desserts -->
-          <p class="souligner_titre_menu -- marge_titre_repas">DESSERTS</p>
-          <div class="slide-left_dessert">
-            <div class="border_carte_menu -- marge_des_plats">
-              <h5 class="espace_text_prix">Paris-Brest</h5>
-              <div class="ligne">
-                <h6 class="espace_text_prix">Revisité</h6>
-                <h5 class="marge_prix_d">18<span class="euro">€</span></h5>
-              </div>
-            </div>
-
-            <div class="border_carte_menu -- marge_des_plats">
-              <h5 class="espace_text_prix">Macaron au chocolat d'exception</h5>
-              <div class="ligne">
-                <h6 class="espace_text_prix">
-                  Et glace à la vanille de Madagascar
-                </h6>
-                <h5 class="marge_prix_d">22<span class="euro">€</span></h5>
-              </div>
-            </div>
-
-            <div class="border_carte_menu -- marge_des_plats">
-              <h5 class="espace_text_prix">Mousse au chocolat</h5>
-              <div class="ligne">
-                <h6 class="espace_text_prix">
-                  Au piment d'Espelette et à la truffe noire
-                </h6>
-                <h5 class="marge_prix_d">23<span class="euro">€</span></h5>
-              </div>
+          <div class="border_carte_menu -- bottom_40  -- marge_des_plats">
+            <h5 class="espace_text_prix">Œuf au plat</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">
+                Assaisonné à la truffe sur lit de caviar
+              </h6>
+              <h5 class="marge_prix_d">20<span class="euro">€</span></h5>
             </div>
           </div>
         </div>
-        </div>
-      </section>
 
-      <!-- boutton -->
-      <div class="centrer -- botton_30">
-        <button class="boutton -- boutton_color">Commander</button>
+        <!-- Plats -->
+        <p class="souligner_titre_menu -- marge_titre_repas">PLATS</p>
+        <div class="slide-left_plat">
+          <div class="border_carte_menu -- marge_des_plats">
+            <h5 class="espace_text_prix">Filet de bœuf aux herbes</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">
+                Accompagné de sa ribambelle de légumes
+              </h6>
+              <h5 class="marge_prix_d">40<span class="euro">€</span></h5>
+            </div>
+          </div>
+
+          <div class="border_carte_menu  -- marge_des_plats">
+            <h5 class="espace_text_prix">Parmentier de queue de bœuf</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">
+                À la truffe noire sur sa purée de panais
+              </h6>
+              <h5 class="marge_prix_d">35<span class="euro">€</span></h5>
+            </div>
+          </div>
+
+          <div class="border_carte_menu -- bottom_40  -- marge_des_plats">
+            <h5 class="espace_text_prix">Filet de turbot</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">Aux agrumes</h6>
+              <h5 class="marge_prix_d">44<span class="euro">€</span></h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- desserts -->
+        <p class="souligner_titre_menu -- marge_titre_repas">DESSERTS</p>
+        <div class="slide-left_dessert">
+          <div class="border_carte_menu -- marge_des_plats">
+            <h5 class="espace_text_prix">Paris-Brest</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">Revisité</h6>
+              <h5 class="marge_prix_d">18<span class="euro">€</span></h5>
+            </div>
+          </div>
+
+          <div class="border_carte_menu -- marge_des_plats">
+            <h5 class="espace_text_prix">Macaron au chocolat d'exception</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">
+                Et glace à la vanille de Madagascar
+              </h6>
+              <h5 class="marge_prix_d">22<span class="euro">€</span></h5>
+            </div>
+          </div>
+
+          <div class="border_carte_menu -- marge_des_plats">
+            <h5 class="espace_text_prix">Mousse au chocolat</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">
+                Au piment d'Espelette et à la truffe noire
+              </h6>
+              <h5 class="marge_prix_d">23<span class="euro">€</span></h5>
+            </div>
+          </div>
+        </div>
       </div>
-   </main>
+      </div>
+    </section>
 
-    <!-- footer -->
-    <footer>
-      <section>
-        <div class="marge_footer">
-          <p class="footer_logo -- color_footer">ohmyfood</p>
-          <ul class="alignement_ul">
-            <li class="ecart_li">
-              <i class="fa-solid fa-utensils -- ecart_img1_text_footer"></i>
-              Proposer un restaurant
-            </li>
-            <li class="ecart_li">
-              <i
-                class="fa-solid fa-handshake-angle -- ecart_img2_text_footer"
-              ></i>
-              Devenir partenaire
-            </li>
+    <!-- boutton -->
+    <div class="centrer -- botton_30">
+      <button class="boutton -- boutton_color">Commander</button>
+    </div>
+  </main>
 
-            <li class="ecart_li">Mentions légales</li>
-            <li>
-              <a class="color_footer" href="mailto:contact@example.com">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </footer>
-  </body>
+  <!-- footer -->
+  <footer>
+    <section>
+      <div class="marge_footer">
+        <p class="footer_logo -- color_footer">ohmyfood</p>
+        <ul class="alignement_ul">
+          <li class="ecart_li">
+            <i class="fa-solid fa-utensils -- ecart_img1_text_footer"></i>
+            Proposer un restaurant
+          </li>
+          <li class="ecart_li">
+            <i class="fa-solid fa-handshake-angle -- ecart_img2_text_footer"></i>
+            Devenir partenaire
+          </li>
+
+          <li class="ecart_li">Mentions légales</li>
+          <li>
+            <a class="color_footer" href="mailto:contact@example.com">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </footer>
+</body>
+
 </html>

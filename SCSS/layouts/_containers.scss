@@ -68,8 +68,11 @@
 .favoris3 {
   position: relative;
   top: -75px;
-  padding: 5px;
-  margin-left: 85%;
+  margin-left: 86%;
+}
+
+.favoris1 {
+  margin-left: 80%;
 }
 
 // Restaurant HTML
@@ -91,10 +94,17 @@
   bottom: 10px;
 }
 
-.favoris4 {
+.coeur_vide,
+.coeur_remplis {
+  position: absolute;
+  right: 20px;
+}
+
+
+.deplacement_coeur_restaurants {
   position: relative;
-  margin-right: 4%;
-  top: 30px;
+  top: 35px;
+  right: 20px;
 }
 
 .fond_menus {
@@ -123,19 +133,3 @@ h6 {
   margin-left: 15px;
 }
 
-.fa-regular {
-  position: absolute;
-  right: 3%;
-  top: 0%;
-}
-
-.deplacement_coeur_index {
-  position: absolute;
-  top: 2px;
-}
-
-.deplacement_coeur_restaurants {
-  position: absolute;
-  right: 2.99%;
-  top: 2.7%;
-}

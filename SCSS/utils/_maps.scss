@@ -87,39 +87,34 @@
   }
 }
 
-  @media (min-width: 1024.1px) and (max-width: 1920px) {
-// Restaurants HTML
+@media (min-width: 1024.1px) and (max-width: 1920px) {
+  // Restaurants HTML
 
-// Header
-.marge_l_bureau {
-  position: absolute;
-  left: 20px;
-}
+  // Header
+  .marge_l_bureau {
+    position: absolute;
+    left: 20px;
+  }
 
-.taille_fleche_bureau {
-  font-size: 30px;
-}
+  .taille_fleche_bureau {
+    font-size: 30px;
+  }
 
-.taille_logo_bureau {
-  width: 200px;
-  height: 34px;
-}
+  .taille_logo_bureau {
+    width: 200px;
+    height: 34px;
+  }
 
-// Main
-.marge_main_bureau  {
-  margin: 0px 191px 0px 191px;
-}
-.marge_carte_bureau {
-  padding: 0px 201px 0px 201px;
-}
+  // Main
+  .marge_main_bureau {
+    margin: 0px 191px 0px 191px;
+  }
+  .marge_carte_bureau {
+    padding: 0px 201px 0px 201px;
+  }
 
- .titre_bureau {
-  font-size: 28px;
-  font-weight: bold;
-}
-
-
-.border_carte_menu_bureau {
-  width: 660%;
-}
+  .titre_bureau {
+    font-size: 28px;
+    font-weight: bold;
+  }
 }

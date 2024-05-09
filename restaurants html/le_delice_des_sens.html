@@ -1,203 +1,186 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Le délice des sens</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
-      rel="stylesheet"
-    />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Le délice des sens</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
+    rel="stylesheet" />
 
-    <link rel="stylesheet" href="/SCSS/style.css" />
-  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <body>
-    <!-- Loader -->
-    <div class="loader__container">
-      <img src="/assets/images/logo/ohmyfood.png" alt="logo d'ohmyfood" />
-    </div>
+  <link rel="stylesheet" href="/SCSS/style.css" />
+</head>
 
-    <!-- header -->
-    <header>
-      <div class="ligne-- centrer_bureau">
-        <div onclick="window.history.back()">
-          <i
-            class="fa-solid fa-arrow-left -- taille_fleche -- taille_fleche_bureau"
-          ></i>
-        </div>
-        <img
-          class="taille_logo -- taille_logo_bureau"
-          src="/assets/images/logo/ohmyfood.png"
-          alt="logo ohmyfood"
-        />
+<body>
+  <!-- Loader -->
+  <div class="loader__container">
+    <img src="/assets/images/logo/ohmyfood.png" alt="logo d'ohmyfood" />
+  </div>
+
+  <!-- header -->
+  <header>
+    <div class="ligne-- centrer_bureau">
+      <div onclick="window.history.back()">
+        <i class="fa-solid fa-arrow-left -- taille_fleche -- taille_fleche_bureau"></i>
       </div>
-    </header>
+      <img class="taille_logo -- taille_logo_bureau" src="/assets/images/logo/ohmyfood.png" alt="logo ohmyfood" />
+    </div>
+  </header>
 
-    <!-- main -->
-    <main>
-      <img
-        class="image_menu"
-        src="/assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-        alt="Photo plat"
-      />
-      <section class="marge_main_bureau -- marge_menu_carte">
-        <div class="fond_menus">
-          <div class="espace_entre">
-            <h1 class="titre -- bottom_40">Le délice des sens</h1>
-            <div class="deplacement_coeur_restaurants">
-              <div class="fa-regular fa-heart"></div>
-            </div>
-            <div class="favoris4 -- favoris4_bureau -- checkbox-container">
-              <input type="checkbox" id="like-button" class="like-button" />
-              <label for="like-button" class="fa-solid fa-heart"> </label>
-            </div>
+  <!-- main -->
+  <main>
+    <img class="image_menu" src="/assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+      alt="Photo plat" />
+    <section class="marge_main_bureau -- marge_menu_carte">
+      <div class="fond_menus">
+        <div class="espace_entre">
+          <h1 class="titre -- bottom_40">Le délice des sens</h1>
+          <div class="deplacement_coeur_restaurants">
+            <div class="fa-regular fa-heart"></div>
+          </div>
+          <div class="deplacement_coeur_restaurants">
+            <i class="fa-solid fa-heart coeur_remplis"></i>
+            <i class="fa-regular fa-heart coeur_vide"></i>
           </div>
         </div>
+      </div>
 
-        <!-- Entrées -->
-        <div class="fond_menus">
-          <p class="souligner_titre_menu -- marge_titre_repas">ENTRÉES</p>
-          <div class="slide-left_entree">
-            <div class="border_carte_menu -- marge_des_plats -- choix_repas">
-              <h5 class="espace_text_prix">Tartare de thon</h5>
-              <div class="ligne">
-                <h6 class="espace_text_prix">Assaisonné au yuzu</h6>
-                <h5 class="marge_prix_d">25<span class="euro">€</span></h5>
-                <div class="">
-                  <div class="square">
-                    <div class="circle">
-                      <div class="number">✓</div>
-                    </div>
+      <!-- Entrées -->
+      <div class="fond_menus">
+        <p class="souligner_titre_menu -- marge_titre_repas">ENTRÉES</p>
+        <div class="slide-left_entree">
+          <div class="border_carte_menu -- marge_des_plats -- choix_repas">
+            <h5 class="espace_text_prix">Tartare de thon</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix">Assaisonné au yuzu</h6>
+              <h5 class="marge_prix_d">25<span class="euro">€</span></h5>
+              <div class="">
+                <div class="square">
+                  <div class="circle">
+                    <div class="number">✓</div>
                   </div>
                 </div>
               </div>
             </div>
-
-            <div class="border_carte_menu -- marge_des_plats">
-              <h5 class="espace_text_prix">Bouchée de homard croustillant</h5>
-              <div class="ligne">
-                <h6 class="espace_text_prix">
-                  Et sa farandole de petits légumes
-                </h6>
-                <h5 class="marge_prix_d">35<span class="euro">€</span></h5>
-              </div>
-            </div>
-
-            <div class="border_carte_menu -- bottom_40 -- marge_des_plats">
-              <h5 class="espace_text_prix">Velouté de cèpes</h5>
-              <div class="ligne">
-                <h6 class="espace_text_prix">Aux truffes</h6>
-                <h5 class="marge_prix_d">20<span class="euro">€</span></h5>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Plats -->
-        <p class="souligner_titre_menu -- marge_titre_repas">PLATS</p>
-        <div class="slide-left_plat">
-          <div class="border_carte_menu -- marge_des_plats">
-            <h5 class="espace_text_prix">Poulet rôti aux herbes de Provence</h5>
-            <div class="ligne">
-              <h6 class="espace_text_prix">Et sa crème de truffe</h6>
-              <h5 class="marge_prix_d">40<span class="euro">€</span></h5>
-            </div>
           </div>
 
           <div class="border_carte_menu -- marge_des_plats">
-            <h5 class="espace_text_prix">Langouste rôtie</h5>
+            <h5 class="espace_text_prix">Bouchée de homard croustillant</h5>
             <div class="ligne">
-              <h6 class="espace_text_prix">Et ses légumes de saison</h6>
+              <h6 class="espace_text_prix">
+                Et sa farandole de petits légumes
+              </h6>
               <h5 class="marge_prix_d">35<span class="euro">€</span></h5>
             </div>
           </div>
 
           <div class="border_carte_menu -- bottom_40 -- marge_des_plats">
-            <h5 class="espace_text_prix">Côte de bœuf Angus</h5>
+            <h5 class="espace_text_prix">Velouté de cèpes</h5>
             <div class="ligne">
-              <h6 class="espace_text_prix">Et sa purée de panais</h6>
-              <h5 class="marge_prix_d">44<span class="euro">€</span></h5>
+              <h6 class="espace_text_prix">Aux truffes</h6>
+              <h5 class="marge_prix_d">20<span class="euro">€</span></h5>
             </div>
           </div>
         </div>
-
-        <!-- desserts -->
-        <p class="souligner_titre_menu marge_titre_repas">DESSERTS</p>
-        <div class="slide-left_dessert">
-          <div class="border_carte_menu -- marge_des_plats">
-            <h5 class="espace_text_prix">Farandole de desserts</h5>
-            <div class="ligne">
-              <h6 class="espace_text_prix">Du chef</h6>
-              <h5 class="marge_prix_d">18<span class="euro">€</span></h5>
-            </div>
-          </div>
-
-          <div class="border_carte_menu -- marge_des_plats">
-            <h5 class="espace_text_prix">Crème brulée</h5>
-            <div class="ligne">
-              <h6 class="espace_text_prix">Revisitée</h6>
-              <h5 class="marge_prix_d">22<span class="euro">€</span></h5>
-            </div>
-          </div>
-
-          <div class="border_carte_menu -- marge_des_plats">
-            <h5 class="espace_text_prix">Tiramisu</h5>
-            <div class="ligne">
-              <h6 class="espace_text_prix">À la noisette</h6>
-              <h5 class="marge_prix_d">23<span class="euro">€</span></h5>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- boutton -->
-      <div class="centrer -- -- botton_30">
-        <button class="boutton -- boutton_color">Commander</button>
       </div>
-    </main>
 
-    <!-- footer -->
-    <footer>
-      <section>
-        <div class="marge_footer">
-          <p class="footer_logo -- color_footer">ohmyfood</p>
-          <ul class="alignement_ul">
-            <li class="ecart_li">
-              <i class="fa-solid fa-utensils -- ecart_img1_text_footer"></i>
-              Proposer un restaurant
-            </li>
-            <li class="ecart_li">
-              <i
-                class="fa-solid fa-handshake-angle -- ecart_img2_text_footer"
-              ></i>
-              Devenir partenaire
-            </li>
-
-            <li class="ecart_li">Mentions légales</li>
-            <li>
-              <a class="color_footer" href="mailto:contact@example.com">
-                Contact
-              </a>
-            </li>
-          </ul>
+      <!-- Plats -->
+      <p class="souligner_titre_menu -- marge_titre_repas">PLATS</p>
+      <div class="slide-left_plat">
+        <div class="border_carte_menu -- marge_des_plats">
+          <h5 class="espace_text_prix">Poulet rôti aux herbes de Provence</h5>
+          <div class="ligne">
+            <h6 class="espace_text_prix">Et sa crème de truffe</h6>
+            <h5 class="marge_prix_d">40<span class="euro">€</span></h5>
+          </div>
         </div>
-      </section>
-    </footer>
-  </body>
+
+        <div class="border_carte_menu -- marge_des_plats">
+          <h5 class="espace_text_prix">Langouste rôtie</h5>
+          <div class="ligne">
+            <h6 class="espace_text_prix">Et ses légumes de saison</h6>
+            <h5 class="marge_prix_d">35<span class="euro">€</span></h5>
+          </div>
+        </div>
+
+        <div class="border_carte_menu -- bottom_40 -- marge_des_plats">
+          <h5 class="espace_text_prix">Côte de bœuf Angus</h5>
+          <div class="ligne">
+            <h6 class="espace_text_prix">Et sa purée de panais</h6>
+            <h5 class="marge_prix_d">44<span class="euro">€</span></h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- desserts -->
+      <p class="souligner_titre_menu marge_titre_repas">DESSERTS</p>
+      <div class="slide-left_dessert">
+        <div class="border_carte_menu -- marge_des_plats">
+          <h5 class="espace_text_prix">Farandole de desserts</h5>
+          <div class="ligne">
+            <h6 class="espace_text_prix">Du chef</h6>
+            <h5 class="marge_prix_d">18<span class="euro">€</span></h5>
+          </div>
+        </div>
+
+        <div class="border_carte_menu -- marge_des_plats">
+          <h5 class="espace_text_prix">Crème brulée</h5>
+          <div class="ligne">
+            <h6 class="espace_text_prix">Revisitée</h6>
+            <h5 class="marge_prix_d">22<span class="euro">€</span></h5>
+          </div>
+        </div>
+
+        <div class="border_carte_menu -- marge_des_plats">
+          <h5 class="espace_text_prix">Tiramisu</h5>
+          <div class="ligne">
+            <h6 class="espace_text_prix">À la noisette</h6>
+            <h5 class="marge_prix_d">23<span class="euro">€</span></h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- boutton -->
+    <div class="centrer -- -- botton_30">
+      <button class="boutton -- boutton_color">Commander</button>
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer>
+    <section>
+      <div class="marge_footer">
+        <p class="footer_logo -- color_footer">ohmyfood</p>
+        <ul class="alignement_ul">
+          <li class="ecart_li">
+            <i class="fa-solid fa-utensils -- ecart_img1_text_footer"></i>
+            Proposer un restaurant
+          </li>
+          <li class="ecart_li">
+            <i class="fa-solid fa-handshake-angle -- ecart_img2_text_footer"></i>
+            Devenir partenaire
+          </li>
+
+          <li class="ecart_li">Mentions légales</li>
+          <li>
+            <a class="color_footer" href="mailto:contact@example.com">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </footer>
+</body>
+
 </html>
