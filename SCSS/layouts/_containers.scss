@@ -100,7 +100,6 @@
   right: 20px;
 }
 
-
 .deplacement_coeur_restaurants {
   position: relative;
   top: 35px;
@@ -108,7 +107,7 @@
 }
 
 .fond_menus {
-  border-radius: 20px 20px;
+  border-radius: 20px 20px 0px 0px;
   background-color: $heighth-color;
 }
 
@@ -117,7 +116,7 @@
 // Menu
 .marge_des_plats,
 .marge_titre_repas {
-  margin: 0px 0px 0px 10px;
+  margin: 0px -10px 0px 10px;
 }
 
 .marge_prix_d {
@@ -132,4 +131,3 @@ h5,
 h6 {
   margin-left: 15px;
 }
-

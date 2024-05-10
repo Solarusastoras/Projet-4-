@@ -293,7 +293,7 @@ h6 {
 
 .marge_des_plats,
 .marge_titre_repas {
-  margin: 0px 0px 0px 10px;
+  margin: 0px -10px 0px 10px;
 }
 
 .marge_prix_d {
@@ -556,34 +556,32 @@ li {
   z-index: 0;
 }
 
-.slide-in-right {
-  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-.selection_plat {
+.hidden-checkbox {
   display: none;
-  position: absolute;
-  right: 0px;
 }
 
-.selection_plat:active {
-  display: block;
-  opacity: 1;
-  cursor: pointer;
-  animation: slide 250ms ease-in-out;
-  transition: slinde-in-right 3s regular;
-  transition: 3s;
+.hidden-checkbox:checked + .trigger-label .square {
+  transform: translateX(50px);
+  animation: scale-up-hor-right 1s ease-in-out;
 }
-@keyframes slide-in-right {
+.hidden-checkbox:checked + .trigger-label .square.square {
+  display: block;
+}
+
+@keyframes scale-up-hor-right {
   0% {
-    transform: translateX(1000px);
-    opacity: 0;
+    transform: scaleX(0.4);
+    transform-origin: 100% 100%;
   }
   100% {
-    transform: translateX(0);
-    opacity: 1;
+    transform: scaleX(1);
+    transform-origin: 100% 100%;
   }
 }
+.square {
+  display: none;
+}
+
 @media (min-width: 320px) and (max-width: 767.99px) {
   .taille_logo {
     width: 60%;

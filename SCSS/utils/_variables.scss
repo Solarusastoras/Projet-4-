@@ -9,8 +9,6 @@
   @include slide-in(1.5s);
 }
 
-
-
 //Coeur
 
 .coeur_remplis {
@@ -33,47 +31,34 @@
 
 // Choix du repas
 
-.slide-in-right {
-  -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-.selection_plat {
+.hidden-checkbox {
   display: none;
-  position: absolute;
-  right: 0px;
 }
 
-.selection_plat:active {
-  display: block;
-  opacity: 1;
-  cursor: pointer;
-  animation: slide 250ms ease-in-out;
-  transition: slinde-in-right 3s regular;
-  transition: 3s;
+.hidden-checkbox:checked + .trigger-label .scale-up-hor-right {
+  transform: translateX(50px);
+  animation: scale-up-hor-right 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+  &.square {
+    display: block;
+    transform: translateX(0);
+    position: absolute;
+    right: 0px;
+  }
 }
 
-@-webkit-keyframes slide-in-right {
+@keyframes scale-up-hor-right {
   0% {
-    -webkit-transform: translateX(1000px);
-            transform: translateX(1000px);
-    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: 100% 100%;
   }
   100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1;
+    transform: scaleX(1);
+    transform-origin: 100% 100%;
   }
 }
-@keyframes slide-in-right {
-  0% {
-    -webkit-transform: translateX(1000px);
-            transform: translateX(1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1;
-  }
+
+.square {
+  display: none;
+ 
 }
