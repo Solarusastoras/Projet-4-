@@ -36,7 +36,7 @@
 
   // Fonctionnement
   .fonctionnement_bureau {
-    width: 73%;
+    width: 70%;
     gap: 20px;
   }
 
@@ -47,9 +47,20 @@
     margin-left: 180px;
   }
 
+  .fa-list,
+  .fa-mobile-screen-button,
+  .fa-store {
+    margin-top: 5px;
+  }
+
   // Restaurant
+
+  .fond_fonctionnement_bureau {
+    margin-bottom: 40px;
+  }
+
   .carte_bureau {
-    width: 490px;
+    width: 470px;
     height: 251px;
     margin-right: 100px;
   }
@@ -65,8 +76,8 @@
   .favoris1_bureau,
   .favoris2_bureau,
   .favoris3_bureau {
-    margin-left: -19%;
-    margin-top: 24%;
+    margin-left: -16%;
+    margin-top: 255px;
   }
 
   // Footer
@@ -79,11 +90,13 @@
     display: flex;
     flex-direction: row;
     padding-top: 40px;
-    margin-left: 20%;
+    margin-left: 40%;
+    padding-bottom: -5px;
   }
 
   .ul_bureau .ecart_li_bureau {
-    padding-right: 10px;
+    padding-right: 25px;
+    padding-bottom: 0px;
   }
 }
 

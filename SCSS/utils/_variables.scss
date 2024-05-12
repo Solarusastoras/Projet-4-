@@ -39,12 +39,15 @@
   transform: translateX(50px);
   animation: scale-up-hor-right 0.5s ease-in-out;
   animation-fill-mode: forwards;
-  &.square {
-    display: block;
-    transform: translateX(0);
-    position: absolute;
-    right: 0px;
-  }
+  cursor: pointer;
+}
+
+.hidden-checkbox:checked + .trigger-label.square {
+  display: block;
+  transform: translateX(0);
+  position: absolute;
+  right: 0;
+  top: 100px;
 }
 
 @keyframes scale-up-hor-right {
@@ -57,8 +60,6 @@
     transform-origin: 100% 100%;
   }
 }
-
 .square {
   display: none;
- 
 }

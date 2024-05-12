@@ -1,4 +1,14 @@
 {
   "liveServer.settings.port": 5501,
-  "search-online.search-engine": "Google"
+  "search-online.search-engine": "Google",
+  "CodeGPT.apiKey": "CodeGPT Plus Beta",
+  "CodeGPT.query.language": "French",
+  "CodeGPT.Autocomplete.enabled": true,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".css",
+      "savePath": "/assets/CSS"
+    }
+  ]
 }
