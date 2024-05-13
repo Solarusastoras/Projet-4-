@@ -26,15 +26,15 @@
     <img src="/assets/images/logo/ohmyfood.png" alt="logo d'ohmyfood" />
   </div>
 
-  <!-- header -->
   <header>
-    <div class="ligne-- centrer_bureau">
-      <div onclick="window.history.back()">
-        <i class="fa-solid fa-arrow-left -- taille_fleche -- taille_fleche_bureau"></i>
+    <div class="ligne -- centrer_bureau">
+      <div class="marge_l_bureau" onclick="window.history.back()">
+        <i class="fa-solid fa-arrow-left -- taille_fleche taille_fleche_bureau"></i>
       </div>
       <img class="taille_logo -- taille_logo_bureau" src="/assets/images/logo/ohmyfood.png" alt="logo ohmyfood" />
     </div>
   </header>
+
 
   <!-- main -->
   <main>
@@ -44,108 +44,192 @@
       <div class="fond_menus">
         <div class="espace_entre">
           <h1 class="titre -- bottom_40">Le délice des sens</h1>
-          <div class="deplacement_coeur_restaurants">
-            <div class="fa-regular fa-heart"></div>
-          </div>
-          <div class="deplacement_coeur_restaurants">
-            <i class="fa-solid fa-heart coeur_remplis"></i>
-            <i class="fa-regular fa-heart coeur_vide"></i>
-          </div>
         </div>
+        <div class="deplacement_coeur_restaurants">
+          <i class="fa-solid fa-heart coeur_remplis"></i>
+          <i class="fa-regular fa-heart coeur_vide"></i>
+        </div>
+      </div>
       </div>
 
       <!-- Entrées -->
-      <div class="fond_menus">
+      <div class="fond_menus_bis">
         <p class="souligner_titre_menu -- marge_titre_repas">ENTRÉES</p>
         <div class="slide-left_entree">
-          <div class="border_carte_menu -- marge_des_plats -- choix_repas">
-            <h5 class="espace_text_prix">Tartare de thon</h5>
-            <div class="ligne">
-              <h6 class="espace_text_prix">Assaisonné au yuzu</h6>
-              <h5 class="marge_prix_d">25<span class="euro">€</span></h5>
-              <div class="">
-                <div class="square">
-                  <div class="circle">
-                    <div class="number">✓</div>
+          <div class="border_carte_menu -- marge_des_plats -- taille_longeur_bureau_menu">
+            <input type="checkbox" id="triggerAnimation" class="hidden-checkbox">
+            <label for="triggerAnimation" class="trigger-label">
+              <h5 class="espace_text_prix -- reduction_text">Tartare de thon</h5>
+              <div class="ligne">
+                <h6 class="espace_text_prix -- reduction_text">Assaisonné au yuzu</h6>
+                <div class="scale-up-hor-right  -- ligne">
+                  <h5 class="marge_prix_d">25<span class="euro">€</span></h5>
+                  <div class="square">
+                    <div class="circle">
+                      <div class="number">✓</div>
+                    </div>
                   </div>
+                </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="border_carte_menu -- marge_des_plats -- taille_longeur_bureau_menu">
+          <input type="checkbox" id="triggerAnimation1" class="hidden-checkbox">
+          <label for="triggerAnimation1" class="trigger-label">
+            <h5 class="espace_text_prix -- reduction_text">Bouchée de homard croustillant </h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix -- reduction_text">Et sa farandole de petits légumes</h6>
+              <div class="scale-up-hor-right  -- ligne">
+                <h5 class="marge_prix_d">35<span class="euro">€</span></h5>
+              </div>
+              <div class="square">
+                <div class="circle">
+                  <div class="number">✓</div>
                 </div>
               </div>
             </div>
-          </div>
+          </label>
+        </div>
 
-          <div class="border_carte_menu -- marge_des_plats">
-            <h5 class="espace_text_prix">Bouchée de homard croustillant</h5>
+        <div class="border_carte_menu -- marge_des_plats -- taille_longeur_bureau_menu -- bottom_40">
+          <input type="checkbox" id="triggerAnimation2" class="hidden-checkbox">
+          <label for="triggerAnimation2" class="trigger-label">
+            <h5 class="espace_text_prix -- reduction_text">Velouté de cèpes</h5>
             <div class="ligne">
-              <h6 class="espace_text_prix">
-                Et sa farandole de petits légumes
-              </h6>
-              <h5 class="marge_prix_d">35<span class="euro">€</span></h5>
+              <h6 class="espace_text_prix -- reduction_text">Aux truffes</h6>
+              <div class="scale-up-hor-right  -- ligne">
+                <h5 class="marge_prix_d">20<span class="euro">€</span></h5>
+              </div>
+              <div class="square">
+                <div class="circle">
+                  <div class="number">✓</div>
+                </div>
+              </div>
             </div>
-          </div>
-
-          <div class="border_carte_menu -- bottom_40 -- marge_des_plats">
-            <h5 class="espace_text_prix">Velouté de cèpes</h5>
-            <div class="ligne">
-              <h6 class="espace_text_prix">Aux truffes</h6>
-              <h5 class="marge_prix_d">20<span class="euro">€</span></h5>
-            </div>
-          </div>
+          </label>
         </div>
       </div>
 
       <!-- Plats -->
       <p class="souligner_titre_menu -- marge_titre_repas">PLATS</p>
       <div class="slide-left_plat">
-        <div class="border_carte_menu -- marge_des_plats">
-          <h5 class="espace_text_prix">Poulet rôti aux herbes de Provence</h5>
-          <div class="ligne">
-            <h6 class="espace_text_prix">Et sa crème de truffe</h6>
-            <h5 class="marge_prix_d">40<span class="euro">€</span></h5>
-          </div>
+
+        <div class="border_carte_menu -- marge_des_plats -- taille_longeur_bureau_menu">
+          <input type="checkbox" id="triggerAnimation4" class="hidden-checkbox">
+          <label for="triggerAnimation4" class="trigger-label">
+            <h5 class="espace_text_prix -- reduction_text">Poulet rôti aux herbes de Provence </h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix -- reduction_text">Et sa crème de truffe</h6>
+              <div class="scale-up-hor-right  -- ligne">
+                <h5 class="marge_prix_d">40<span class="euro">€</span></h5>
+              </div>
+              <div class="square">
+                <div class="circle">
+                  <div class="number">✓</div>
+                </div>
+              </div>
+            </div>
+          </label>
         </div>
 
-        <div class="border_carte_menu -- marge_des_plats">
-          <h5 class="espace_text_prix">Langouste rôtie</h5>
-          <div class="ligne">
-            <h6 class="espace_text_prix">Et ses légumes de saison</h6>
-            <h5 class="marge_prix_d">35<span class="euro">€</span></h5>
-          </div>
+
+        <div class="border_carte_menu -- marge_des_plats -- taille_longeur_bureau_menu">
+          <input type="checkbox" id="triggerAnimation5" class="hidden-checkbox">
+          <label for="triggerAnimation5" class="trigger-label">
+            <h5 class="espace_text_prix -- reduction_text">Langouste rôtie </h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix -- reduction_text">Et ses légumes de saison</h6>
+              <div class="scale-up-hor-right  -- ligne">
+                <h5 class="marge_prix_d">35<span class="euro">€</span></h5>
+              </div>
+              <div class="square">
+                <div class="circle">
+                  <div class="number">✓</div>
+                </div>
+              </div>
+            </div>
+          </label>
         </div>
 
-        <div class="border_carte_menu -- bottom_40 -- marge_des_plats">
-          <h5 class="espace_text_prix">Côte de bœuf Angus</h5>
-          <div class="ligne">
-            <h6 class="espace_text_prix">Et sa purée de panais</h6>
-            <h5 class="marge_prix_d">44<span class="euro">€</span></h5>
-          </div>
+        <div class="border_carte_menu -- marge_des_plats -- taille_longeur_bureau_menu -- bottom_40">
+          <input type="checkbox" id="triggerAnimation6" class="hidden-checkbox">
+          <label for="triggerAnimation6" class="trigger-label">
+            <h5 class="espace_text_prix -- reduction_text">Côte de bœuf Angus </h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix -- reduction_text">Et sa purée de panais</h6>
+              <div class="scale-up-hor-right  -- ligne">
+                <h5 class="marge_prix_d">44<span class="euro">€</span></h5>
+              </div>
+              <div class="square">
+                <div class="circle">
+                  <div class="number">✓</div>
+                </div>
+              </div>
+            </div>
+          </label>
         </div>
       </div>
 
+
       <!-- desserts -->
-      <p class="souligner_titre_menu marge_titre_repas">DESSERTS</p>
+      <p class="souligner_titre_menu -- marge_titre_repas">DESSERTS</p>
       <div class="slide-left_dessert">
-        <div class="border_carte_menu -- marge_des_plats">
-          <h5 class="espace_text_prix">Farandole de desserts</h5>
-          <div class="ligne">
-            <h6 class="espace_text_prix">Du chef</h6>
-            <h5 class="marge_prix_d">18<span class="euro">€</span></h5>
-          </div>
+
+        <div class="border_carte_menu -- marge_des_plats -- taille_longeur_bureau_menu">
+          <input type="checkbox" id="triggerAnimation7" class="hidden-checkbox">
+          <label for="triggerAnimation7" class="trigger-label">
+            <h5 class="espace_text_prix -- reduction_text">Farandole de desserts</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix -- reduction_text">Du chef</h6>
+              <div class="scale-up-hor-right  -- ligne">
+                <h5 class="marge_prix_d">18<span class="euro">€</span></h5>
+              </div>
+              <div class="square">
+                <div class="circle">
+                  <div class="number">✓</div>
+                </div>
+              </div>
+            </div>
+          </label>
         </div>
 
-        <div class="border_carte_menu -- marge_des_plats">
-          <h5 class="espace_text_prix">Crème brulée</h5>
-          <div class="ligne">
-            <h6 class="espace_text_prix">Revisitée</h6>
-            <h5 class="marge_prix_d">22<span class="euro">€</span></h5>
-          </div>
+
+        <div class="border_carte_menu -- marge_des_plats -- taille_longeur_bureau_menu">
+          <input type="checkbox" id="triggerAnimation8" class="hidden-checkbox">
+          <label for="triggerAnimation8" class="trigger-label">
+            <h5 class="espace_text_prix -- reduction_text">Crème brulée </h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix -- reduction_text">Revisitée</h6>
+              <div class="scale-up-hor-right  -- ligne">
+                <h5 class="marge_prix_d">22<span class="euro">€</span></h5>
+              </div>
+              <div class="square">
+                <div class="circle">
+                  <div class="number">✓</div>
+                </div>
+              </div>
+            </div>
+          </label>
         </div>
 
-        <div class="border_carte_menu -- marge_des_plats">
-          <h5 class="espace_text_prix">Tiramisu</h5>
-          <div class="ligne">
-            <h6 class="espace_text_prix">À la noisette</h6>
-            <h5 class="marge_prix_d">23<span class="euro">€</span></h5>
-          </div>
+
+        <div class="border_carte_menu -- marge_des_plats -- taille_longeur_bureau_menu -- bottom_40">
+          <input type="checkbox" id="triggerAnimation9" class="hidden-checkbox">
+          <label for="triggerAnimation9" class="trigger-label">
+            <h5 class="espace_text_prix -- reduction_text">Tiramisu</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix -- reduction_text">À la noisette</h6>
+              <div class="scale-up-hor-right  -- ligne">
+                <h5 class="marge_prix_d">23<span class="euro">€</span></h5>
+              </div>
+              <div class="square">
+                <div class="circle">
+                  <div class="number">✓</div>
+                </div>
+              </div>
+            </div>
+          </label>
         </div>
       </div>
     </section>

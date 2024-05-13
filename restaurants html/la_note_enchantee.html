@@ -28,11 +28,11 @@
 
   <!-- header -->
   <header>
-    <div class="ligne">
-      <div onclick="window.history.back()">
-        <i class="fa-solid fa-arrow-left -- taille_fleche"></i>
+    <div class="ligne -- centrer_bureau">
+      <div class="marge_l_bureau" onclick="window.history.back()">
+        <i class="fa-solid fa-arrow-left -- taille_fleche taille_fleche_bureau"></i>
       </div>
-      <img class="taille_logo" src="/assets/images/logo/ohmyfood.png" alt="logo ohmyfood" />
+      <img class="taille_logo -- taille_logo_bureau" src="/assets/images/logo/ohmyfood.png" alt="logo ohmyfood" />
     </div>
   </header>
 
@@ -46,9 +46,6 @@
         <div class="espace_entre">
           <h1 class="titre -- bottom_40">La note enchantée</h1>
           <div class="deplacement_coeur_restaurants">
-            <div class="fa-regular fa-heart"></div>
-          </div>
-          <div class="deplacement_coeur_restaurants">
             <i class="fa-solid fa-heart coeur_remplis"></i>
             <i class="fa-regular fa-heart coeur_vide"></i>
           </div>
@@ -56,122 +53,209 @@
       </div>
 
       <!-- Entrées -->
-      <div class="fond_menus">
+      <div class="fond_menus_bis">
         <p class="souligner_titre_menu -- marge_titre_repas">ENTRÉES</p>
         <div class="slide-left_entree">
-          <div class="border_carte_menu -- marge_des_plats -- choix_repas">
-            <h5 class="espace_text_prix">Ravioles de foie gras</h5>
-            <div class="ligne">
-              <h6 class="espace_text_prix">
-                Accompagnées de leur crème à la truffe
-              </h6>
-              <h5 class="marge_prix_d">25<span class="euro">€</span></h5>
-              <div class="">
-                <div class="square">
-                  <div class="circle">
-                    <div class="number">✓</div>
+          <div class="border_carte_menu -- marge_des_plats -- taille_longeur_bureau_menu">
+            <input type="checkbox" id="triggerAnimation" class="hidden-checkbox">
+            <label for="triggerAnimation" class="trigger-label">
+              <h5 class="espace_text_prix -- reduction_text">Ravioles de foie gras </h5>
+              <div class="ligne">
+                <h6 class="espace_text_prix -- reduction_text">Accompagnées de leur crème à la truffe</h6>
+                <div class="scale-up-hor-right  -- ligne">
+                  <h5 class="marge_prix_d">25<span class="euro">€</span></h5>
+                  <div class="square">
+                    <div class="circle">
+                      <div class="number">✓</div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
+            </label>
           </div>
+        </div>
 
-          <div class="border_carte_menu">
-            <h5 class="espace_text_prix">Caviar osciètre</h5>
+        <div class="border_carte_menu -- marge_des_plats -- taille_longeur_bureau_menu">
+          <input type="checkbox" id="triggerAnimation2" class="hidden-checkbox">
+          <label for="triggerAnimation2" class="trigger-label">
+            <h5 class="espace_text_prix -- reduction_text">Caviar osciètre </h5>
             <div class="ligne">
-              <h6 class="espace_text_prix">
-                Sur blini à la farine de blé noir
-              </h6>
-              <h5 class="marge_prix_d">35<span class="euro">€</span></h5>
-            </div>
-          </div>
-
-          <div class="border_carte_menu">
-            <h5 class="espace_text_prix">Homard et espuma de potiron</h5>
-            <div class="ligne">
-              <h6 class="espace_text_prix">Marinés aux zestes d'orange</h6>
-              <h5 class="marge_prix_d">20<span class="euro">€</span></h5>
-            </div>
-          </div>
-
-          <div class="border_carte_menu -- bottom_40">
-            <h5 class="espace_text_prix">Foie gras de canard cuit entier</h5>
-            <div class="ligne">
-              <h6 class="espace_text_prix">
-                Confiture de figue et pain toasté
-              </h6>
-              <h5 class="marge_prix_d">35<span class="euro">€</span></h5>
-            </div>
-          </div>
-
-          <!-- Plats -->
-          <p class="souligner_titre_menu -- marge_titre_repas">PLATS</p>
-          <div class="slide-left_plat">
-            <div class="border_carte_menu">
-              <h5 class="espace_text_prix">
-                Noix de coquilles Saint-Jacques
-              </h5>
-              <div class="ligne">
-                <h6 class="espace_text_prix">
-                  Sur lit de purée de céleri-rave
-                </h6>
-                <h5 class="marge_prix_d">40<span class="euro">€</span></h5>
-              </div>
-            </div>
-
-            <div class="border_carte_menu">
-              <h5 class="espace_text_prix">Langoustine poêlée</h5>
-              <div class="ligne">
-                <h6 class="espace_text_prix">Purée de patate douce</h6>
+              <h6 class="espace_text_prix -- reduction_text">Sur blini à la farine de blé noir</h6>
+              <div class="scale-up-hor-right  -- ligne">
                 <h5 class="marge_prix_d">35<span class="euro">€</span></h5>
               </div>
+              <div class="square">
+                <div class="circle">
+                  <div class="number">✓</div>
+                </div>
+              </div>
             </div>
+          </label>
+        </div>
 
-            <div class="border_carte_menu -- bottom_40">
-              <h5 class="espace_text_prix">Mijoté de queue de bœuf</h5>
-              <div class="ligne">
-                <h6 class="espace_text_prix">
-                  Et riz sauvage aux zestes de citron
-                </h6>
+
+        <div class="border_carte_menu -- marge_des_plats -- taille_longeur_bureau_menu">
+          <input type="checkbox" id="triggerAnimation3" class="hidden-checkbox">
+          <label for="triggerAnimation3" class="trigger-label">
+            <h5 class="espace_text_prix -- reduction_text">Homard et espuma de potiron</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix -- reduction_text">Marinés aux zestes d'orange</h6>
+              <div class="scale-up-hor-right  -- ligne">
+                <h5 class="marge_prix_d">20<span class="euro">€</span></h5>
+              </div>
+              <div class="square">
+                <div class="circle">
+                  <div class="number">✓</div>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+
+        <div class="border_carte_menu -- marge_des_plats -- taille_longeur_bureau_menu -- bottom_40">
+          <input type="checkbox" id="triggerAnimation4" class="hidden-checkbox">
+          <label for="triggerAnimation4" class="trigger-label">
+            <h5 class="espace_text_prix -- reduction_text">Foie gras de canard cuit entier</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix -- reduction_text">Confiture de figue et pain toasté</h6>
+              <div class="scale-up-hor-right  -- ligne">
+                <h5 class="marge_prix_d">35<span class="euro">€</span></h5>
+              </div>
+              <div class="square">
+                <div class="circle">
+                  <div class="number">✓</div>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <!-- Plats -->
+      <p class="souligner_titre_menu -- marge_titre_repas">PLATS</p>
+      <div class="slide-left_plat">
+
+        <div class="border_carte_menu -- marge_des_plats -- taille_longeur_bureau_menu">
+          <input type="checkbox" id="triggerAnimation5" class="hidden-checkbox">
+          <label for="triggerAnimation5" class="trigger-label">
+            <h5 class="espace_text_prix -- reduction_text">Noix de coquilles Saint-Jacques</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix -- reduction_text">Sur lit de purée de céleri-rave</h6>
+              <div class="scale-up-hor-right  -- ligne">
+                <h5 class="marge_prix_d">40<span class="euro">€</span></h5>
+              </div>
+              <div class="square">
+                <div class="circle">
+                  <div class="number">✓</div>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+
+
+        <div class="border_carte_menu -- marge_des_plats -- taille_longeur_bureau_menu">
+          <input type="checkbox" id="triggerAnimation6" class="hidden-checkbox">
+          <label for="triggerAnimation6" class="trigger-label">
+            <h5 class="espace_text_prix -- reduction_text">Langoustine poêlée</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix -- reduction_text">Purée de patate douce</h6>
+              <div class="scale-up-hor-right  -- ligne">
+                <h5 class="marge_prix_d">35<span class="euro">€</span></h5>
+              </div>
+              <div class="square">
+                <div class="circle">
+                  <div class="number">✓</div>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+
+        <div class="border_carte_menu -- marge_des_plats -- taille_longeur_bureau_menu -- bottom_40">
+          <input type="checkbox" id="triggerAnimation7" class="hidden-checkbox">
+          <label for="triggerAnimation7" class="trigger-label">
+            <h5 class="espace_text_prix -- reduction_text">Mijoté de queue de bœuf </h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix -- reduction_text">Et riz sauvage aux zestes de citron</h6>
+              <div class="scale-up-hor-right  -- ligne">
                 <h5 class="marge_prix_d">44<span class="euro">€</span></h5>
               </div>
-            </div>
-          </div>
-
-          <!-- desserts -->
-          <div>
-            <p class="souligner_titre_menu -- marge_titre_repas">DESSERTS</p>
-            <div class="slide-left_dessert">
-              <div class="border_carte_menu">
-                <h5 class="espace_text_prix">Macaron noisette et chocolat</h5>
-                <div class="ligne">
-                  <h6 class="espace_text_prix">
-                    Glace au caramel brun et sel de Guérande
-                  </h6>
-                  <h5 class="marge_prix_d">18<span class="euro">€</span></h5>
-                </div>
-              </div>
-
-              <div class="border_carte_menu">
-                <h5 class="espace_text_prix">Baba au rhum revisité</h5>
-                <div class="ligne">
-                  <h6 class="espace_text_prix">Avec son coulis de citron</h6>
-                  <h5 class="marge_prix_d">22<span class="euro">€</span></h5>
-                </div>
-              </div>
-
-              <div class="border_carte_menu">
-                <h5 class="espace_text_prix">Tarte au citron meringuée</h5>
-                <div class="ligne">
-                  <h6 class="espace_text_prix">Déstructurée</h6>
-                  <h5 class="marge_prix_d">23<span class="euro">€</span></h5>
+              <div class="square">
+                <div class="circle">
+                  <div class="number">✓</div>
                 </div>
               </div>
             </div>
-          </div>
+          </label>
+        </div>
+      </div>
+
+
+      <!-- desserts -->
+      <p class="souligner_titre_menu -- marge_titre_repas">DESSERTS</p>
+      <div class="slide-left_dessert">
+
+        <div class="border_carte_menu -- marge_des_plats -- taille_longeur_bureau_menu">
+          <input type="checkbox" id="triggerAnimation8" class="hidden-checkbox">
+          <label for="triggerAnimation8" class="trigger-label">
+            <h5 class="espace_text_prix -- reduction_text">Macaron noisette et chocolat</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix -- reduction_text">Glace au caramel brun et sel de Guérande</h6>
+              <div class="scale-up-hor-right  -- ligne">
+                <h5 class="marge_prix_d">18<span class="euro">€</span></h5>
+              </div>
+              <div class="square">
+                <div class="circle">
+                  <div class="number">✓</div>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+
+
+        <div class="border_carte_menu -- marge_des_plats -- taille_longeur_bureau_menu">
+          <input type="checkbox" id="triggerAnimation9" class="hidden-checkbox">
+          <label for="triggerAnimation9" class="trigger-label">
+            <h5 class="espace_text_prix -- reduction_text">Baba au rhum revisité </h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix -- reduction_text">Avec son coulis de citron</h6>
+              <div class="scale-up-hor-right  -- ligne">
+                <h5 class="marge_prix_d">22<span class="euro">€</span></h5>
+              </div>
+              <div class="square">
+                <div class="circle">
+                  <div class="number">✓</div>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+
+
+        <div class="border_carte_menu -- marge_des_plats -- taille_longeur_bureau_menu -- bottom_40">
+          <input type="checkbox" id="triggerAnimation10" class="hidden-checkbox">
+          <label for="triggerAnimation10" class="trigger-label">
+            <h5 class="espace_text_prix -- reduction_text">Tarte au citron meringuée</h5>
+            <div class="ligne">
+              <h6 class="espace_text_prix -- reduction_text">Déstructurée
+              </h6>
+              <div class="scale-up-hor-right  -- ligne">
+                <h5 class="marge_prix_d">23<span class="euro">€</span></h5>
+              </div>
+              <div class="square">
+                <div class="circle">
+                  <div class="number">✓</div>
+                </div>
+              </div>
+            </div>
+          </label>
         </div>
       </div>
     </section>
+
+
+
 
     <!-- boutton -->
     <div class="centrer -- botton_30">
