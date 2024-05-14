@@ -17,13 +17,13 @@
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <link rel="stylesheet" href="/assets/CSS/style.css" />
+  <link rel="stylesheet" href="./assets/CSS/style.css" />
 </head>
 
 <body>
   <!-- Loader -->
   <div class="loader__container">
-    <img src="/assets/images/logo/ohmyfood.png" alt="logo d'ohmyfood" />
+    <img src="./assets/images/logo/ohmyfood.png" alt="logo d'ohmyfood" />
   </div>
 
   <header>
@@ -31,14 +31,14 @@
       <div class="marge_l_bureau" onclick="window.history.back()">
         <i class="fa-solid fa-arrow-left -- taille_fleche taille_fleche_bureau"></i>
       </div>
-      <img class="taille_logo -- taille_logo_bureau" src="/assets/images/logo/ohmyfood.png" alt="logo ohmyfood" />
+      <img class="taille_logo -- taille_logo_bureau" src="./assets/images/logo/ohmyfood.png" alt="logo ohmyfood" />
     </div>
   </header>
 
 
   <!-- main -->
   <main>
-    <img class="image_menu" src="/assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+    <img class="image_menu" src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
       alt="Photo plat" />
     <section class="marge_main_bureau -- marge_menu_carte">
       <div class="fond_menus">
@@ -46,8 +46,10 @@
           <h1 class="titre -- bottom_40">Le délice des sens</h1>
         </div>
         <div class="deplacement_coeur_restaurants">
-          <i class="fa-solid fa-heart coeur_remplis"></i>
-          <i class="fa-regular fa-heart coeur_vide"></i>
+          <input type="checkbox" id="heart-checkbox" class="hidden-checkbox">
+          <label for="heart-checkbox">
+            <i class="fa-solid fa-heart coeur_remplis"></i>
+            <i class="fa-regular fa-heart coeur_vide"></i>
         </div>
       </div>
       </div>
@@ -236,7 +238,7 @@
 
     <!-- boutton -->
     <div class="centrer -- -- botton_30">
-      <button class="boutton -- boutton_color">Commander</button>
+      <button class="boutton -- boutton_color -- boutton_restaurants">Commander</button>
     </div>
   </main>
 

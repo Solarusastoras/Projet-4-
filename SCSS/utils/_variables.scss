@@ -1,3 +1,52 @@
+// Mouvement des éléments
+.ligne {
+  display: flex;
+  flex-direction: row;
+}
+
+.centrer,
+.centrer_bureau {
+  display: flex;
+  justify-content: center;
+}
+
+.colonne {
+  display: flex;
+  flex-direction: column;
+}
+
+.espace_entre {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+}
+
+.fond {
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.2));
+}
+
+.bottom_40 {
+  margin-bottom: 40px;
+}
+
+.botton_30 {
+  margin-bottom: 30px;
+}
+
+.marge_left_10 {
+  margin-left: 10px;
+}
+
+.boutton_index {
+  width: 218px;
+}
+
+.boutton_restaurants {
+  width: 166px;
+}
+
+// Animation
+
 // Entrée des menu
 .slide-left_entree {
   @include slide-in(0.5s);
@@ -10,27 +59,32 @@
 }
 
 //Coeur
+.hidden-checkbox {
+  display: none;
+}
 
 .coeur_remplis {
   opacity: 0;
   z-index: 999;
 }
 
-.coeur_remplis:hover {
+#heart-checkbox:checked + label .coeur_remplis, 
+#heart-checkbox2:checked + label .favoris1 .coeur_remplis,
+#heart-checkbox3:checked + label .favoris2 .coeur_remplis,
+#heart-checkbox4:checked + label .favoris3 .coeur_remplis  {
   opacity: 1;
-  background-image: linear-gradient(to bottom, $fifths-color, $second-color);
+  background: linear-gradient(to bottom, $base-color 50%, $fifths-color, $second-color);
+  background-size: 100% 200%;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   cursor: pointer;
-  animation: fade-in 250ms ease-in-out;
+  animation: fill-heart 1.5s ease-in-out forwards;
   transition: all;
-  transition: 3s;
   z-index: 0;
 }
 
 // Choix du repas
-
 .hidden-checkbox {
   display: none;
 }
@@ -47,6 +101,7 @@
   cursor: pointer;
 }
 
+// Remplacement text par des points
 .hidden-checkbox:checked + .trigger-label .square {
   display: block;
 }
@@ -55,15 +110,4 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-@keyframes scale-up-hor-right {
-  0% {
-    transform: scaleX(0);
-    transform-origin: 100% 100%;
-  }
-  100% {
-    transform: scaleX(1);
-    transform-origin: 100% 100%;
-  }
 }

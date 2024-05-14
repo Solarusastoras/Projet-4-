@@ -1,6 +1,5 @@
 //Boutton
 .boutton {
-  width: 218px;
   height: 50px;
   border-radius: 30px;
   border: none;
@@ -19,7 +18,8 @@
 
 // validation plats
 .square {
-  width: 59px;
+  min-width: 59px;
+  max-width: 59px;
   height: 70px;
   background-color: $third-color;
   border-radius: 0px 10px 10px 0px;
