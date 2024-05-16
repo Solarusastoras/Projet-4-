@@ -90,20 +90,21 @@
 }
 
 .espace_titre_coeur {
-  position: absolute;
+  position: relative;
   bottom: 10px;
+  right: 10px;
 }
 
 .coeur_vide,
 .coeur_remplis {
   position: absolute;
-  right: 20px;
+  right: 0px;
 }
 
 .deplacement_coeur_restaurants {
   position: relative;
-  top: 35px;
-  right: 20px;
+  top: 40px;
+  right: 8%;
 }
 
 .fond_menus {
@@ -116,7 +117,8 @@
 // Menu
 .marge_des_plats,
 .marge_titre_repas {
-  margin: 0px -10px 0px 10px;
+  margin-left: 3%;
+  margin-right: 5%;
 }
 
 .marge_prix_d {
@@ -130,4 +132,8 @@
 h5,
 h6 {
   margin-left: 15px;
+}
+
+.marge_top_boutton {
+  margin-top: -60px;
 }

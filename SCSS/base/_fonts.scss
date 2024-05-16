@@ -47,11 +47,11 @@ li {
   font-size: 19px;
 }
 
-// Menu
+// Restaurants html
 h1.titre {
   font-family: $font-tittle;
-  font-size: 22px;
-  font-weight: 100;
+  font-size: 24px;
+  font-weight: 400;
 }
 
 h5 {
@@ -63,9 +63,8 @@ h6 {
   font-weight: 400;
 }
 
-
 @media (min-width: 1024.1px) and (max-width: 1920px) {
   ul {
-    font-size: 16px ;
+    font-size: 16px;
   }
 }

@@ -58,32 +58,6 @@
   @include slide-in(1.5s);
 }
 
-//Coeur
-.hidden-checkbox {
-  display: none;
-}
-
-.coeur_remplis {
-  opacity: 0;
-  z-index: 999;
-}
-
-#heart-checkbox:checked + label .coeur_remplis, 
-#heart-checkbox2:checked + label .favoris1 .coeur_remplis,
-#heart-checkbox3:checked + label .favoris2 .coeur_remplis,
-#heart-checkbox4:checked + label .favoris3 .coeur_remplis  {
-  opacity: 1;
-  background: linear-gradient(to bottom, $base-color 50%, $fifths-color, $second-color);
-  background-size: 100% 200%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  cursor: pointer;
-  animation: fill-heart 1.5s ease-in-out forwards;
-  transition: all;
-  z-index: 0;
-}
-
 // Choix du repas
 .hidden-checkbox {
   display: none;
@@ -96,12 +70,12 @@
 
 .hidden-checkbox:checked + .trigger-label .scale-up-hor-right {
   transform: translateX(50px);
-  animation: scale-up-hor-right 0.5s ease-in-out;
+  animation: scale-up-hor-right 0.4s ease-in-out;
   animation-fill-mode: forwards;
   cursor: pointer;
 }
 
-// Remplacement text par des points
+// Remplacement texte par des points
 .hidden-checkbox:checked + .trigger-label .square {
   display: block;
 }
