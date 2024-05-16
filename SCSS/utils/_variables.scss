@@ -33,6 +33,10 @@
   margin-bottom: 30px;
 }
 
+.bottom_50 {
+  margin-bottom: 50px;
+}
+
 .marge_left_10 {
   margin-left: 10px;
 }
@@ -64,8 +68,9 @@
 }
 
 .square {
-  margin-top: -42px;
   display: none;
+  margin-top: -33%;
+  right: -1px;
 }
 
 .hidden-checkbox:checked + .trigger-label .scale-up-hor-right {

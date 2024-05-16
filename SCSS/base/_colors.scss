@@ -47,6 +47,15 @@ a {
 .boutton_color {
   background: linear-gradient(to bottom, $fifths-color, $second-color);
   color: $base-color;
+  box-shadow:
+    4px 4px 5px rgba(0, 0, 0, 0.2),
+    -4px 4px 5px rgba(0, 0, 0, 0.2);
+  &:hover {
+    filter: brightness(110%);
+    box-shadow:
+      -5px 6px 5px rgba(0, 0, 0, 0.3),
+      5px 6px 5px rgba(0, 0, 0, 0.3);
+  }
 }
 
 .cercle {
