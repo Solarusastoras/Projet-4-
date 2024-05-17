@@ -8,3 +8,39 @@
   margin: 30px -30px -10px 0px;
   font-size: 20px;
 }
+
+// tablette
+@media (min-width: 768px) and (max-width: 1279px) {
+  .centrer_logo_tablette {
+    margin-left: 11%;
+  }
+}
+
+// Desktop
+@media (min-width: 1280px) and (max-width: 1599px) {
+  .centrer_logo_bureau {
+    margin-left: 150px;
+    margin-bottom: 35px;
+  }
+
+  // Restaurants HTML
+  .marge_b_fond_bureau {
+    padding-bottom: 30px;
+  }
+
+  .marge_l_bureau {
+    position: absolute;
+    left: 20px;
+  }
+
+  .taille_fleche_bureau {
+    font-size: 30px;
+    margin-top: 19px;
+  }
+
+  .taille_logo_bureau {
+    width: 200px;
+    height: 34px;
+    margin-left: 12%;
+  }
+}

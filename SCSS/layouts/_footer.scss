@@ -22,3 +22,29 @@ li {
 .marge_footer {
   padding: 5px;
 }
+
+// tablette
+@media (min-width: 768px) and (max-width: 1279px) {
+}
+
+// Desktop
+@media (min-width: 1280px) and (max-width: 1599px) {
+  .logo_header_position {
+    position: absolute;
+    right: 5%;
+    margin-top: 40px;
+  }
+
+  .ul_bureau {
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    margin-left: 40%;
+    padding-bottom: -5px;
+  }
+
+  .ul_bureau .ecart_li_bureau {
+    padding-right: 25px;
+    padding-bottom: 0px;
+  }
+}

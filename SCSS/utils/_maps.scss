@@ -45,10 +45,6 @@
     margin: 0px;
   }
 
-  .centrer_logo_tablette {
-    margin-left: 11%;
-  }
-
   .marge_tablette {
     margin: 0% 3% 0% 3%;
   }
@@ -115,16 +111,6 @@
   // INDEX HTML
   .marge_bureau {
     margin: 0px;
-  }
-
-  // Header
-  .centrer_logo_bureau {
-    margin-left: 150px;
-    margin-bottom: 35px;
-  }
-
-  .marge_b_fond_bureau {
-    padding-bottom: 30px;
   }
 
   // Main
@@ -199,53 +185,17 @@
     transition: all;
     z-index: 0;
   }
-  
+
   .coeur_remplis:not(:hover) {
     opacity: 0.01;
     background: none;
     color: initial;
     animation: empty-heart 1.5s ease-in-out forwards;
-}
-  // Footer
-  .logo_header_position {
-    position: absolute;
-    right: 5%;
-    margin-top: 40px;
-  }
-
-  .ul_bureau {
-    display: flex;
-    flex-direction: row;
-    padding-top: 40px;
-    margin-left: 40%;
-    padding-bottom: -5px;
-  }
-
-  .ul_bureau .ecart_li_bureau {
-    padding-right: 25px;
-    padding-bottom: 0px;
   }
 }
 
 @media (min-width: 1280px) and (max-width: 1599px) {
   // Restaurants HTML
-
-  // Header
-  .marge_l_bureau {
-    position: absolute;
-    left: 20px;
-  }
-
-  .taille_fleche_bureau {
-    font-size: 30px;
-    margin-top: 19px;
-  }
-
-  .taille_logo_bureau {
-    width: 200px;
-    height: 34px;
-    margin-left: 12%;
-  }
 
   // Main
   .centrer_bureau_resto_desktop {

@@ -10,6 +10,7 @@
   align-items: center;
   z-index: 999;
   animation: loaderFadeOut 2s forwards;
+  backdrop-filter: blur(10px);
 }
 
 .loader img {
