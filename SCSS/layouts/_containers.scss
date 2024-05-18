@@ -122,8 +122,13 @@
 }
 
 .marge_prix_d {
+  display: block;
   margin-right: 15px;
+  padding-top: 30px;
+  position: relative;
+  top: -32px;
 }
+
 
 .espace_text_prix {
   margin: 0px auto 5px 10px;
