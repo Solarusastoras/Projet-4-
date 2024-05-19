@@ -112,6 +112,10 @@
   background-color: $heighth-color;
 }
 
+h3 {
+  margin-top: 10px;
+}
+
 //Plats
 
 // Menu
@@ -121,6 +125,15 @@
   margin-right: 5%;
 }
 
+.hidden-checkbox {
+  display: none;
+}
+
+.square {
+  display: none;
+  margin-top: -33%;
+  right: -1px;
+}
 .marge_prix_d {
   display: block;
   margin-right: 15px;
@@ -129,6 +142,11 @@
   top: -32px;
 }
 
+.marge_prix_d1 {
+  display: block;
+  margin-right: 15px;
+  position: relative;
+}
 
 .espace_text_prix {
   margin: 0px auto 5px 10px;

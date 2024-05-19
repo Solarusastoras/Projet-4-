@@ -63,21 +63,18 @@
 }
 
 // Choix du repas
-.hidden-checkbox {
-  display: none;
-}
 
-.square {
-  display: none;
-  margin-top: -33%;
-  right: -1px;
-}
-
-.hidden-checkbox:checked + .trigger-label .scale-up-hor-right {
+.hidden-checkbox:checked ~ .trigger-label .scale-up-hor-right {
   transform: translateX(50px);
   animation: scale-up-hor-right 0.4s ease-in-out;
   animation-fill-mode: forwards;
   cursor: pointer;
+}
+
+.hidden-checkbox:checked ~ .trigger-label .marge_prix_d1 {
+  transform: translateX(-60px);
+  color: transparent;
+  width: 80px;
 }
 
 // Remplacement texte par des points

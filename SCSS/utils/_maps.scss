@@ -145,15 +145,15 @@
   // Restaurant
 
   .carte_bureau {
-    width: 450px;
+    width: 430px;
     height: 251px;
-    margin-right: 100px;
+    margin-right: 50px;
   }
 
   .restaurants_alignement_bureau {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px;
     padding-top: 28px;
   }
 
@@ -163,8 +163,8 @@
   .favoris2_bureau,
   .favoris3_bureau {
     position: relative;
-    top: 180px;
-    left: -140px;
+    top: 170px;
+    left: -80px;
   }
 
   .coeur_remplis {
@@ -225,5 +225,28 @@
 
   .marge_boutton_desktop {
     margin-top: -60px;
+  }
+
+  .trigger-label:hover + .hidden-checkbox .scale-up-hor-right {
+    transform: translateX(50px);
+    animation: scale-up-hor-right 0.4s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+
+  .trigger-label:hover + .hidden-checkbox .marge_prix_d1 {
+    transform: translateX(-60px);
+    color: transparent;
+    width: 80px;
+  }
+
+  // Remplacement texte par des points
+  .trigger-label:hover + .hidden-checkbox .square {
+    display: block;
+  }
+
+  .trigger-label:hover + .hidden-checkbox .reduction_text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 }
