@@ -93,6 +93,7 @@
     font-family: $font-tittle;
     font-size: 24px;
     font-weight: 400;
+    margin-left: 3%;
   }
   .taille_fleche_tablette {
     font-size: 30px;
@@ -227,16 +228,20 @@
     margin-top: -60px;
   }
 
-  .trigger-label:hover + .hidden-checkbox .scale-up-hor-right {
+  .hidden-checkbox:hover ~ .trigger-label .scale-up-hor-right {
     transform: translateX(50px);
     animation: scale-up-hor-right 0.4s ease-in-out;
     animation-fill-mode: forwards;
+    cursor: pointer;
   }
 
-  .trigger-label:hover + .hidden-checkbox .marge_prix_d1 {
+  .hidden-checkbox:hover ~ .trigger-label .square {
+    display: block;
+  }
+
+  .hidden-checkbox:hover ~ .trigger-label .marge_prix_d1 {
     transform: translateX(-60px);
     color: transparent;
-    width: 80px;
   }
 
   // Remplacement texte par des points

@@ -51,6 +51,7 @@
 // Restaurants carte
 .marge_restaurants {
   margin: 15px;
+  margin-bottom: 72px;
 }
 
 .marge_titre_restaurants {
@@ -150,6 +151,17 @@ h3 {
 
 .espace_text_prix {
   margin: 0px auto 5px 10px;
+}
+
+// Remplacement texte par des points
+.hidden-checkbox:checked + .trigger-label .square {
+  display: block;
+}
+
+.hidden-checkbox:checked + .trigger-label .reduction_text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 h5,

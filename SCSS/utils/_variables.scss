@@ -77,13 +77,3 @@
   width: 80px;
 }
 
-// Remplacement texte par des points
-.hidden-checkbox:checked + .trigger-label .square {
-  display: block;
-}
-
-.hidden-checkbox:checked + .trigger-label .reduction_text {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
