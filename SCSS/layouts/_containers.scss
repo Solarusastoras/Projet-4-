@@ -156,11 +156,29 @@ h3 {
 }
 
 // Remplacement texte par des points
-#moveable:active .trigger-label .square {
+#moveable:active .marge_prix_d,
+#moveable1:active .marge_prix_d,
+#moveable2:active .marge_prix_d,
+#moveable3:active .marge_prix_d,
+#moveable4:active .marge_prix_d,
+#moveable5:active .marge_prix_d,
+#moveable6:active .marge_prix_d,
+#moveable7:active .marge_prix_d,
+#moveable8:active .marge_prix_d,
+#moveable9:active .marge_prix_d {
   display: block;
 }
 
-#moveable:active .reduction_text {
+#moveable:active .reduction_text,
+#moveable1:active .reduction_text,
+#moveable2:active .reduction_text,
+#moveable3:active .reduction_text,
+#moveable4:active .reduction_text,
+#moveable5:active .reduction_text,
+#moveable6:active .reduction_text,
+#moveable7:active .reduction_text,
+#moveable8:active .reduction_text,
+#moveable9:active .reduction_text {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

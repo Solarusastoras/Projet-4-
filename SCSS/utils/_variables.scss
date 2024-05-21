@@ -63,11 +63,29 @@
 }
 
 // Choix du repas
-#moveable {
+#moveable,
+.moveable1,
+.moveable2,
+.moveable3,
+.moveable4,
+.moveable5,
+.moveable6,
+.moveable7,
+.moveable8,
+.moveable9 {
   box-sizing: box;
 }
 
-#moveable:active .square {
+#moveable:active .square,
+#moveable1:active .square,
+#moveable2:active .square,
+#moveable3:active .square,
+#moveable4:active .square,
+#moveable5:active .square,
+#moveable6:active .square,
+#moveable7:active .square,
+#moveable8:active .square,
+#moveable9:active .square {
   transform: translateX(-50px);
   animation: scale-up-hor-right 0.3s ease-in-out;
   animation-fill-mode: forwards;
@@ -75,17 +93,34 @@
   display: block;
 }
 
-#moveable:active .marge_prix_d {
-  transform: translateX(-10px);
-  animation: slide-in 1.5s ease-in-out;
+#moveable:active .marge_prix_d ,
+#moveable1:active .marge_prix_d,
+#moveable2:active .marge_prix_d,
+#moveable3:active .marge_prix_d,
+#moveable4:active .marge_prix_d,
+#moveable5:active .marge_prix_d,
+#moveable6:active .marge_prix_d,
+#moveable7:active .marge_prix_d,
+#moveable8:active .marge_prix_d,
+#moveable9:active .marge_prix_d {
+  transform: translateX(-50px);
+  animation: scale-up-hor-right 0.3s ease-in-out;
   animation-fill-mode: forwards;
   cursor: pointer;
 }
 
-#moveable:active .marge_prix_d1 {
-  transform: translateX(-60px);
-  animation: scale-up-hor-right 0.4s ease-in-out;
-  cursor: pointer;
+#moveable:active .marge_prix_d1,
+#moveable1:active .marge_prix_d1,
+#moveable2:active .marge_prix_d1,
+#moveable3:active .marge_prix_d1,
+#moveable4:active .marge_prix_d1,
+#moveable5:active .marge_prix_d1,
+#moveable6:active .marge_prix_d1,
+#moveable7:active .marge_prix_d1,
+#moveable8:active .marge_prix_d1,
+#moveable9:active .marge_prix_d1 {
+  transform: translateX(-50px);
+  animation: scale-up-hor-right 0.3s ease-in-out;
   animation-fill-mode: forwards;
-  width: 80px;
+  cursor: pointer;
 }

@@ -95,15 +95,10 @@
     font-weight: 400;
     margin-left: 3%;
   }
+
   .taille_fleche_tablette {
     font-size: 30px;
     margin-top: 19px;
-  }
-
-  .taille_fleche_bureau {
-    font-size: 30px;
-    margin-top: 40px;
-    margin-left: -120px;
   }
 }
 
@@ -112,6 +107,12 @@
   // INDEX HTML
   .marge_bureau {
     margin: 0px;
+  }
+
+  .taille_fleche_bureau {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: -20%;
   }
 
   // Main
@@ -228,30 +229,53 @@
     margin-top: -60px;
   }
 
-  .hidden-checkbox:hover ~ .trigger-label .scale-up-hor-right {
-    transform: translateX(50px);
-    animation: scale-up-hor-right 0.4s ease-in-out;
-    animation-fill-mode: forwards;
-    cursor: pointer;
-  }
-
-  .hidden-checkbox:hover ~ .trigger-label .square {
+  #moveable .marge_prix_d::before {
     display: block;
   }
 
-  .hidden-checkbox:hover ~ .trigger-label .marge_prix_d1 {
+  #moveable:hover .square,
+  #moveable1:hover .square,
+  #moveable2:hover .square,
+  #moveable3:hover .square,
+  #moveable4:hover .square,
+  #moveable5:hover .square,
+  #moveable6:hover .square,
+  #moveable7:hover .square,
+  #moveable8:hover .square,
+  #moveable9:hover .square {
+    @include slide-in1(0.3s); 
+    cursor: pointer;
+    display: block;
+  }
+
+  #moveable:hover .marge_prix_d,
+  #moveable1:hover .marge_prix_d,
+  #moveable2:hover .marge_prix_d,
+  #moveable3:hover .marge_prix_d,
+  #moveable4:hover .marge_prix_d,
+  #moveable5:hover .marge_prix_d,
+  #moveable6:hover .marge_prix_d,
+  #moveable7:hover .marge_prix_d,
+  #moveable8:hover .marge_prix_d,
+  #moveable9:hover .marge_prix_d {
+    @include slide-in1(0.3s); 
+  cursor: pointer;
+  display: block;
+  }
+
+  #moveable:hover .marge_prix_d1,
+  #moveable1:hover .marge_prix_d1,
+  #moveable2:hover .marge_prix_d1,
+  #moveable3:hover .marge_prix_d1,
+  #moveable4:hover .marge_prix_d1,
+  #moveable5:hover .marge_prix_d1,
+  #moveable6:hover .marge_prix_d1,
+  #moveable7:hover .marge_prix_d1,
+  #moveable8:hover .marge_prix_d1,
+  #moveable9:hover .marge_prix_d1 {
     transform: translateX(-60px);
     color: transparent;
-  }
-
-  // Remplacement texte par des points
-  .trigger-label:hover + .hidden-checkbox .square {
-    display: block;
-  }
-
-  .trigger-label:hover + .hidden-checkbox .reduction_text {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    @include slideIn1(0.3s); 
+    cursor: pointer;
   }
 }

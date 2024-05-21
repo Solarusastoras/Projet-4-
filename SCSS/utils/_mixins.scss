@@ -31,18 +31,32 @@
     }
   }
   opacity: 0;
-  animation: slideIn 0.5s ease-out $delay forwards;
+  animation: slideIn 0.4s ease-out $delay forwards;
 }
 
 // Animation choix des plats
 
-@keyframes scale-up-hor-right {
-  0% {
-    transform: scaleX(0);
-    transform-origin: 100% 100%;
+@mixin slide-in-marge_prix($delay, $distance: 50px) {
+  @keyframes slideInMargePrix {
+    from {
+      transform: translatex($distance);
+    }
+    to {
+      transform: translatex(100%);
+    }
   }
-  100% {
-    transform: scaleX(1);
-    transform-origin: 100% 100%;
+  animation: slideInMargePrix 0.4s ease-out $delay forwards;
+}
+
+// Animation pour .square
+@mixin slide-in-square($delay, $distance: 50px) {
+  @keyframes slideInSquare {
+    from {
+      transform: translatex($distance);
+    }
+    to {
+      transform: translatex(100%);
+    }
   }
+  animation: slideInSquare 0.4s ease-out $delay forwards;
 }
