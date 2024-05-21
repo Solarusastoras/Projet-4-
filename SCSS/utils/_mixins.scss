@@ -26,7 +26,7 @@
       opacity: 0;
     }
     to {
-      transform: translatex(0);
+      transform: translatex(100);
       opacity: 1;
     }
   }
@@ -36,27 +36,11 @@
 
 // Animation choix des plats
 
-@mixin slide-in-marge_prix($delay, $distance: 50px) {
-  @keyframes slideInMargePrix {
-    from {
-      transform: translatex($distance);
-    }
-    to {
-      transform: translatex(100%);
-    }
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
   }
-  animation: slideInMargePrix 0.4s ease-out $delay forwards;
-}
-
-// Animation pour .square
-@mixin slide-in-square($delay, $distance: 50px) {
-  @keyframes slideInSquare {
-    from {
-      transform: translatex($distance);
-    }
-    to {
-      transform: translatex(100%);
-    }
+  100% {
+    transform: translateX(-50px);
   }
-  animation: slideInSquare 0.4s ease-out $delay forwards;
 }

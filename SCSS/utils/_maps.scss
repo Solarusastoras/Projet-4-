@@ -39,6 +39,8 @@
   margin-right: 0%;
 }
 
+
+
 // tablette
 @media (min-width: 768px) and (max-width: 1279px) {
   .marge_bureau {
@@ -95,25 +97,22 @@
     font-weight: 400;
     margin-left: 3%;
   }
-
   .taille_fleche_tablette {
     font-size: 30px;
-    margin-top: 19px;
+    margin-top: 45px;
+    position: absolue;
+    margin-left: 10%;
   }
+ 
 }
 
 // Desktop
-@media (min-width: 1280px) and (max-width: 1599px) {
+@media (min-width: 1280px)  {
   // INDEX HTML
   .marge_bureau {
     margin: 0px;
   }
 
-  .taille_fleche_bureau {
-    font-size: 30px;
-    margin-top: 20px;
-    margin-left: -20%;
-  }
 
   // Main
   .marge_bureau {
@@ -196,10 +195,18 @@
   }
 }
 
-@media (min-width: 1280px) and (max-width: 1599px) {
-  // Restaurants HTML
+  // Desktop Restaurants HTML
+@media (min-width: 1280px) {
+
 
   // Main
+
+  .taille_fleche_bureau {
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: -20%;
+  }
+
   .centrer_bureau_resto_desktop {
     display: flex;
     justify-content: center;
@@ -229,8 +236,18 @@
     margin-top: -60px;
   }
 
-  #moveable .marge_prix_d::before {
-    display: block;
+  // Choix des plats
+  #moveable,
+  .moveable1,
+  .moveable2,
+  .moveable3,
+  .moveable4,
+  .moveable5,
+  .moveable6,
+  .moveable7,
+  .moveable8,
+  .moveable9 {
+    box-sizing: box;
   }
 
   #moveable:hover .square,
@@ -243,9 +260,10 @@
   #moveable7:hover .square,
   #moveable8:hover .square,
   #moveable9:hover .square {
-    @include slide-in1(0.3s); 
-    cursor: pointer;
+    transform: scaleX(0px);
+    animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     display: block;
+    margin-left: -50px;
   }
 
   #moveable:hover .marge_prix_d,
@@ -258,9 +276,10 @@
   #moveable7:hover .marge_prix_d,
   #moveable8:hover .marge_prix_d,
   #moveable9:hover .marge_prix_d {
-    @include slide-in1(0.3s); 
-  cursor: pointer;
-  display: block;
+    transform: scaleX(-50px);
+    animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    display: block;
+    
   }
 
   #moveable:hover .marge_prix_d1,
@@ -273,9 +292,9 @@
   #moveable7:hover .marge_prix_d1,
   #moveable8:hover .marge_prix_d1,
   #moveable9:hover .marge_prix_d1 {
-    transform: translateX(-60px);
     color: transparent;
-    @include slideIn1(0.3s); 
-    cursor: pointer;
+    transform: scaleX(-50px);
+    animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    display: block;
   }
 }

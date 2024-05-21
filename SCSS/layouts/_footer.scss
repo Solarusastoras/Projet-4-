@@ -28,7 +28,7 @@ li {
 }
 
 // Desktop
-@media (min-width: 1280px) and (max-width: 1599px) {
+@media (min-width: 1280px) {
   .logo_header_position {
     position: absolute;
     right: 30px;
@@ -46,5 +46,9 @@ li {
   .ul_bureau .ecart_li_bureau {
     padding-right: 20px;
     padding-bottom: 0px;
+  }
+
+  ul {
+    font-size: 16px;
   }
 }
