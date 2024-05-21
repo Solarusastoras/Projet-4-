@@ -132,9 +132,11 @@ h3 {
 
 .square {
   display: none;
-  margin-top: -33%;
+  margin-top: -38px;
+  position: relative;
   right: -1px;
 }
+
 .marge_prix_d {
   display: block;
   margin-right: 15px;
@@ -154,11 +156,11 @@ h3 {
 }
 
 // Remplacement texte par des points
-.hidden-checkbox:checked + .trigger-label .square {
+#moveable:active .trigger-label .square {
   display: block;
 }
 
-.hidden-checkbox:checked + .trigger-label .reduction_text {
+#moveable:active .reduction_text {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

@@ -63,17 +63,29 @@
 }
 
 // Choix du repas
+#moveable {
+  box-sizing: box;
+}
 
-.hidden-checkbox:checked ~ .trigger-label .scale-up-hor-right {
-  transform: translateX(50px);
-  animation: scale-up-hor-right 0.4s ease-in-out;
+#moveable:active .square {
+  transform: translateX(-50px);
+  animation: scale-up-hor-right 0.3s ease-in-out;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+  display: block;
+}
+
+#moveable:active .marge_prix_d {
+  transform: translateX(-10px);
+  animation: slide-in 1.5s ease-in-out;
   animation-fill-mode: forwards;
   cursor: pointer;
 }
 
-.hidden-checkbox:checked ~ .trigger-label .marge_prix_d1 {
+#moveable:active .marge_prix_d1 {
   transform: translateX(-60px);
-  color: transparent;
+  animation: scale-up-hor-right 0.4s ease-in-out;
+  cursor: pointer;
+  animation-fill-mode: forwards;
   width: 80px;
 }
-
