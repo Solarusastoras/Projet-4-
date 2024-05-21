@@ -1,11 +1,4 @@
 @media (min-width: 320px) and (max-width: 767.99px) {
-  .taille_logo {
-    width: 60%;
-    margin-left: 20%;
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-  }
-
   //Coeur
   .hidden-checkbox {
     display: none;
@@ -38,8 +31,6 @@
   width: 94%;
   margin-right: 0%;
 }
-
-
 
 // tablette
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -103,16 +94,14 @@
     position: absolue;
     margin-left: 10%;
   }
- 
 }
 
 // Desktop
-@media (min-width: 1280px)  {
+@media (min-width: 1280px) {
   // INDEX HTML
   .marge_bureau {
     margin: 0px;
   }
-
 
   // Main
   .marge_bureau {
@@ -195,10 +184,8 @@
   }
 }
 
-  // Desktop Restaurants HTML
+// Desktop Restaurants HTML
 @media (min-width: 1280px) {
-
-
   // Main
 
   .taille_fleche_bureau {
@@ -279,7 +266,6 @@
     transform: scaleX(-50px);
     animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     display: block;
-    
   }
 
   #moveable:hover .marge_prix_d1,

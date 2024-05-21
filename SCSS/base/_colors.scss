@@ -36,6 +36,7 @@ a {
   background-color: $base-color;
 }
 
+// Fonctionnement
 .icon_color {
   color: $fourth-color;
   &:hover,
@@ -44,9 +45,12 @@ a {
   }
 }
 
+// Boutton
 .boutton_color {
   background: linear-gradient(to bottom, $fifths-color, $second-color);
   color: $base-color;
+  font-weight: 500;
+
   box-shadow:
     4px 4px 5px rgba(0, 0, 0, 0.2),
     -4px 4px 5px rgba(0, 0, 0, 0.2);

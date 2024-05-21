@@ -14,17 +14,18 @@
   display: flex;
   margin-left: 1px;
   text-align: center;
+  margin: 0% 10% 0% 10%;
 }
 
 .marge_soustitre {
-  margin: 25px 0px 0px 0px;
+  margin: 15px 4.4% 25px 4.4%;
   text-align: center;
 }
 
 // Boutton
 .boutton {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: -15px;
 }
 
 // Fonctionnement
@@ -70,10 +71,6 @@
   position: relative;
   top: -75px;
   right: 6%;
-}
-
-.favoris1, favoris3 {
-  margin-left: 80%;
 }
 
 // Restaurant HTML
