@@ -110,7 +110,6 @@
   // Main
   .marge_bureau {
     margin: 0px 0% 0% 20%;
-    
   }
 
   .font-bureau {
@@ -120,8 +119,6 @@
   .positionnement_fonctionnement {
     margin-left: 12%;
   }
-  
-
 
   .boutton_index_bureau {
     margin-bottom: 30px;
@@ -181,7 +178,7 @@
     opacity: 0.01;
     z-index: 999;
     background-position: 0% 0%;
-    animation: empty-heart 3.5s ease-in-out forwards;
+    animation: empty-heart 2.5s ease-in-out forwards;
   }
 
   .coeur_remplis:hover {
@@ -268,7 +265,7 @@
   #moveable8:hover .square,
   #moveable9:hover .square {
     transform: scaleX(0px);
-    animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-left 0.5s ease-in-out forwards;
     display: block;
     margin-left: -50px;
   }
@@ -284,7 +281,7 @@
   #moveable8:hover .marge_prix_d,
   #moveable9:hover .marge_prix_d {
     transform: scaleX(-50px);
-    animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-left 0.5s ease-in-out forwards;
     display: block;
   }
 
@@ -300,7 +297,7 @@
   #moveable9:hover .marge_prix_d1 {
     color: transparent;
     transform: scaleX(-50px);
-    animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-left 0.5s ease-in-out forwards;
     display: block;
   }
 }
