@@ -148,6 +148,15 @@
 
   // Restaurant
 
+  .favoris_bureau,
+  .favoris1_bureau,
+  .favoris2_bureau,
+  .favoris3_bureau {
+    position: relative;
+    right: 60%;
+    margin-top: 90%;
+  }
+
   .restaurants_alignement_bureau {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -163,14 +172,7 @@
   }
 
   // Favoris
-  .favoris_bureau,
-  .favoris1_bureau,
-  .favoris2_bureau,
-  .favoris3_bureau {
-    position: relative;
-    top: 180px;
-    left: -50%;
-  }
+
 
   .coeur_remplis {
     opacity: 0.01;
