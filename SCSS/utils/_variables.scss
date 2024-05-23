@@ -64,15 +64,15 @@
 
 // Choix du repas
 #moveable,
-.moveable1,
-.moveable2,
-.moveable3,
-.moveable4,
-.moveable5,
-.moveable6,
-.moveable7,
-.moveable8,
-.moveable9 {
+#moveable1,
+#moveable2,
+#moveable3,
+#moveable4,
+#moveable5,
+#moveable6,
+#moveable7,
+#moveable8,
+#moveable9 {
   box-sizing: box;
 }
 
@@ -90,6 +90,7 @@
   animation: slide-left 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   display: block;
   margin-left: -50px;
+  cursor: pointer;
 }
 
 #moveable:active .marge_prix_d,
