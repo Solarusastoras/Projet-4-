@@ -109,7 +109,7 @@
 
   // Main
   .marge_bureau {
-    margin: 0px 0% 0% 20%;
+    margin: 0px 0% 0% 10%;
   }
 
   .font-bureau {
@@ -117,7 +117,7 @@
   }
 
   .positionnement_fonctionnement {
-    margin-left: 12%;
+    margin-left: 1%;
   }
 
   .boutton_index_bureau {
@@ -132,15 +132,14 @@
   }
 
   .fonctionnement_bureau {
-    width: 66%;
-    margin-right: 30px;
+    width: 940px;
+    margin-right: 60px;
   }
 
   .ligne_bureau {
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    margin-left: 180px;
+    gap: 40px;
   }
 
   .fa-list,
@@ -154,13 +153,13 @@
   .carte_bureau {
     width: 443px;
     height: 251px;
-    margin-right: 50px;
+    margin-right: 80px;
   }
 
   .restaurants_alignement_bureau {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
     padding-top: 28px;
   }
 
@@ -285,19 +284,4 @@
     display: block;
   }
 
-  #moveable:hover .marge_prix_d1,
-  #moveable1:hover .marge_prix_d1,
-  #moveable2:hover .marge_prix_d1,
-  #moveable3:hover .marge_prix_d1,
-  #moveable4:hover .marge_prix_d1,
-  #moveable5:hover .marge_prix_d1,
-  #moveable6:hover .marge_prix_d1,
-  #moveable7:hover .marge_prix_d1,
-  #moveable8:hover .marge_prix_d1,
-  #moveable9:hover .marge_prix_d1 {
-    color: transparent;
-    transform: scaleX(-50px);
-    animation: slide-left 0.5s ease-in-out forwards;
-    display: block;
-  }
 }
