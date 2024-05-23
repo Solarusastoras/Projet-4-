@@ -87,7 +87,7 @@
 #moveable8:active .square,
 #moveable9:active .square {
   transform: scaleX(0px);
-  animation: slide-left 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 0.4s ease-in-out forwards;
   display: block;
   margin-left: -50px;
   cursor: pointer;
@@ -104,23 +104,8 @@
 #moveable8:active .marge_prix_d,
 #moveable9:active .marge_prix_d {
   transform: scaleX(-50px);
-  animation: slide-left 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 0.4s ease-in-out forwards;
   display: block;
   cursor: pointer;
 }
 
-#moveable:active .marge_prix_d1,
-#moveable1:active .marge_prix_d1,
-#moveable2:active .marge_prix_d1,
-#moveable3:hover .marge_prix_d1,
-#moveable4:hover .marge_prix_d1,
-#moveable5:hover .marge_prix_d1,
-#moveable6:hover .marge_prix_d1,
-#moveable7:hover .marge_prix_d1,
-#moveable8:hover .marge_prix_d1,
-#moveable9:hover .marge_prix_d1 {
-  transform: scaleX(-50px);
-  animation: slide-left 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  display: block;
-  cursor: pointer;
-}

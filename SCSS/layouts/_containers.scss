@@ -25,7 +25,7 @@
 // Boutton
 .boutton {
   margin-top: 20px;
-  margin-bottom: -15px;
+  margin-bottom: 15px;
 }
 
 // Fonctionnement
@@ -176,6 +176,7 @@ h3 {
 #moveable7:active .reduction_text,
 #moveable8:active .reduction_text,
 #moveable9:active .reduction_text {
+  width: 180px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
