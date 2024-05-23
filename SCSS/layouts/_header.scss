@@ -17,12 +17,8 @@
 
 // tablette
 @media (min-width: 768px) and (max-width: 1279px) {
-  .centrer_logo_tablette {
-    margin-left: 11%;
-  }
-
   .taille_logo_tablette {
-    width: 200px;
+    width: 40%;
     height: 50px;
   }
 
@@ -35,7 +31,6 @@
 
 // Desktop
 @media (min-width: 1280px) {
- 
   .centrer_logo_bureau {
     margin-bottom: 35px;
   }
@@ -43,7 +38,6 @@
   .taille_logo_index {
     width: 300px;
     height: 50px;
-  
   }
 
   // Restaurants HTML

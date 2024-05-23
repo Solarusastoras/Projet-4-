@@ -100,38 +100,48 @@
 @media (min-width: 1280px) {
   // INDEX HTML
 
+  * {
+    margin-left: 0%;
+  }
   // Main
   .font-bureau {
     font-size: 40px;
   }
 
-  //Boutton
+    .marge_bureau {
+    margin-left: 190px;
+    margin-right: 60px;
+  }
+
+  .marge_bureau1 {
+    margin-left: 190px;
+    margin-right: 60px;
+  }
 
   // Fonctionnement
   .fond_fonctionnement_bureau {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     background-color: $base-color;
   }
 
-  .positionnement_fonctionnement {
-    margin-left: 20%;
+  .fonctionnement_bureau {
+    width: 85%;
   }
 
-  .fonctionnement_bureau {
-    width: 940px;
-    margin-right: 60px;
-    margin-left: 15%;
+  .marge_d_fonctionnement_bureau {
+ margin-right: 2%;
   }
-  .fonctionnement_bureau, .fonctionnement_titre_bureau, .marge_restaurants_bureau, .restaurants_alignement_bureau {
-    margin-left: 12%;
+
+  h1 .font_h1_bureau {
+    font-size: 24px;
   }
 
   .ligne_bureau {
     display: flex;
     flex-direction: row;
-    margin-right: 40px;
+    margin-right: 2%;
   }
-  
+
   .fa-list,
   .fa-mobile-screen-button,
   .fa-store {
@@ -140,16 +150,19 @@
 
   // Restaurant
 
-  .carte_bureau {
-    width: 443px;
-    height: 251px;
-    margin-right: 90px;
-  }
+  
 
   .restaurants_alignement_bureau {
     display: flex;
     flex-wrap: wrap;
     padding-top: 28px;
+    gap: 50px;
+  }
+
+  .carte_bureau {
+    width: 440px;
+    height: 251px;
+    margin-right: 30px;
   }
 
   // Favoris
@@ -159,7 +172,7 @@
   .favoris3_bureau {
     position: relative;
     top: 180px;
-    left: -100px;
+    left: -90px;
   }
 
   .coeur_remplis {
