@@ -10,9 +10,9 @@
   }
 
   #heart-checkbox:checked + label .coeur_remplis,
-  #heart-checkbox2:checked + label .favoris1 .coeur_remplis,
-  #heart-checkbox3:checked + label .favoris2 .coeur_remplis,
-  #heart-checkbox4:checked + label .favoris3 .coeur_remplis {
+  #heart-checkbox1:checked + label .coeur_remplis,
+  #heart-checkbox2:checked + label .coeur_remplis,
+  #heart-checkbox3:checked + label .coeur_remplis {
     opacity: 1;
     background: linear-gradient(to bottom, $base-color 10%, $fifths-color, $second-color);
     background-size: 100% 200%;
