@@ -34,10 +34,6 @@
 
 // tablette
 @media (min-width: 768px) and (max-width: 1279px) {
-  .marge_bureau {
-    margin: 0px;
-  }
-
   .marge_tablette {
     margin: 0% 3% 0% 3%;
   }
@@ -103,54 +99,39 @@
 // Desktop
 @media (min-width: 1280px) {
   // INDEX HTML
-  .marge_bureau {
-    margin: 0px;
-  }
 
   // Main
-  .marge_bureau {
-    margin: 0px 0% 0% 14%;
-  }
-
-  .ville_bureau, .centrer_bureau  {
-    margin-left: -2%;
-  }
-
   .font-bureau {
     font-size: 40px;
   }
 
- 
-
-
-  .boutton_index_bureau {
-    margin-left: -7%;
-  }
-  .boutton_index_bureau {
-    margin-bottom: 30px;
-  }
+  //Boutton
 
   // Fonctionnement
   .fond_fonctionnement_bureau {
     margin-bottom: 40px;
     background-color: $base-color;
-    padding-left: 13%;
   }
 
   .positionnement_fonctionnement {
-    margin-left: 1%;
+    margin-left: 20%;
   }
+
   .fonctionnement_bureau {
     width: 940px;
     margin-right: 60px;
+    margin-left: 15%;
+  }
+  .fonctionnement_bureau, .fonctionnement_titre_bureau, .marge_restaurants_bureau, .restaurants_alignement_bureau {
+    margin-left: 12%;
   }
 
   .ligne_bureau {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    margin-right: 40px;
   }
-
+  
   .fa-list,
   .fa-mobile-screen-button,
   .fa-store {
@@ -162,13 +143,12 @@
   .carte_bureau {
     width: 443px;
     height: 251px;
-    margin-right: 50px;
+    margin-right: 90px;
   }
 
   .restaurants_alignement_bureau {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     padding-top: 28px;
   }
 

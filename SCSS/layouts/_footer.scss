@@ -29,10 +29,14 @@ li {
 
 // Desktop
 @media (min-width: 1280px) {
-  .logo_header_position {
+  .logo_footer_position {
     position: absolute;
     right: 30px;
     margin-top: 38px;
+  }
+
+  .marge_footer_bureau {
+    margin-top: -70px;
   }
 
   .ul_bureau {
@@ -42,8 +46,7 @@ li {
     margin-left: 40%;
     padding-bottom: -5px;
   }
-
-  .ul_bureau .ecart_li_bureau {
+  a .ul_bureau .ecart_li_bureau {
     padding-right: 20px;
     padding-bottom: 0px;
   }
