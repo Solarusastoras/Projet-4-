@@ -109,17 +109,23 @@
 
   // Main
   .marge_bureau {
-    margin: 0px 0% 0% 10%;
+    margin: 0px 0% 0% 14%;
+  }
+
+  .ville_bureau, .centrer_bureau  {
+    margin-left: -2%;
   }
 
   .font-bureau {
     font-size: 40px;
   }
 
-  .positionnement_fonctionnement {
-    margin-left: 1%;
-  }
+ 
 
+
+  .boutton_index_bureau {
+    margin-left: -7%;
+  }
   .boutton_index_bureau {
     margin-bottom: 30px;
   }
@@ -128,9 +134,12 @@
   .fond_fonctionnement_bureau {
     margin-bottom: 40px;
     background-color: $base-color;
-    padding-left: 10%;
+    padding-left: 13%;
   }
 
+  .positionnement_fonctionnement {
+    margin-left: 1%;
+  }
   .fonctionnement_bureau {
     width: 940px;
     margin-right: 60px;
@@ -153,13 +162,13 @@
   .carte_bureau {
     width: 443px;
     height: 251px;
-    margin-right: 80px;
+    margin-right: 50px;
   }
 
   .restaurants_alignement_bureau {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
     padding-top: 28px;
   }
 
@@ -283,5 +292,4 @@
     animation: slide-left 0.5s ease-in-out forwards;
     display: block;
   }
-
 }
