@@ -14,12 +14,7 @@
   #heart-checkbox2:checked + label .coeur_remplis,
   #heart-checkbox3:checked + label .coeur_remplis {
     opacity: 1;
-    background: linear-gradient(
-      to bottom,
-      $base-color 10%,
-      $fifths-color,
-      $second-color
-    );
+    background: linear-gradient(to bottom, $base-color 10%, $fifths-color, $second-color);
     background-size: 100% 200%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -74,12 +69,7 @@
   #heart-checkbox3:checked + label .favoris2 .coeur_remplis,
   #heart-checkbox4:checked + label .favoris3 .coeur_remplis {
     opacity: 1;
-    background: linear-gradient(
-      to bottom,
-      $base-color 10%,
-      $fifths-color,
-      $second-color
-    );
+    background: linear-gradient(to bottom, $base-color 10%, $fifths-color, $second-color);
     background-size: 100% 200%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -107,7 +97,7 @@
 }
 
 // Desktop
-@media (min-width: 1280px) {
+@media (min-width: 1280px) and (max-width: 1599px) {
   // INDEX HTML
 
   * {
@@ -191,12 +181,7 @@
 
   .coeur_remplis:hover {
     opacity: 1;
-    background: linear-gradient(
-      to bottom,
-      $base-color 10%,
-      $fifths-color,
-      $second-color
-    );
+    background: linear-gradient(to bottom, $base-color 10%, $fifths-color, $second-color);
     background-size: 100% 200%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -253,7 +238,6 @@
     margin-top: -60px;
   }
 
-  
   // Choix des plats
   #moveable,
   .moveable1,
