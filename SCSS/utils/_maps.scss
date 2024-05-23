@@ -14,7 +14,12 @@
   #heart-checkbox2:checked + label .coeur_remplis,
   #heart-checkbox3:checked + label .coeur_remplis {
     opacity: 1;
-    background: linear-gradient(to bottom, $base-color 10%, $fifths-color, $second-color);
+    background: linear-gradient(
+      to bottom,
+      $base-color 10%,
+      $fifths-color,
+      $second-color
+    );
     background-size: 100% 200%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -69,7 +74,12 @@
   #heart-checkbox3:checked + label .favoris2 .coeur_remplis,
   #heart-checkbox4:checked + label .favoris3 .coeur_remplis {
     opacity: 1;
-    background: linear-gradient(to bottom, $base-color 10%, $fifths-color, $second-color);
+    background: linear-gradient(
+      to bottom,
+      $base-color 10%,
+      $fifths-color,
+      $second-color
+    );
     background-size: 100% 200%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -108,7 +118,6 @@
     font-size: 40px;
   }
 
-
   .marge_bureau {
     margin-left: 130px;
     margin-right: 70px;
@@ -129,9 +138,8 @@
   }
 
   .marge_d_fonctionnement_bureau {
- margin-right: 20px;
+    margin-right: 20px;
   }
-
 
   h1 .font_h1_bureau {
     font-size: 24px;
@@ -151,14 +159,16 @@
   // Restaurant
 
   .restaurants_alignement_bureau {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-top: 28px;
-    gap: 5%;
+    gap: 10px;
+    margin-left: 15px;
   }
 
   .carte_bureau {
-    width: 440px;
+    width: 160%;
     height: 251px;
   }
 
@@ -169,7 +179,7 @@
   .favoris3_bureau {
     position: relative;
     top: 180px;
-    left: -90px;
+   left: -130%;
   }
 
   .coeur_remplis {
@@ -181,7 +191,12 @@
 
   .coeur_remplis:hover {
     opacity: 1;
-    background: linear-gradient(to bottom, $base-color 10%, $fifths-color, $second-color);
+    background: linear-gradient(
+      to bottom,
+      $base-color 10%,
+      $fifths-color,
+      $second-color
+    );
     background-size: 100% 200%;
     -webkit-background-clip: text;
     background-clip: text;
