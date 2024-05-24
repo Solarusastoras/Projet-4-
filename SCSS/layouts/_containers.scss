@@ -10,9 +10,10 @@
   padding-right: 15px;
 }
 
-.fond_site, .fond_site_bureau {
+.fond_site,
+.fond_site_bureau {
   padding-bottom: 20px;
-} 
+}
 
 .marge_titre {
   display: flex;
@@ -134,13 +135,14 @@ h3 {
   display: none;
   margin-top: -38px;
   position: relative;
-  right: -51px;
+  right: -1px;
 }
 
 .marge_prix_d {
   display: block;
   margin-right: 20px;
   padding-top: 30px;
+  padding-bottom: 20px;
   position: relative;
   top: -32px;
 }

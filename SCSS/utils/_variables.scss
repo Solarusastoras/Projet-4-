@@ -51,6 +51,38 @@
 
 // Animation
 
+//Coeur
+.hidden-checkbox {
+  display: none;
+}
+
+.coeur_remplis {
+  opacity: 0;
+  z-index: 999;
+}
+
+#heart-checkbox:checked + label .coeur_remplis,
+#heart-checkbox1:checked + label .coeur_remplis,
+#heart-checkbox2:checked + label .coeur_remplis,
+#heart-checkbox3:checked + label .coeur_remplis {
+  opacity: 1;
+  background: linear-gradient(to bottom, $base-color 10%, $fifths-color, $second-color);
+  background-size: 100% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  cursor: pointer;
+  animation: fill-heart 1.5s ease-in-out forwards;
+  transition: all;
+  z-index: 0;
+}
+
+// Restaurants HTML
+.border_carte_menu {
+  width: 94%;
+  margin-right: 0%;
+}
+
 // Entrée des menu
 .slide-left_entree {
   @include slide-in(0.5s);
@@ -74,38 +106,36 @@
 #moveable8,
 #moveable9 {
   box-sizing: box;
+  height: 50px;
+  user-select: none;
 }
 
-#moveable:active .square,
-#moveable1:active .square,
-#moveable2:active .square,
-#moveable3:active .square,
-#moveable4:active .square,
-#moveable5:active .square,
-#moveable6:active .square,
-#moveable7:active .square,
-#moveable8:active .square,
-#moveable9:active .square {
-  transform: scaleX(0px);
-  animation: slide-left 0.4s ease-in-out forwards;
+#moveable:hover:active .square,
+#moveable1:hover:active .square,
+#moveable2:hover:active .square,
+#moveable3:hover:active .square,
+#moveable4:hover:active .square,
+#moveable5:hover:active .square,
+#moveable6:hover:active .square,
+#moveable7:hover:active .square,
+#moveable8:hover:active .square,
+#moveable9:hover:active .square {
+  transform: scaleX(-50px);
+  animation: scale-up-hor-right 0.5s ease-in-out forwards;
   display: block;
   margin-left: -50px;
-  cursor: pointer;
 }
-
-#moveable:active .marge_prix_d,
-#moveable1:active .marge_prix_d,
-#moveable2:active .marge_prix_d,
-#moveable3:active .marge_prix_d,
-#moveable4:active .marge_prix_d,
-#moveable5:active .marge_prix_d,
-#moveable6:active .marge_prix_d,
-#moveable7:active .marge_prix_d,
-#moveable8:active .marge_prix_d,
-#moveable9:active .marge_prix_d {
-  transform: scaleX(-50px);
-  animation: slide-left 0.4s ease-in-out forwards;
+#moveable:hover:active .marge_prix_d,
+#moveable1:hover:active .marge_prix_d,
+#moveable2:hover:active .marge_prix_d,
+#moveable3:hover:active .marge_prix_d,
+#moveable4:hover:active .marge_prix_d,
+#moveable5:hover:active .marge_prix_d,
+#moveable6:hover:active .marge_prix_d,
+#moveable7:hover:active .marge_prix_d,
+#moveable8:hover:active .marge_prix_d,
+#moveable9:hover:active .marge_prix_d {
+  animation: slide-left 0.5s ease-in-out forwards;
   display: block;
   cursor: pointer;
 }
-
